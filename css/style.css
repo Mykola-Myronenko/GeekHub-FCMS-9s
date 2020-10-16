@@ -1,107 +1,309 @@
-.forms {
-  margin: 1% 25%;
+body {
+  margin: 0;
 }
 
-.tables {
-  margin: 1% 35%;
+/* Блок header */
+
+header {
+  border-bottom: 1px solid lightgray;
+  border-width: 0.01em;
+  padding: 20px 0 1px 20px;
 }
 
-.bg-gray {
-  background-color: #e0e0e0;
+.head {
+  align-items: center;
 }
 
-h1 {
-  text-align: left;
-  margin-bottom: 10px;
-}
-
-p {
-  text-align: left;
-  font-size: 12pt;
-  margin: 5px;
-}
-
-form p {
-  font-size: 12pt;
-  font-weight: bold
-}
-
-legend {
-  font-weight: bold;
-}
-
-label, .block {
+.logo {
+  width: 90px;
   display: block;
-  margin: 2px;
-}
-
-.inline {
-  display: inline;
 }
 
 input {
-  margin: 2px;
-}
-
-input[name="first_name"], input[name="surname"]{
-  width: 200px;
-}
-
-input[name="age"]{
-  width: 50px;
-}
-
-input[type="submit"] {
-  margin-top: 5px;
-}
-
-.more-about input[type="text"] {
-  width: 150px;
-}
-
-.conclusion input[type="text"], input[type="email"] {
-  width: 200px;
-}
-
-textarea {
-  display: block;
-  width: 300px;
-  height: 100px;
-  resize: none;
-  margin-bottom: 10px;
-}
-
-label[for] {
-  font-weight: bold;
-  margin: 4px;
-}
-
-.italic-text {
-  font-style: italic;
+  width: 640px;
+  height: 45px;
+  border: 1px solid lightgray;
+  border-width: 0.04em;
+  border-radius: 20px;
+  font-size: 14pt;
   font-weight: normal;
-  padding: 0;
+  margin-left: 20px;
+  padding-left: 20px;
 }
 
-.bold-text td, .bold-text {
+input:hover {
+  box-shadow: 1px 1px 3px lightgray;
+}
+
+img {
+  position: relative;
+}
+
+img[alt="on-screen keyboard"] {
+  right: 130px;
+}
+
+img[alt="voice input"] {
+  right: 110px;
+  width: 25px;
+}
+
+img[alt="search"] {
+  right: 90px;
+  width: 20px;
+}
+
+.all {
+  background-image: url("../img/icon/all-not-active.png");
+}
+
+.all:hover {
+  background-image: url("../img/icon/all-active.png");
+}
+
+.pictures {
+  background-image: url("../img/icon/pictures-not-active.png");
+}
+
+.pictures:hover {
+  background-image: url("../img/icon/pictures-active.png");
+}
+
+.video {
+  background-image: url("../img/icon/video-not-active.png");
+}
+
+.video:hover {
+  background-image: url("../img/icon/video-active.png");
+}
+
+.news {
+  background-image: url("../img/icon/news-not-active.png");
+}
+
+.news:hover {
+  background-image: url("../img/icon/news-active.png");
+}
+
+.books {
+  background-image: url("../img/icon/books-not-active.png");
+}
+
+.books:hover {
+  background-image: url("../img/icon/books-active.png");
+}
+
+.more {
+  background-image: url("../img/icon/more-not-active.png");
+}
+
+.more:hover {
+  background-image: url("../img/icon/more-active.png");
+}
+
+.tools:hover {
+  border: 1px solid gray;
+  border-width: 0.05em;
+  background-color: #f2f2f2;
+}
+
+.navigation {
+  margin-left: 130px;
+  padding-top: 30px;
+}
+
+/* Задаємо оформлення в div'ах (потомках) класу navigation 
+крім зазначених в дужках: пункти "Настройки" та "Инструменты" */
+.navigation div:not(.settings):not(.tools) {
+  height: 20px;
+  padding: 0 15px 3px 25px;
+  background-repeat: no-repeat;
+}
+
+/* Задаємо оформлення для пунктів "Настройки" та "Инструменты" */
+.settings, .tools {
+  height: 20px;
+  padding: 0 5px 0 5px;
+}
+
+.navigation a:hover {
+  color: #1a73e8;
+}
+
+/* Виводимо нижній border в div'ах (потомках) класу navigation крім 
+зазначених в дужках: пункти "Ещё", "Настройки" та "Инструменты" */
+.navigation div:not(.more):not(.settings):not(.tools) {
+  border-bottom: 3px solid white;
+}
+
+/* При наведенні миші на панель навігації, виводимо нижній border в div'ах (потомках) класу
+navigation крім зазначених в дужках: пункти "Ещё", "Настройки" та "Инструменты" */
+.navigation div:hover:not(.more):not(.settings):not(.tools) {
+  border-bottom: 3px solid #1a73e8;
+}
+
+.number-of-results {
+  margin-top: 10px;
+  margin-left: 150px;
+}
+
+/* Основний блок */
+
+ul {
+  width: 640px;
+  list-style-type: none;
+  margin-left: 110px;
+}
+
+ul > li:not(:first-child) {
+  margin-top: 30px;
+}
+
+li > a:first-child {
+  color: #1a0dab;
+  font-size: 16pt;
+}
+
+li a + a {
+  color: #006621;
+  font-size: 14pt;
+}
+
+/* Блок: "Схожі запити"*/
+
+.related_queries {
+  color: #222222;
+  width: 640px;
+  font-size: 18px;
+  border: 1px solid lightgray;
+  border-width: 0.04em;
+  border-radius: 15px;
+  margin: 25px -20px 25px;
+  padding: 10px;
+}
+
+.related_queries div:first-child {
+  font-size: 18pt;
+  font-weight: normal;
+}
+
+.related_queries div {
+  font-size: 14pt;
+  font-weight: lighter;
+  padding: 7px;
+}
+
+.related_queries img {
+  position: absolute;
+  width: 18px;
+  left: 750px;
+}
+
+.related_queries div:not(:last-child) {
+  border-bottom: 1px solid lightgray;
+  border-width: 0.01em;
+}
+
+h2 {
+  color: #222222;
+  font-size: 16pt;
   font-weight: bold;
 }
 
-table {
-  border-collapse: collapse;
-  width: 400px;
-  height: 130px;
-  margin-top: 10px;
+/* Блок: "Разом з ... часто шукають" */
+
+.looking-together {
+  height: 90px;
+  flex-flow: column wrap;
+  align-content: flex-start;
 }
 
-td, th {
-  border: 2px solid black;
-  text-align: center;
+.looking-together a {
+  color: #1a0dab;
+  font-size: 18px;
+  margin: 0 20px 1px 0;
 }
 
-.grid td, .grid{
-  border: 1px solid gray;
+.interactive-logo {
+  width: 270px;
+  padding-left: 130px;
 }
 
-.hardcore td {
-  padding: 15px;
+/* 1 2 3 4 5 6 7 8 9 10  */
+
+.pages {
+  justify-content: center;
+  font-size: 14pt;
+}
+
+.pages a {
+  color: #007fff;
+  padding: 0 5px 5px 5px;
+}
+
+.pages a:last-child {
+  padding-left: 20px;
+}
+
+/* Футер */
+
+footer {
+  width: 100%;
+  border-top: 1px solid lightgray;
+  border-width: 0.01em;
+  background-color: #f2f2f2;
+}
+
+.geo, .another {
+  font-size: 12pt;
+  font-weight: lighter;
+  padding: 10px 0 10px 140px;
+}
+
+.geo div, .another div {
+  font-weight: lighter;
+  padding: 0 10px 0 10px;
+}
+
+.geo {
+  border-bottom: 1px solid lightgray;
+}
+
+.geo div:first-child {
+  border-right: 1px solid #e4e4e4;
+}
+
+/* Загальне */
+
+.navigation a,
+.tools,
+.number-of-results,
+footer a,
+.geo {
+  color: #5f6368;
+}
+
+.head,
+.navigation,
+.looking-together,
+.pages,
+.geo,
+.another {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+.bold-text {
+  color: #333333;
+  font-weight: bold;
+}
+
+li a:first-child:hover,
+.looking-together a:hover,
+.pages a:hover {
+  text-decoration: underline;
 }
