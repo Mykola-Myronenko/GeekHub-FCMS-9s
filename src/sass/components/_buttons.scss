@@ -1,0 +1,40 @@
+.add-task-button,
+.edit-task-button,
+.delete-task-button,
+.update-task-button {
+  height: 46px;
+  position: absolute;
+
+  &:hover {
+    background-color: $button-hover-color;
+    opacity: .9;
+  }
+}
+
+.add-task-button {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-width: 1px;
+  padding: 2px 52px;
+  right: 0;
+}
+
+.edit-task-button {
+  border-width: 1px;
+  padding: 2px 20px;
+  right: 70px;
+}
+
+.delete-task-button {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-width: 1px;
+  padding: 2px 10px;
+  right: 0;
+}
+
+.update-task-button {
+  border-width: 1px;
+  padding: 0 20px;
+  right: 141px;
+}

@@ -1,0 +1,28 @@
+.task-item, .form-container {
+  height: 45px;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin: 8px;
+  border-radius: 8px;
+
+  position: relative;
+}
+
+.task-text {
+  width: 100%;
+
+  @include text-style($main-font, 18px, 100, $secondary-text-color, 1px, 45px);
+
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.task-list {
+  padding-left: 0;
+}
+
+.completed {
+  background: $task-complete-color;
+  opacity: .7;
+}
+
