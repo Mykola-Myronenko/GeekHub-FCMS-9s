@@ -1,28 +1,4 @@
-body {
-  font-family: $main-font;
-}
-
-a {
-  &:hover {
-    text-decoration: none;
-  }
-}
-
 ul {
-  list-style-type: none;
-  margin: 0;
+  list-style: none;
   padding: 0;
-}
-
-.hidden {
-  position: absolute;
-  left: -9999px;
-}
-
-.clearfix {
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 }
