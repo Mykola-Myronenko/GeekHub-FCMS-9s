@@ -1,179 +1,114 @@
-<!--Document checking completed. No errors or warnings to show. |validator.w3.org|-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>css selector - Поиск в Google</title>
+    <title>Tanatos Studio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<!-- Хедер -->
-<header>
-    <div class="head">
-        <a href="#"><img src="img/google-logo.png" alt="Google" class="logo"></a>
-        <form action="#" method="post">
-            <input type="text" name="search" value="css selector">
-        </form>
-        <img src="img/icon/keyboard.png" alt="on-screen keyboard">
-        <img src="img/icon/mic.png" alt="voice input">
-        <img src="img/icon/magnifier.png" alt="search">
-    </div>
+<!-- Головний header -->
+<header class="main-header">
+    <img src="img/logo.png" alt="Tanatos Studio" class="logo">
+    <h1>We design <span class="orange-text">things</span></h1>
+    <p class="header-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua
+    </p>
     <nav>
-        <div class="navigation">
-            <div class="all"><a href="#">Все</a></div>
-            <div class="pictures"><a href="#">Картинки</a></div>
-            <div class="video"><a href="#">Видео</a></div>
-            <div class="news"><a href="#">Новости</a></div>
-            <div class="books"><a href="#">Книги</a></div>
-            <div class="more"><a href="#">Ещё</a></div>
-            <div class="settings"><a href="#">Настройки</a></div>
-            <div class="tools">Инструменты</div>
-        </div>
+        <div class="menu">Menu</div>
+        <button name="here_us">Here Us</button>
+        <button name="our_works">Our Works</button>
     </nav>
 </header>
-
-<!-- Основний блок -->
-<div class="number-of-results">Результатов: примерно 17 700 000 (0,55 сек.)</div>
-<ul>
-    <li>
-        <a href="#">CSS-селекторы - CSS | MDN</a>
-        <a href="#">https://developer.mozilla.org › docs › Web › CSS › CSS_Селекторы</a>
-        <p>
-            26 сент. 2019 г. - Селектор определяет, к какому элементу применять то или иное
-            <span class="bold-text">CSS</span>-правило.
+<section>
+    <header>
+        <h2 class="hidden">Our Services</h2>
+    </header>
+    <!-- OUR SERVICES -->
+    <nav class="serv-container">
+        <ul class="our-services">
+            <li>
+                <div class="print-design"></div>
+                <h3>Print Design</h3>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </li>
+            <li>
+                <div class="web-design"></div>
+                <h3>Web Design</h3>
+                <p>Incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </li>
+            <li>
+                <div class="app-design"></div>
+                <h3>App Design</h3>
+                <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+            </li>
+            <li>
+                <div class="logo-design"></div>
+                <h3>Logo Design</h3>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu</p>
+            </li>
+        </ul>
+    </nav>
+    <!-- SUBSCRIBE -->
+    <footer class="subscribe">
+        <form action="#" method="post">
+            <input type="email" name="email" placeholder="Enter Your email adress for newsletter">
+            <input type="submit" value="subscribe">
+        </form>
+    </footer>
+</section>
+<!-- OUR WORKS -->
+<section>
+    <header>
+        <h2>Our <span class="orange-text">Works</span></h2>
+        <p class="another-text">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat
         </p>
-    </li>
-    <li>
-        <a href="#">Знаете ли вы селекторы? - Современный учебник JavaScript</a>
-        <a href="#">https://learn.javascript.ru › css-selectors</a>
+    </header>
+    <nav>
+        <ul class="our-works">
+            <li class="imac">
+                <h3>Lorem ipsum</h3>
+                <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                <button name="show_project" value="imac">Show Project</button>
+            </li>
+            <li class="office">
+                <h3>Lorem ipsum</h3>
+                <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                <button name="show_project" value="office">Show Project</button>
+            </li>
+            <li class="business">
+                <h3>Lorem ipsum</h3>
+                <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                <button name="show_project" value="business">Show Project</button>
+            </li>
+            <li class="ipad">
+                <h3>Lorem ipsum</h3>
+                <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                <button name="show_project" value="ipad">Show Project</button>
+            </li>
+            <li class="technology">
+                <h3>Lorem ipsum</h3>
+                <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                <button name="show_project" value="technology">Show Project</button>
+            </li>
+            <li class="macbook">
+                <h3>Lorem ipsum</h3>
+                <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+                <button name="show_project" value="macbook">Show Project</button>
+            </li>
+        </ul>
+    </nav>
+    <button name="show_more">Show More</button>
+    <footer class="person">
+        <img src="img/person/john_smith.png" alt="John Smith">
         <p>
-            3 июл. 2019 г. - <span class="bold-text">CSS3</span>-селекторы – фундаментально полезная вещь. Даже если вы
-            почему-то (старый IE?) не пользуетесь ими в <span class="bold-text">CSS</span>, есть много ...
+            These guys are incredible! I get my project in 10 days and it was awesome!
+            Very good service! Highly recommended!
         </p>
-    </li>
-    <li>
-        <a href="#">CSS Selectors Reference - W3Schools</a>
-        <a href="#">https://www.w3schools.com › cssref › css_selectors</a>
-        <p>
-            <span class="bold-text">CSS Selectors</span>. In <span class="bold-text">CSS</span>, selectors are patterns
-            used to select the element(s) you want to style. Use our <span class="bold-text">CSS Selector</span>
-            Tester to demonstrate the different selectors.
-        </p>
-        <div class="related_queries">
-            <div>Похожие запросы</div>
-            <div>What is a CSS selector?<img src="img/icon/arrow-to-down.png" alt="expand"></div>
-            <div>Does CSS have a selector?<img src="img/icon/arrow-to-down.png" alt="expand"></div>
-            <div>What is Selector in CSS with example?<img src="img/icon/arrow-to-down.png" alt="expand"></div>
-            <div>What are the types of CSS selectors?<img src="img/icon/arrow-to-down.png" alt="expand"></div>
-        </div>
-    <li>
-        <a href="#">30 CSS селекторов, которые вы должны запомнить</a>
-        <a href="#">https://code.tutsplus.com › tutorials › the-30-css-selectors-you-must-memo...</a>
-        <p>
-            9 июн. 2011 г. - Web DevelopmentFront-EndHTMLCSS<span class="bold-text">CSS Selectors</span> ...
-            из описанных в этой статье селекторов являются частью спецификации CSS3, ...
-        </p>
-    </li>
-    <li>
-        <a href="#">Селекторы | htmlbook.ru</a>
-        <a href="#">htmlbook.ru › css › selector</a>
-        <p>
-            15 июл. 2013 г. - Справочник <span class="bold-text">CSS</span>. Как пользоваться справочником
-            !important · -moz-border-bottom-colors · -moz-border-left-colors · -moz-border-right-colors ...
-        </p>
-    </li>
-    <li>
-        <a href="#">The CssSelector Component — Symfony Framework ...</a>
-        <a href="#">symfony.com.ua › doc › current › components › css_selector</a>
-        <p>
-            Many developers -- particularly web developers -- are more comfortable using CSS selectors to find elements.
-            As well as working in stylesheets, <span class="bold-text">CSS selectors</span> ...
-        </p>
-    </li>
-    <li>
-        <a href="#">CSS/Селекторы — Викиучебник</a>
-        <a href="#">https://ru.wikibooks.org › wiki › CSS › Селекторы</a>
-        <p>
-            Где body — это селектор, background-image и font-size — это свойства, а url("image.gif") и 18px — значения.
-            Виды селекторов[править]. Селектор тегов ...
-        </p>
-    </li>
-    <li>
-        <a href="#">The CssSelector Component — Symfony Framework ...</a>
-        <a href="#">symfony.com.ua › doc › current › components › css_selector</a>
-        <p>
-            Many developers -- particularly web developers -- are more comfortable using
-            <span class="bold-text">CSS selectors</span> to find elements.
-            As well as working in stylesheets, <span class="bold-text">CSS selectors</span> ...
-        </p>
-    </li>
-    <li>
-        <a href="#">CSS: Селекторы</a>
-        <a href="#">vvz.nw.ru › Lessons › CSS › selectors</a>
-        <p>
-            Селекторы. Итак, селектор - это формальное описание того элемента или группы элементов, к которым
-            применяется указанное правило стиля.
-        </p>
-    </li>
-    <li>
-        <a href="#">CSS селекторы - PuzzleWeb.ru</a>
-        <a href="#">https://puzzleweb.ru › css › selectors</a>
-        <p>
-            Селектор - это часть CSS-правила, которая сообщает браузеру, к какому ...
-            <span class="bold-text">selector</span>), сложному селектору
-            (complex <span class="bold-text">selector</span>) или списку селекторов.
-        </p>
-    </li>
-    <li>
-        <h2>Вместе с css selector часто ищут</h2>
-        <div class="looking-together">
-            <a href="#">css <strong>selector plus</strong></a>
-            <a href="#">css selector <strong>selenium</strong></a>
-            <a href="#">css selector <strong>parent</strong></a>
-            <a href="#">css selector <strong>attribute</strong></a>
-            <a href="#">css selector <strong>not</strong></a>
-            <a href="#">css <strong>селекторы классов</strong></a>
-            <a href="#">css selector <strong>mdn</strong></a>
-            <a href="#"><strong>дочерние селекторы</strong> css</a>
-        </div>
-    </li>
-    <li>
-        <img src="img/interactive-logo.png" alt="Google" class="interactive-logo">
-        <div class="pages">
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-            <a href="#">5</a>
-            <a href="#">6</a>
-            <a href="#">7</a>
-            <a href="#">8</a>
-            <a href="#">9</a>
-            <a href="#">10</a>
-            <a href="#">Следующая</a>
-        </div>
-    </li>
-</ul>
-
-<!-- Футер -->
-<footer>
-    <div class="geo">
-        <div>Украина</div>
-        <div>
-            <span>&bull;</span>
-            <span class="bold-text">Приднепровский район, Черкассы, Черкасская область</span>
-            - На основе ваших предыдущих действий
-        </div>
-        <div><a href="#">Учитывать мое местоположение</a></div>
-        <div><a href="#">Подробнее...</a></div>
-    </div>
-    <div class="another">
-        <div><a href="#">Справка</a></div>
-        <div><a href="#">Отправить отзыв</a></div>
-        <div><a href="#">Конфиденциальность</a></div>
-        <div><a href="#">Условия</a></div>
-    </div>
-</footer>
+        <p>John Smith</p>
+    </footer>
+</section>
 </body>
 </html>
