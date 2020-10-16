@@ -4,17 +4,14 @@
   background-repeat: no-repeat;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: $main-font;
 }
 
 a {
   text-decoration: none;
   display: inline-block;
+  text-align: center;
 }
 
 ul {
@@ -23,11 +20,9 @@ ul {
   padding: 0;
 }
 
-.services-list li,
-.works-list li,
-.team-list li,
-.say-hello-ico li {
-  display: inline-block;
+.hidden {
+  position: absolute;
+  left: -9999px;
 }
 
 .text-inline-block {
@@ -38,17 +33,12 @@ ul {
   text-align: center;
 }
 
-.text-accent {
-  color: $main-hv-color;
-}
-
-.hidden {
-  position: absolute;
-  left: -9999px;
-}
-
 .clearfix::after {
   content: "";
   display: table;
   clear: both;
+}
+
+.task-text {
+  display: inline-block;
 }

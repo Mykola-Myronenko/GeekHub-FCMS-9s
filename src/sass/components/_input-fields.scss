@@ -1,46 +1,30 @@
 .subscribe-email {
-  width: 100%;
-  max-width: 560px;
-  height: 50px;
-  color: $main-bg-color;
-  border-radius: 10px;
-  border-width: 0.01em;
-  background-color: #ffffff;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 40px;
-  margin: 5px 20px;
+  max-width: 510px;
+  height: 55px;
+  border-radius: 27px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+
+  color: $main-color;
+  font-family: $main-font;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 50px;
   padding-left: 15px;
+  padding-right: 50px;
+
+  &::placeholder {
+    color: $main-color;
+    font-family: $main-font;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
 }
 
-.say-hello-email,
-.say-hello-subject,
-.say-hello-message {
-  margin: 5px 0 15px;
-  color:$main-bg-color;
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 40px;
-  padding-left: 15px;
-}
-
-.say-hello-email,
-.say-hello-subject {
-  width: calc(50% - 15px);
-  max-width: 400px;
-  height: 50px;
-}
-
-.say-hello-message {
-  width: 100%;
-  max-width: 900px;
-  min-width: 200px;
-  height: 200px;
-  margin: 15px 0;
-  resize: none;
-}
-
-.say-hello-email {
-  margin-right: 25px;
+@media (min-width: 320px) {
+  .subscribe-email {
+    width: 95%;
+    padding-right: 42%;
+  }
 }

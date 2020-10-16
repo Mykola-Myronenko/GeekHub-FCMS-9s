@@ -1,12 +1,17 @@
-.main-logo {
-  width: 158px;
-  height: 18px;
+@media (min-width: 640px) {
+  .logo {
+    float: none;
+    margin: 20px auto;
+  }
+
+  .main-nav .content {
+    margin: 10px 0 32px;
+  }
 }
 
-.footer-logo {
-  float: right;
-}
-
-.footer-logo img {
-  vertical-align: middle;
+@media (min-width: 850px) {
+  .logo {
+    margin: 0;
+    float: left;
+  }
 }

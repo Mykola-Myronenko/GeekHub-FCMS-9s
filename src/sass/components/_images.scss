@@ -1,68 +1,180 @@
-// Володя і Всеволод, я декілька годин ламав голову на тим, куди "втулити" стилі для хедера і футера,
-// які не відносяться до позиціонування. Відповідно стараючись слідувати методичці і тому, про що
-// Ви декілька разів на лекції наголошували. Файли в layout не підходять, бо там тільки позиціонування,
-// а pages, бо хедер і футер буде повторюватися на інших сторінках сайту, тому вирішив прописати тут.
-
-.main-header-block {
-  background: url("../img/background/macbook.png") center;
-  background-color: $main-bg-color;
-  opacity: 0.8;
-  background-size: cover;
+.product-list,
+.news-list,
+.ipsum-dolor-item {
+  display: flex;
+  justify-content: center;
 }
 
-.print-design {
-  background-image: url("../img/services/print_design.png");
-}
-
-.web-design {
-  background-image: url("../img/services/web_design.png");
-}
-
-.app-design {
-  background-image: url("../img/services/app_design.png");
-}
-
-.logo-design {
-  background-image: url("../img/services/logo_design.png");
-}
-
-.imac {
-  background-image: url("../img/works/imac.png");
-}
-
-.office {
-  background-image: url("../img/works/office.png");
-}
-
-.business {
-  background-image: url("../img/works/business.png");
-}
-
-.ipad {
-  background-image: url("../img/works/ipad.png");
-}
-
-.technology {
-  background-image: url("../img/works/technology.png");
-}
-
-.macbook {
-  background-image: url("../img/works/macbook.png");
-}
-
-.photo {
-  border-bottom: 5px solid transparent;
-
-  &:hover {
-    transform: scale(1.1);
-    transform-origin: bottom;
-    transition: transform 500ms;
-    border-bottom: 5px solid $main-hv-color;
-    border-radius: 15px;
-    cursor: pointer;
+@media (min-width: 320px) {
+  .product-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-item {
+    width: 90%;
+    margin: 5px 20px;
+  }
+  .product-image {
+    width: 40%
   }
 }
 
-.main-footer-block {
-  background-color: $main-bg-color;
+@media (min-width: 640px) {
+  .product-list {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .product-item {
+    width: 35%;
+    margin: 5px 20px;
+  }
+
+  .product-image {
+    width: 50%
+  }
+}
+
+//Main info
+
+@media (min-width: 960px) {
+  .product-list {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 150px;
+  }
+
+  .product-item {
+    width: 30%;
+  }
+
+  .product-image {
+    width: 30%
+  }
+}
+
+//Our news
+
+@media (min-width: 320px) {
+  .news-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .news-item {
+    margin: 10px 10px 30px;
+    width: 95%;
+  }
+
+  .news-image {
+    width: 95%;
+  }
+}
+
+@media (min-width: 640px) {
+  .news-list {
+    flex-direction: row;
+  }
+
+  .news-item {
+    width: 27%;
+    margin: 5px 15px;
+  }
+
+  .news-image {
+    width: 100%;
+  }
+}
+
+@media (min-width: 960px) {
+  .news-list {
+    flex-direction: row;
+  }
+
+  .news-item {
+    width: 32%;
+    margin: 5px 15px;
+  }
+
+  .news-image {
+    width: 100%;
+  }
+}
+
+@media (min-width: 320px) {
+  .ipsum-dolor-item {
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 50px 0;
+  }
+
+  .list-content {
+    width: 90%;
+    padding: 0;
+  }
+
+  .ipsum-image {
+    width: 90%;
+  }
+
+  .dish {
+    text-align: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .ipsum-dolor-item {
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 50px 0;
+  }
+
+  .list-content {
+    width: 70%;
+    padding: 0;
+  }
+
+  .ipsum-image {
+    width: 70%;
+  }
+
+  .dish {
+    text-align: center;
+  }
+}
+
+@media (min-width: 940px) {
+  .ipsum-dolor-item {
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin: 50px 0;
+  }
+
+  .list-content {
+    width: 40%;
+    padding: 0 15px;
+    margin: 10px 30px 0;
+  }
+
+  .ipsum-image {
+    width: 90%;
+  }
+
+  .dish {
+    text-align: left;
+  }
+}
+
+
+.main-info-block {
+  background: url("../img/background/header.jpg") center;
+  background-size: cover;
+}
+
+.newsletter-block {
+  background: url("../img/background/newsletter.jpg") center;
+  background-size: cover;
+}
+
+.our-news-block {
+  background-color: #edeff1;
 }

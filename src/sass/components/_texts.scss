@@ -1,119 +1,137 @@
 h1 {
-  max-width: 700px;
-  color: #ffffff;
-  font-family: "Open Sans Extrabold", sans-serif;
-  font-size: 70px;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin: 160px auto 0
+  color: $main-color;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+  font-family: $main-font;
 }
 
-h2 {
-  font-family: $base-font;
-  max-width: 210px;
-  color: $main-bg-color;
-  font-size: 35px;
-  font-weight: 400;
-  line-height: 40px;
-  text-transform: uppercase;
-  margin: 0 auto 0;
+@media (min-width: 320px) {
+  h1 {
+    font-size: 23px;
+    font-weight: 300;
+    margin: 10px;
+  }
 }
 
-h3 {
-  font-family: $base-font;
+@media (min-width: 640px) {
+  h1 {
+    font-size: 72px;
+    font-weight: 300;
+    margin: 10px;
+  }
 }
 
-.header-text {
-  max-width: 750px;
-  color: #ffffff;
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 40px;
-  text-align: center;
-  margin: 25px auto 65px;
+.main-header-block h2 {
+  color: $main-color;
+  font-family: $main-font;
+  margin: 10px;
 }
 
-.another-text {
-  max-width: 455px;
-  color: $main-bg-color;
-  font-size: 16px;
-  font-weight: 400;
+@media (min-width: 320px) {
+  .main-header-block h2 {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 36px;
+  }
+}
+
+@media (min-width: 640px) {
+  .main-header-block h2 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+}
+
+.our-news-block h2 {
+  color: #31353e;
+  font-family: $main-font;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 0 0 70px;
+}
+
+.newsletter-block h2 {
+  color: $main-color;
+  font-family: $main-font;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 48px;
+  margin: 0 0 10px;
+}
+
+.product-list h3 {
+  color: $main-color;
+  font-family: $main-font;
+}
+
+@media (min-width: 320px) {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+@media (min-width: 640px) {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.news-list h3 {
+  color: #31353e;
+  font-family: $main-font;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.product-detail {
+  color: $main-color;
+  font-size: 15px;
+  font-weight: 300;
   line-height: 30px;
-  margin: 30px auto 80px;
 }
 
-.services-list h3 {
-  color: $main-bg-color;
+.news-detail {
+  color: #31353e;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+.newsletter-block .another-text {
+  max-width: 500px;
+  color: $main-color;
+  font-family: $main-font;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0 auto 45px;
+}
+
+.ipsum-dolor-block h3 {
+  color: $second-font-color;
+  font-family: $main-font;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 48px;
+  margin-top: 0;
+}
+
+.ipsum-dolor-block .another-text {
+  max-width: 100%;
+  color: $second-font-color;
+  font-family: $main-font;
   font-size: 16px;
-  font-weight: 400;
-  line-height: 40px;
-  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 30px;
 }
 
-.works-list h3 {
-  color: #ffffff;
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 40px;
-  text-transform: uppercase;
-  margin: 85px auto 0;
-}
-
-.team-list h3 {
-  color: $main-bg-color;
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 40px;
-  text-transform: uppercase;
-}
-
-.services-description,
-.team-description {
-  color: $main-bg-color;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 26px;
-  text-transform: uppercase;
-  margin-bottom: 0;
-}
-
-.works-description {
-  max-width: 250px;
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 26px;
-  margin: 20px auto 0;
-}
-
-.feedback-text {
-  max-width: 800px;
-  color: #ffffff;
-  font-size: 25px;
-  font-style: italic;
-  line-height: 40px;
-  margin: 50px auto 0;
-}
-
-.feedback-author-name {
-  color: #ffffff;
+// На жаль шрифт "Proxima Nova" платний :(
+.footer-image-block .another-text {
+  width: 100%;
+  max-width: 550px;
+  color: $main-color;
+  font-family: $main-font;
   font-size: 18px;
-  font-weight: 400;
-  line-height: 40px;
-  margin: 40px auto 0;
-}
-
-.say-hello-block h2,
-.say-hello-block .another-text {
-  color: #ffffff;
-}
-
-.copyright {
-  color: #ffffff;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 40px;
-  text-transform: uppercase;
-  cursor: pointer;
-  margin: 0;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0 auto;
 }

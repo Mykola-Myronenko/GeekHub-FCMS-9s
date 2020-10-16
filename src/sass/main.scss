@@ -1,22 +1,24 @@
 @import "normalize/import-now";
 
 @import 'utils/variables';
+
 @import 'base/basic';
 
-@import 'layout/grid';
 @import 'layout/header';
+@import 'layout/grid';
 @import 'layout/footer';
+@import 'layout/forms';
 
-@import 'pages/home';
+//@import 'pages/home';
 
-@import 'components/common';
 @import 'components/logos';
-@import 'components/arrows';
-@import 'components/icons';
-@import 'components/texts';
+@import 'components/header';
+@import 'components/footer';
 @import 'components/buttons';
 @import 'components/input-fields';
+@import 'components/texts';
 @import 'components/images';
 
-// Не виключаю, що допущено не мало помилок, але я вже зараз розумію наскільки це круті інструменти!
-// Безмежно Вам дякую! :)
+
+
+
