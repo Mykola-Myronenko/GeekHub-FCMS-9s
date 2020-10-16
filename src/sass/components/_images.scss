@@ -1,0 +1,75 @@
+.rocket {
+  & .ellipse {
+    background: url('../img/icons/about/rocket.png') no-repeat center;
+    &:hover{
+      background: url('../img/icons/about/rocket_hover.png') no-repeat center;
+    }
+  }
+}
+
+.atom {
+  & .ellipse {
+    background: url('../img/icons/about/atom.png') no-repeat center;
+    &:hover{
+      background: url('../img/icons/about/atom_hover.png') no-repeat center;
+    }
+  }
+}
+
+.activity {
+  & .ellipse {
+    background: url('../img/icons/about/activity.png') no-repeat center;
+    &:hover{
+      background: url('../img/icons/about/activity_hover.png') no-repeat center;
+    }
+  }
+}
+
+.graduation {
+  & .ellipse {
+    background: url('../img/icons/about/graduation_cap.png') no-repeat center;
+    &:hover{
+      background: url('../img/icons/about/graduation_cap_hover.png') no-repeat center;
+    }
+  }
+}
+
+.ellipse {
+  width: 180px;
+  height: 180px;
+  border-radius: 90px;
+  margin: 0 auto;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 320px) {
+  .team-list {
+    & .team-list-item {
+      width: 50vw;
+      height: 50vw;
+    }
+
+    & .member {
+      height: 50vw;
+      width: 50vw;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .team-list {
+    & .team-list-item {
+      width: 19vw;
+      height: 20vw;
+    }
+
+    & .member {
+      height: 20vw;
+      width: 20vw;
+    }
+  }
+}
+

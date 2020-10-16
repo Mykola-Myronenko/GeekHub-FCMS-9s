@@ -1,13 +1,19 @@
 @import 'utils/variables';
 @import 'utils/mixins';
+
 @import "bootstrap";
+
 @import 'base/basic';
-@import 'layout/grid';
-@import 'layout/header';
-@import 'layout/footer';
-@import 'layout/forms';
+
+//@import 'layout/header';
+//@import 'layout/grid';
+//@import 'layout/footer';
+@import 'layout/navigation';
+
 @import 'pages/home';
-@import 'components/buttons.scss';
-@import 'components/inputs.scss';
 
-
+@import 'components/texts';
+@import 'components/images';
+@import 'components/icons';
+@import 'components/buttons';
+@import 'components/sliders';
