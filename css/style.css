@@ -1,88 +1,107 @@
-html {
-  padding: 3%  22%;
+.forms {
+  margin: 1% 25%;
+}
+
+.tables {
+  margin: 1% 35%;
+}
+
+.bg-gray {
+  background-color: #e0e0e0;
 }
 
 h1 {
-  text-align: center;
-  font-size: 24pt;
-  margin-bottom: 2px; 
-}
-
-p, ul, ol {
-  font-size: 14pt;
-  line-height: 1.5;  
-}
-
-ul, ol {
-  margin-top: 50px
-}
-
-.AuthTxt {	
-  text-align: center;
-  font-size: 18pt;
-  font-weight: normal;
-  font-style: italic;
-  margin-top: 2px;
-  margin-bottom: 15px;
-}
-
-.CorpTxt {	
-  text-align: center;
-  font-size: 16pt;
-  font-weight: bold;
-  margin-top: 15px;
-}
-
-.ScLevelHead {
   text-align: left;
-  font-size: 22pt;
+  margin-bottom: 10px;
 }
 
-.ThLevelHead {
+p {
   text-align: left;
-  font-size: 20pt;
+  font-size: 12pt;
+  margin: 5px;
 }
 
-.BoldLeftTxt {
-  font-weight: bold;	
+form p {
+  font-size: 12pt;
+  font-weight: bold
 }
 
-.ItalicCenterTxt {
-  text-align: center;	
-  font-style: italic;
-}
-
-.BoldItalicTxt {
-  font-weight: bold;	
-  font-style: italic;	
-}
-
-.ItalicRightTxt {
-  text-align: right;	
-  font-style: italic;
-}
-
-.UndTxt {
-  text-decoration: underline;	
-}
-
-.BoldTxt {
+legend {
   font-weight: bold;
 }
 
-.UndItalicTxt {
-  text-decoration: underline;
-  font-style: italic;
-}
-
-.LeftFloatImg {
-  float: left;
-  width: 380px;
-  margin-right: 15px;
-}
-
-.CenterImg {
+label, .block {
   display: block;
-  width: 430px;	
-  margin: auto;
+  margin: 2px;
+}
+
+.inline {
+  display: inline;
+}
+
+input {
+  margin: 2px;
+}
+
+input[name="first_name"], input[name="surname"]{
+  width: 200px;
+}
+
+input[name="age"]{
+  width: 50px;
+}
+
+input[type="submit"] {
+  margin-top: 5px;
+}
+
+.more-about input[type="text"] {
+  width: 150px;
+}
+
+.conclusion input[type="text"], input[type="email"] {
+  width: 200px;
+}
+
+textarea {
+  display: block;
+  width: 300px;
+  height: 100px;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+label[for] {
+  font-weight: bold;
+  margin: 4px;
+}
+
+.italic-text {
+  font-style: italic;
+  font-weight: normal;
+  padding: 0;
+}
+
+.bold-text td, .bold-text {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  width: 400px;
+  height: 130px;
+  margin-top: 10px;
+}
+
+td, th {
+  border: 2px solid black;
+  text-align: center;
+}
+
+.grid td, .grid{
+  border: 1px solid gray;
+}
+
+.hardcore td {
+  padding: 15px;
 }
