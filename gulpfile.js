@@ -10,7 +10,12 @@ var  imagemin = require('gulp-imagemin')
 var del = require('del')
 
 var SASS_INCLUDE_PATHS = [
-  './node_modules/normalize-scss/sass/'
+  './node_modules/bootstrap-scss/'
+]
+
+var LIBRARIES_PATHS = [
+  './node_modules/jquery/dist/jquery.min.js',
+  './node_modules/bootstrap/dist/js/bootstrap.min.js'
 ]
 
 function handleError (err) {
@@ -43,6 +48,15 @@ function scripts() {
     .pipe(gulp.dest('./assets/js'))
 }
 
+function scriptsLibraries() {
+  return gulp.src(LIBRARIES_PATHS)
+    .pipe(plumber({errorHandler: handleError}))
+    .pipe(sourcemaps.init())
+    .pipe(concat('libs.js'))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('./assets/js'))
+}
+
 function images() {
   return gulp.src('./src/img/**/*')
     .pipe(imagemin())
@@ -59,11 +73,12 @@ function watch() {
   gulp.watch('./src/js/**/*.js', scripts)
 }
 
-var build = gulp.series(clean, gulp.parallel(styles, scripts, images, fonts));
+var build = gulp.series(clean, gulp.parallel(scriptsLibraries, styles, scripts, images, fonts));
 
 exports.clean = clean;
 exports.styles = styles;
 exports.scripts = scripts;
+exports.scriptsLibraries = scriptsLibraries;
 exports.images = images;
 exports.fonts = fonts;
 exports.watch = watch;

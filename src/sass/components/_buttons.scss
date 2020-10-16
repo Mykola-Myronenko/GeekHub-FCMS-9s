@@ -1,139 +1,75 @@
-.menu-link-list {
-  font-family: $main-font;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
+%button-style {
+  width: 183px;
+  height: 47px;
+
+  border-radius: 24px;
+  display: table-cell;
+  vertical-align: middle;
 }
 
-.menu-list-item {
-  & a {
-    color: $main-menu-font-color;
-    margin: 5px;
-    padding: 5px 15px;
-
-    &:hover {
-      color: $main-color;
-      border-radius: 25px;
-      background-color: $first-bg-color-button;
-    }
-  }
+%button-style-hover {
+  color: $secondary-text-color;
+  transform-origin: center;
+  transform: scale(1.1);
+  transition: transform 700ms;
 }
 
-.main-info-button {
-  background-color: $main-color;
-  border-radius: 27px;
-  color: $first-font-color;
-  font-family: $main-font;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 30px;
-  padding: 3px 15px;
+.main-slider-button {
+  @include text-style($main-font, 14px, 700, $secondary-text-color, 0.35px, 24px);
+  @extend %button-style;
+
+  border: 2px solid $secondary-text-color;
+  background-color: transparent;
 
   &:hover {
-    background-color: $first-bg-color-button;
+    @extend %button-style-hover;
   }
 }
 
-.main-info-rm-button {
-  display: block;
-  background-color: $main-color;
-  width: 210px;
-  border-radius: 27px;
-  color: $first-font-color;
-  font-family: $main-font;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 30px;
-  padding: 10px 5px;
-  margin: 0 auto;
+.learn-more-button {
+  @include text-style($main-font, 14px, 700, $secondary-text-color, 0.35px, 24px);
+  @extend %button-style;
+
+  background-color: $main-bg-color;
 
   &:hover {
-    background-color: $first-bg-color-button;
-    color: $main-color;
+    @extend %button-style-hover;
   }
 }
 
-.our-news-rm-button {
-  width: 180px;
-  background-color: $main-color;
-  border-radius: 27px;
-  color: $our-news-rm-button-color;
-  font-family: $main-font;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 30px;
-  padding: 10px 5px;
+.try-template-button {
+  @include text-style($main-font, 14px, 700, $secondary-text-color, 0.35px, 24px);
+  @extend %button-style;
+
+  background-color: $main-bg-color;
 
   &:hover {
-    background-color: $first-bg-color-button;
-    color: $main-color;
+    @extend %button-style-hover;
   }
 }
 
-.subscribe-sign-up-button {
-  height: 55px;
-  background-color: $main-color;
-  border-radius: 27px;
-  color: $first-font-color;
-  font-family: $main-font;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 30px;
-  padding: 10px 20px;
-  position: absolute;
+.purchase-button {
+  @include text-style($main-font, 18px, 700, $secondary-text-color, 0.45px, 48px);
+  text-transform: uppercase;
 
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 30px;
+
+  background-color: $main-bg-color;
+  position: relative;
+
+  width: 20%;
 
   &:hover {
-    background-color: $first-bg-color-button;
-    color: $main-color;
+    color: $secondary-text-color;
+    opacity: 0.7;
+    transition: opacity 400ms;
   }
 }
 
-.first-sign-up-button,
-.second-sign-up-button {
-  width: 100%;
-  max-width: 210px;
-  border-radius: 27px;
-  font-family: $main-font;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 30px;
-  padding: 10px 20px;
-}
-
-.first-sign-up-button {
-  background-color: $first-bg-color-button;
-  color: $main-color;
-
-  &:hover {
-    opacity: 0.8;
+@media (min-width: 768px) and (max-width: 992px) {
+  .purchase-button {
+    @include text-style($main-font, 12px, 700, $secondary-text-color, 0.45px, 48px);
   }
 }
-
-.second-sign-up-button {
-  background-color: $second-bg-color-button;
-  color: $main-color;
-
-  &:hover {
-    opacity: 0.8;
-  }
-}
-
-@media (min-width: 320px) {
-  .subscribe-sign-up-button {
-    right: 5px;
-  }
-}
-
-@media (min-width: 480px) {
-  .subscribe-sign-up-button {
-    width: 140px;
-  }
-}
-
-@media (min-width: 640px) {
-  .subscribe-sign-up-button {
-    width: 210px;
-  }
-}
-

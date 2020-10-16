@@ -2,205 +2,384 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Panakeia</title>
+    <title>Alecto</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-<!--Main Header-->
+<!-- MAIN HEADER -->
 <header class="main-header-block">
-    <div class="content">
-        <div class="logo text-center clearfix">
-            <a href="#"><img src="assets/img/logo.png" alt="Panakeia"></a>
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light header-navigation">
+            <a class="navbar-brand" href="#"> <img src="assets/img/logos/main_logo.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li><a class="nav-link" href="#">About</a></li>
+                    <li><a class="nav-link" href="#">Work</a></li>
+                    <li><a class="nav-link" href="#">Services</a></li>
+                    <li><a class="nav-link" href="#">Blog</a></li>
+                    <li><a class="nav-link search-icon" href="#"></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row align-items-center header-slider">
+            <div class="col-md-12 justify-content-bottom text-center">
+                <h1><strong class="text-acccent">Alecto</strong> is simple PSD Template</h1>
+                <p class="another-text">Nam varius accumsan elementum aliquam</p>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <a class="main-slider-button" href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <nav class="main-nav">
-        <div class="content">
-            <ul class="menu-link-list">
-                <li class="menu-list-item">
-                    <a href="#">Fusce at</a>
-                </li>
-                <li class="menu-list-item">
-                    <a href="#">Facilisis</a>
-                </li>
-                <li class="menu-list-item">
-                    <a href="#">Ante donec</a>
-                </li>
-                <li class="menu-list-item">
-                    <a href="#">Blandit rhoncus</a>
-                </li>
-                <li class="menu-list-item">
-                    <a href="#">Placerat</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <section class="main-info-block">
-        <div class="content">
-            <h1 class="text-center">Integer at tortor ut magna</h1>
-            <h2 class="text-center">finibus lobortis sed quis tellus</h2>
-            <ul class="product-list text-center">
-                <li class="product-item">
-                    <img src="assets/img/product/tincidunt.png" alt="Tincidunt" class="product-image">
-                    <h3>Tincidunt</h3>
-                    <p class="product-detail">
-                        Phasellus arcu justo, ullamcorper non diam sit amet, luctus condimentum metus. Nullam tempus
-                        egestas efficitur. Sed quam dolor.
-                    </p>
-                </li>
-                <li class="product-item">
-                    <img src="assets/img/product/duis_bibendum.png" alt="Duis bibendum" class="product-image">
-                    <h3>Duis bibendum</h3>
-                    <p class="product-detail">
-                        Ut arcu arcu, faucibus eu risus blandit, pulvinar viverra justo. Phasellus arcu justo,
-                        ullamcorper non diam sit amet, luctus condimentum metus. In hac habitasse platea dictumst.
-                    </p>
-                </li>
-                <li class="product-item">
-                    <img src="assets/img/product/donec_ligula.png" alt="Donec ligula" class="product-image">
-                    <h3>Donec ligula</h3>
-                    <p class="product-detail">
-                        Nullam tempus egestas efficitur. Sed quam dolor, vulputate sed mattis et, sodales quis orci.
-                        Ut arcu arcu, faucibus eu risus blandit,.
-                    </p>
-                </li>
-            </ul>
-            <a href="#" class="main-info-rm-button">Read more</a>
-        </div>
-    </section>
 </header>
-<!-- Our News -->
-<section class="our-news-block">
-    <div class="content">
-        <h2 class="text-center">Our news</h2>
-        <ul class="news-list text-center">
-            <li class="news-item">
-                <img src="assets/img/news/cheeseburger.jpg" alt="Cheeseburger" class="news-image">
-                <h3>Lorem ipsum</h3>
-                <p class="news-detail">
-                    Est a elit scelerisque vestibulum. Donec est sem, lobortis sit amet imperdiet vel, pretium
-                    lobortis erat. Nulla vitae hendrerit odio.
+<!-- ABOUT US -->
+<section class="about-us-block">
+    <div class="container">
+        <header>
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2>About us</h2>
+                    <div class="line"></div>
+                    <p class="another-text">
+                        Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque
+                    </p>
+                </div>
+            </div>
+        </header>
+        <ul class="row about-us-list">
+            <li class="col-12 col-sm-6 col-lg-3 rocket">
+                <div class="ellipse"></div>
+                <h3 class="text-center">Lorem ipsum</h3>
+                <p class="about-us-details text-center">
+                    Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.
                 </p>
-                <a href="#" class="our-news-rm-button text-center">Read more</a>
             </li>
-            <li class="news-item">
-                <img src="assets/img/news/cake.jpg" alt="Cake" class="news-image">
-                <h3>Lorem ipsum</h3>
-                <p class="news-detail">
-                    Est a elit scelerisque vestibulum. Donec est sem, lobortis sit amet imperdiet vel, pretium
-                    lobortis erat. Nulla vitae hendrerit odio.
+            <li class="col-12 col-sm-6 col-lg-3 atom">
+                <div class="ellipse"></div>
+                <h3 class="text-center">Lorem ipsum</h3>
+                <p class="about-us-details text-center">
+                    Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.
                 </p>
-                <a href="#" class="our-news-rm-button text-center">Read more</a>
             </li>
-            <li class="news-item">
-                <img src="assets/img/news/hamburger.jpg" alt="Hamburger" class="news-image">
-                <h3>Lorem ipsum</h3>
-                <p class="news-detail">
-                    Est a elit scelerisque vestibulum. Donec est sem, lobortis sit amet imperdiet vel, pretium
-                    lobortis erat. Nulla vitae hendrerit odio.
+            <li class="col-12 col-sm-6 col-lg-3 activity">
+                <div class="ellipse"></div>
+                <h3 class="text-center">Lorem ipsum</h3>
+                <p class="about-us-details text-center">
+                    Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.
                 </p>
-                <a href="#" class="our-news-rm-button text-center">Read more</a>
+            </li>
+            <li class="col-12 col-sm-6 col-lg-3 graduation">
+                <div class="ellipse"></div>
+                <h3 class="text-center">Lorem ipsum</h3>
+                <p class="about-us-details text-center">
+                    Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.
+                </p>
             </li>
         </ul>
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <a class="learn-more-button text-center" href="#" role="button">Learn more</a>
+            </div>
+        </div>
     </div>
 </section>
-<!-- Newsletter -->
-<section class="newsletter-block">
-    <div class="content">
-        <h2 class="text-center">Newsletter</h2>
-        <p class="another-text text-center">
-            Ut arcu arcu, faucibus eu risus blandit, pulvinar viverra justo. Phasellus arcu justo, ullamcorper non
-            diam sit amet, luctus condimentum metus
-        </p>
-        <form action="#" method="post" id="subscribe" class="subscribe-form text-center">
-            <input type="email" name="email" placeholder="email adress" class="subscribe-email">
-            <input type="submit" value="Sign up" class="subscribe-sign-up-button">
-        </form>
+<!-- LOREM IPSUM -->
+<section class="lorem-ipsum-block">
+    <div class="container">
+        <header>
+            <div class="row justify-content-center">
+                <h2 class="hidden">Lorem ipsum</h2>
+            </div>
+        </header>
+        <div class="row">
+            <div class="col-lg-6">
+                <!-- so far empty -->
+            </div>
+            <div class="col-lg-6">
+                <h3>Lorem ipsum</h3>
+                <p class="lorem-ipsum-details">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est porttitor,
+                    ac blandit nisl posuere. Pellentesque hendrerit suscipit mi eu lobortis. Curabitur consectetur enim
+                    id elementum accumsan. Quisque metus purus, iaculis id tincidunt non, blandit quis sapien.
+                </p>
+                <a class="learn-more-button text-center" href="#" role="button">Learn more</a>
+            </div>
+        </div>
     </div>
 </section>
-<!-- Ipsum dolor -->
+<!-- IPSUM DOLOR -->
 <section class="ipsum-dolor-block">
-    <h2 class="hidden">Ipsum dolor</h2>
-    <div class="content">
-        <ul class="ipsum-dolor-list">
-            <li class="ipsum-dolor-item">
-                <div class="list-content">
-                    <h3>Ipsum dolor sit amet</h3>
-                    <p class="another-text">Nam accumsan nunc sit amet elementum sollicitudin. Integer vel lacus eget
-                        tortor lobortis tincidunt sed eu dolor. Phasellus cursus augue ac pulvinar cursus.
-                    </p>
-                    <p class="another-text">
-                        Quisque ut erat ornare, feugiat turpis a, fringilla felis. Nulla molestie lorem et orci
-                        sagittis, et accumsan ex porta.
-                    </p>
-                    <a href="#" class="first-sign-up-button">Sign up</a>
-                </div>
-                <div class="dish">
-                    <img src="assets/img/product/chicken.jpg" alt="Chiken" class="ipsum-image">
-                </div>
-            </li>
-            <li class="ipsum-dolor-item">
-                <div class="dish">
-                    <img src="assets/img/product/big-hamburger.jpg" alt="Big hamburger" class="ipsum-image">
-                </div>
-                <div class="list-content">
-                    <h3>Ipsum dolor sit amet</h3>
-                    <p class="another-text">Nam accumsan nunc sit amet elementum sollicitudin. Integer vel lacus eget
-                        tortor lobortis tincidunt sed eu dolor. Phasellus cursus augue ac pulvinar cursus.
-                    </p>
-                    <p class="another-text">
-                        Quisque ut erat ornare, feugiat turpis a, fringilla felis. Nulla molestie lorem et orci
-                        sagittis, et accumsan ex porta.
-                    </p>
-                    <a href="#" class="second-sign-up-button">Sign up</a>
-                </div>
-            </li>
-        </ul>
+    <div class="container">
+        <header>
+            <div class="row justify-content-center">
+                <h2 class="hidden">Lorem ipsum</h2>
+            </div>
+        </header>
+        <div class="row">
+            <div class="col-lg-6">
+                <h3>Dolor sit amet</h3>
+                <p class="ipsum-dolor-details">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est porttitor,
+                    ac blandit nisl posuere. Pellentesque hendrerit suscipit mi eu lobortis. Curabitur consectetur enim
+                    id elementum accumsan. Quisque metus purus, iaculis id tincidunt non, blandit quis sapien.
+                </p>
+                <a class="learn-more-button text-center" href="#" role="button">Learn more</a>
+            </div>
+            <div class="col-lg-6">
+                <!-- so far empty -->
+            </div>
+        </div>
     </div>
 </section>
-<!-- Main Footer -->
-<footer class="main-footer-block">
-    <div class="footer-link-block">
-        <div class="content">
-            <ul class="footer-link-list">
-                <li class="footer-list-item">
-                    <a href="#">Ad litora torquent</a>
-                    <a href="#">Per conubia</a>
-                    <a href="#">Nostra</a>
-                    <a href="#">Per inceptos</a>
-                    <a href="#">Himenaeos</a>
-                    <a href="#">In consectetur</a>
+<!-- FEEDBACK BLOCK -->
+<div class="feedback-block">
+    <div class="container">
+        <div class="row align-items-center feedback-slider">
+            <div class="col-lg-12 justify-content-center text-center">
+                <img src="assets/img/person/adam_czajkowski.png" alt="Adam Czajkowski" class="person">
+                <h2><strong class="text-acccent">Alecto</strong> lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. </h2>
+                <p class="another-text">Nam varius accumsan elementum aliquam</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- OUR SERVICES -->
+<section class="our-services-block">
+    <div class="container">
+        <header>
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2>Our Services</h2>
+                    <div class="line"></div>
+                    <p class="another-text">
+                        Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque
+                    </p>
+                </div>
+            </div>
+            <ul class="row align-items-center service-list">
+                <li class="col-lg-6 service-list-item">
+                    <div class="portfolio-icon"></div>
+                    <h3>Portfolio</h3>
+                    <p class="service-details">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est
+                        porttitor, ac blandit nisl posuere.
+                    </p>
                 </li>
-                <li class="footer-list-item">
-                    <a href="#">Taciti sociosqu</a>
-                    <a href="#">Ad litora torquent</a>
-                    <a href="#">Per conubia</a>
-                    <a href="#">Himenaeos</a>
-                    <a href="#">In consectetur</a>
-                    <a href="#">Nisi sed blandit</a>
-                    <a href="#">Tincidunt</a>
+                <li class="col-lg-6 service-list-item">
+                    <div class="design-icon"></div>
+                    <h3>Design</h3>
+                    <p class="service-details">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est
+                        porttitor, ac blandit nisl posuere.
+                    </p>
                 </li>
-                <li class="footer-list-item">
-                    <a href="#">Nostra</a>
-                    <a href="#">Per inceptos</a>
-                    <a href="#">Himenaeos</a>
-                    <a href="#">In consectetur</a>
-                    <a href="#">Nisi sed blandit</a>
-                    <a href="#">Tincidunt</a>
+                <li class="col-lg-6 service-list-item">
+                    <div class="branding-icon"></div>
+                    <h3>Branding</h3>
+                    <p class="service-details">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est
+                        porttitor, ac blandit nisl posuere.
+                    </p>
+                </li>
+                <li class="col-lg-6 service-list-item">
+                    <div class="development-icon"></div>
+                    <h3>Development</h3>
+                    <p class="service-details">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque elementum augue sed est
+                        porttitor, ac blandit nisl posuere.
+                    </p>
                 </li>
             </ul>
+        </header>
+    </div>
+</section>
+<!-- OUR TEAM  -->
+<section class="our-team-block">
+    <div class="container">
+        <header>
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2>Meet our team</h2>
+                    <div class="line"></div>
+                    <p class="another-text">
+                        Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.
+                    </p>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="gallery">
+        <ul class="row no-gutters team-list ">
+            <li class="col team-list-item">
+                <img src="assets/img/team/james_allford.jpg" alt="James Allford" class="member">
+            </li>
+            <li class="col team-list-item">
+                <img src="assets/img/team/claudia_sinclair.jpg" alt="Claudia Sinclair" class="member">
+            </li>
+            <li class="col team-list-item">
+                <img src="assets/img/team/justin_walker.jpg" alt="Justin Walker" class="member">
+            </li>
+            <li class="col team-list-item">
+                <img src="assets/img/team/dianne_brook.jpg" alt="Dianne Brook" class="member">
+            </li>
+            <li class="col team-list-item">
+                <img src="assets/img/team/ethan_jhonson.jpg" alt="Ethan Jhonson" class="member">
+            </li>
+            <li class="col team-list-item">
+                <img src="assets/img/team/deborah_waite.jpg" alt="Deborah Waite" class="member">
+            </li>
+            <li class="col team-list-item">
+                <img src="assets/img/team/william_white.jpg" alt="William White" class="member">
+            </li>
+            <li class="col team-list-item">
+                <img src="assets/img/team/wilma_leapman.jpg" alt="Wilma Leapman" class="member">
+            </li>
+            <li class="col team-list-item">
+                <img src="assets/img/team/kevin_brown.jpg" alt="Kevin Brown" class="member">
+            </li>
+            <li class="col team-list-item">
+                <img src="assets/img/team/catherine_edwards.jpg" alt="Catherine Edwards" class="member">
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- PRICING  -->
+<section class="pricing-block">
+    <div class="container">
+        <header>
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <h2>Pricing</h2>
+                    <div class="line"></div>
+                    <p class="another-text">
+                        Nam varius accumsan elementum. Aliquam fermentum eros in suscipit scelerisque.
+                    </p>
+                </div>
+            </div>
+            <ul class="row justify-content-center price-list">
+                <li class="col-10 col-sm-6 col-md-3 price-list-item">
+                    <div class="block">
+                        <div class="price">
+                            <p class="product-price">$29</p>
+                            <p class="another-text">Lorem ipsum license</p>
+                        </div>
+                        <div class="details">
+                            <p class="product-details">
+                                Lorem ipsum dolor sit amet consectetur adipiscing elit Ante sed interdum labortis Est
+                                nisi
+                                efficitur lactus
+                            </p>
+                        </div>
+                        <a href="#" class="purchase-button">Purchase</a>
+                    </div>
+                </li>
+                <li class="col-10 col-sm-6 col-md-3 price-list-item">
+                    <div class="block">
+                        <div class="price">
+                            <p class="product-price">$39</p>
+                            <p class="another-text">Lorem ipsum license</p>
+                        </div>
+                        <div class="details">
+                            <p class="product-details">
+                                Lorem ipsum dolor sit amet consectetur adipiscing elit Ante sed interdum labortis Est
+                                nisi
+                                efficitur lactus
+                            </p>
+                        </div>
+                        <a href="#" class="purchase-button">Purchase</a>
+                    </div>
+                </li>
+                <li class="col-10 col-sm-6 col-md-3 price-list-item">
+                    <div class="block">
+                        <div class="price">
+                            <p class="product-price">$49</p>
+                            <p class="another-text">Lorem ipsum license</p>
+                        </div>
+                        <div class="details">
+                            <p class="product-details">
+                                Lorem ipsum dolor sit amet consectetur adipiscing elit Ante sed interdum labortis Est
+                                nisi
+                                efficitur lactus
+                            </p>
+                        </div>
+                        <a href="#" class="purchase-button">Purchase</a>
+                    </div>
+                </li>
+                <li class="col-10 col-sm-6 col-md-3 price-list-item">
+                    <div class="block">
+                        <div class="price">
+                            <p class="product-price">$109</p>
+                            <p class="another-text">Lorem ipsum license</p>
+                        </div>
+                        <div class="details">
+                            <p class="product-details">
+                                Lorem ipsum dolor sit amet consectetur adipiscing elit Ante sed interdum labortis Est
+                                nisi
+                                efficitur lactus
+                            </p>
+                        </div>
+                        <a href="#" class="purchase-button">Purchase</a>
+                    </div>
+                </li>
+            </ul>
+        </header>
+    </div>
+</section>
+<!-- TRY OUR -->
+<section class="try-block">
+    <div class="container">
+        <div class="row align-items-center row-content">
+            <div class="col-lg-12 justify-content-center text-center">
+                <h2>Try our <strong class="text-acccent">PSD template</strong> on symu.co</h2>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <a class="try-template-button text-center" href="#" role="button">symu.co/freebies</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="footer-image-block">
-        <div class="content">
-            <p class="another-text text-center">
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-                Try awsome tool for desgners <strong>symu.co</strong>
-            </p>
-        </div>
+</section>
+<!-- MAIN FOOTER -->
+<footer class="main-footer-block">
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light footer-navigation">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logos/footer-logo.png" alt="logo">
+            </a>
+            <span class="copyright">All Rights Reserved by <a class="brand" href="#">Alecto</a></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li><a class="nav-link" href="#">About</a></li>
+                    <li><a class="nav-link" href="#">Work</a></li>
+                    <li><a class="nav-link" href="#">Services</a></li>
+                    <li><a class="nav-link" href="#">Blog</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
 </footer>
+<script src="assets/js/libs.js"></script>
+<script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -1,180 +1,75 @@
-.product-list,
-.news-list,
-.ipsum-dolor-item {
-  display: flex;
-  justify-content: center;
-}
-
-@media (min-width: 320px) {
-  .product-list {
-    flex-direction: column;
-    align-items: center;
-  }
-  .product-item {
-    width: 90%;
-    margin: 5px 20px;
-  }
-  .product-image {
-    width: 40%
+.rocket {
+  & .ellipse {
+    background: url('../img/icons/about/rocket.png') no-repeat center;
+    &:hover{
+      background: url('../img/icons/about/rocket_hover.png') no-repeat center;
+    }
   }
 }
 
-@media (min-width: 640px) {
-  .product-list {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-  .product-item {
-    width: 35%;
-    margin: 5px 20px;
-  }
-
-  .product-image {
-    width: 50%
+.atom {
+  & .ellipse {
+    background: url('../img/icons/about/atom.png') no-repeat center;
+    &:hover{
+      background: url('../img/icons/about/atom_hover.png') no-repeat center;
+    }
   }
 }
 
-//Main info
-
-@media (min-width: 960px) {
-  .product-list {
-    flex-direction: row;
-    align-items: flex-start;
-    margin-top: 150px;
-  }
-
-  .product-item {
-    width: 30%;
-  }
-
-  .product-image {
-    width: 30%
+.activity {
+  & .ellipse {
+    background: url('../img/icons/about/activity.png') no-repeat center;
+    &:hover{
+      background: url('../img/icons/about/activity_hover.png') no-repeat center;
+    }
   }
 }
 
-//Our news
-
-@media (min-width: 320px) {
-  .news-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .news-item {
-    margin: 10px 10px 30px;
-    width: 95%;
-  }
-
-  .news-image {
-    width: 95%;
+.graduation {
+  & .ellipse {
+    background: url('../img/icons/about/graduation_cap.png') no-repeat center;
+    &:hover{
+      background: url('../img/icons/about/graduation_cap_hover.png') no-repeat center;
+    }
   }
 }
 
-@media (min-width: 640px) {
-  .news-list {
-    flex-direction: row;
-  }
+.ellipse {
+  width: 180px;
+  height: 180px;
+  border-radius: 90px;
+  margin: 0 auto;
 
-  .news-item {
-    width: 27%;
-    margin: 5px 15px;
-  }
-
-  .news-image {
-    width: 100%;
-  }
-}
-
-@media (min-width: 960px) {
-  .news-list {
-    flex-direction: row;
-  }
-
-  .news-item {
-    width: 32%;
-    margin: 5px 15px;
-  }
-
-  .news-image {
-    width: 100%;
+  &:hover {
+    cursor: pointer;
   }
 }
 
 @media (min-width: 320px) {
-  .ipsum-dolor-item {
-    flex-flow: row wrap;
-    align-items: center;
-    margin: 50px 0;
-  }
+  .team-list {
+    & .team-list-item {
+      width: 50vw;
+      height: 50vw;
+    }
 
-  .list-content {
-    width: 90%;
-    padding: 0;
-  }
-
-  .ipsum-image {
-    width: 90%;
-  }
-
-  .dish {
-    text-align: center;
+    & .member {
+      height: 50vw;
+      width: 50vw;
+    }
   }
 }
 
-@media (min-width: 600px) {
-  .ipsum-dolor-item {
-    flex-flow: row wrap;
-    justify-content: center;
-    margin: 50px 0;
-  }
+@media (min-width: 576px) {
+  .team-list {
+    & .team-list-item {
+      width: 19vw;
+      height: 20vw;
+    }
 
-  .list-content {
-    width: 70%;
-    padding: 0;
-  }
-
-  .ipsum-image {
-    width: 70%;
-  }
-
-  .dish {
-    text-align: center;
+    & .member {
+      height: 20vw;
+      width: 20vw;
+    }
   }
 }
 
-@media (min-width: 940px) {
-  .ipsum-dolor-item {
-    flex-flow: row nowrap;
-    justify-content: center;
-    margin: 50px 0;
-  }
-
-  .list-content {
-    width: 40%;
-    padding: 0 15px;
-    margin: 10px 30px 0;
-  }
-
-  .ipsum-image {
-    width: 90%;
-  }
-
-  .dish {
-    text-align: left;
-  }
-}
-
-
-.main-info-block {
-  background: url("../img/background/header.jpg") center;
-  background-size: cover;
-}
-
-.newsletter-block {
-  background: url("../img/background/newsletter.jpg") center;
-  background-size: cover;
-}
-
-.our-news-block {
-  background-color: #edeff1;
-}
