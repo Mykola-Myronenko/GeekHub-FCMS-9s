@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.services-list li,
+.works-list li,
+.team-list li,
+.say-hello-ico li {
+  display: inline-block;
+}
+
+.text-inline-block {
+  display: inline-block;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-accent {
+  color: $main-hv-color;
+}
+
+.hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

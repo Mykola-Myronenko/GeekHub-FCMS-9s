@@ -1,0 +1,71 @@
+.facebook-ico,
+.twitter-ico,
+.g-plus-ico,
+.ball-ico,
+.behance-ico {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-size: contain;
+  margin: 0 7px
+}
+
+.facebook-ico {
+  background-image: url("../img/social_networks/facebook.png");
+
+  &:hover {
+    transform: translateY(-3px);
+    transition: 0.2s;
+  }
+}
+
+.twitter-ico {
+  background-image: url("../img/social_networks/twitter.png");
+
+  &:hover {
+    transform: translateY(-3px);
+    transition: 0.2s;
+  }
+}
+
+.g-plus-ico {
+  background-image: url("../img/social_networks/google_plus.png");
+
+  &:hover {
+    transform: translateY(-3px);
+    transition: 0.2s;
+  }
+}
+
+.ball-ico {
+  background-image: url("../img/social_networks/ball.png");
+
+  &:hover {
+    transform: translateY(-3px);
+    transition: 0.2s;
+  }
+}
+
+.behance-ico {
+  background-image: url("../img/social_networks/behance.png");
+
+  &:hover {
+    transform: translateY(-3px);
+    transition: 0.2s;
+  }
+}
+
+.say-hello-ico {
+  margin: 5px 0;
+  float: right;
+}
+
+.say-hello-ico .facebook-ico,
+.say-hello-ico .twitter-ico,
+.say-hello-ico .g-plus-ico,
+.say-hello-ico .ball-ico,
+.say-hello-ico .behance-ico {
+  width: 43px;
+  height: 43px;
+}
+

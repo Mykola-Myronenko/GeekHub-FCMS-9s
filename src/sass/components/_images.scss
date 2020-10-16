@@ -1,0 +1,68 @@
+// Володя і Всеволод, я декілька годин ламав голову на тим, куди "втулити" стилі для хедера і футера,
+// які не відносяться до позиціонування. Відповідно стараючись слідувати методичці і тому, про що
+// Ви декілька разів на лекції наголошували. Файли в layout не підходять, бо там тільки позиціонування,
+// а pages, бо хедер і футер буде повторюватися на інших сторінках сайту, тому вирішив прописати тут.
+
+.main-header-block {
+  background: url("../img/background/macbook.png") center;
+  background-color: $main-bg-color;
+  opacity: 0.8;
+  background-size: cover;
+}
+
+.print-design {
+  background-image: url("../img/services/print_design.png");
+}
+
+.web-design {
+  background-image: url("../img/services/web_design.png");
+}
+
+.app-design {
+  background-image: url("../img/services/app_design.png");
+}
+
+.logo-design {
+  background-image: url("../img/services/logo_design.png");
+}
+
+.imac {
+  background-image: url("../img/works/imac.png");
+}
+
+.office {
+  background-image: url("../img/works/office.png");
+}
+
+.business {
+  background-image: url("../img/works/business.png");
+}
+
+.ipad {
+  background-image: url("../img/works/ipad.png");
+}
+
+.technology {
+  background-image: url("../img/works/technology.png");
+}
+
+.macbook {
+  background-image: url("../img/works/macbook.png");
+}
+
+.photo {
+  border-bottom: 5px solid transparent;
+
+  &:hover {
+    transform: scale(1.1);
+    transform-origin: bottom;
+    transition: transform 500ms;
+    border-bottom: 5px solid $main-hv-color;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+}
+
+.main-footer-block {
+  background-color: $main-bg-color;
+}

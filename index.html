@@ -4,36 +4,35 @@
     <meta charset="UTF-8">
     <title>Tanatos Studio</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
 <!-- Main header -->
-<header class="main-header">
+<header class="main-header-block">
     <div class="content">
-        <a href="#"><img src="img/main_logo.png" alt="Tanatos Studio" class="main-logo"></a>
+        <a href="#"><img src="assets/img/main_logo.png" alt="Tanatos Studio" class="main-logo"></a>
+        <nav>
+            <div class="menu"><a class="link" href="#">Menu</a></div>
+        </nav>
         <h1 class="text-center">We design <strong class="text-accent">things</strong></h1>
         <p class="header-text text-center">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
             dolore magna aliqua
         </p>
-        <nav class="text-center">
-            <div class="menu"><a class="link" href="#">Menu</a></div>
+        <div class="text-center">
             <a class="main-header-button text-inline-block" href="#">Hire Us</a>
             <a class="main-header-button text-inline-block" href="#">Our Works</a>
-        </nav>
-        <div class="arrow-down text-center">
-            <a href="#"></a>
         </div>
+        <a class="arrow-down text-center" href="#bottom"></a>
     </div>
 </header>
 <!-- OUR SERVICES -->
-<section class="our-services">
+<section class="our-services-block">
     <div class="content text-center">
         <header>
             <h2 class="hidden">Our Services</h2>
         </header>
-        <div class="services-container">
+        <div class="services-container" id="bottom">
             <ul class="services-list">
                 <li>
                     <div class="print-design"></div>
@@ -67,7 +66,7 @@
         </div>
     </div>
     <!-- SUBSCRIBE -->
-    <footer class="subscribe">
+    <div class="subscribe-block">
         <div class="content text-center">
             <form action="#" method="post">
                 <input class="subscribe-email" type="email" name="email"
@@ -75,10 +74,10 @@
                 <input class="subscribe-submit" type="submit" value="subscribe">
             </form>
         </div>
-    </footer>
+    </div>
 </section>
 <!-- OUR WORKS -->
-<section class="our-works">
+<section class="our-works-block">
     <div class="content text-center">
         <header>
             <h2>Our <strong class="text-accent">Works</strong></h2>
@@ -129,21 +128,21 @@
         </nav>
         <a href="#" class="show-more-button text-inline-block">Show More</a>
     </div>
-    <footer class="person">
+    <div class="feedback-block">
         <div class="content text-center clearfix">
             <a class="arrow-left " href="#"></a>
             <a class="arrow-right" href="#"></a>
-            <img src="img/person/john_smith.png" alt="John Smith">
-            <p class="feedback">
+            <img src="assets/img/person/john_smith.png" alt="John Smith">
+            <p class="feedback-text">
                 These guys are incredible! I get my project in 10 days and it was awesome!
                 Very good service! Highly recommended!
             </p>
-            <h3 class="name">John Smith</h3>
+            <h3 class="feedback-author-name">John Smith</h3>
         </div>
-    </footer>
+    </div>
 </section>
 <!-- OUR TEAM -->
-<section class="our-team">
+<section class="our-team-block">
     <div class="content text-center">
         <header>
             <h2>Our <strong class="text-accent">Team</strong></h2>
@@ -155,7 +154,7 @@
         <nav>
             <ul class="team-list">
                 <li>
-                    <img src="img/team/catherina_gail.png" alt="Catherina Gail" class="photo">
+                    <img src="assets/img/team/catherina_gail.png" alt="Catherina Gail" class="photo">
                     <h3>Catherina Gail</h3>
                     <div class="social-network-ico">
                         <a href="#"><span class="facebook-ico"></span></a>
@@ -167,7 +166,7 @@
                     </p>
                 </li>
                 <li>
-                    <img src="img/team/harvey_rube.png" alt="Harvey Rube" class="photo">
+                    <img src="assets/img/team/harvey_rube.png" alt="Harvey Rube" class="photo">
                     <h3>Harvey Rube</h3>
                     <div class="social-network-ico">
                         <a href="#"><span class="facebook-ico"></span></a>
@@ -179,7 +178,7 @@
                     </p>
                 </li>
                 <li>
-                    <img src="img/team/janet_pris.png" alt="Janet Pris" class="photo">
+                    <img src="assets/img/team/janet_pris.png" alt="Janet Pris" class="photo">
                     <h3>Janet Pris</h3>
                     <div class="social-network-ico">
                         <a href="#"><span class="facebook-ico"></span></a>
@@ -191,7 +190,7 @@
                     </p>
                 </li>
                 <li>
-                    <img src="img/team/kevin_ward.png" alt="Kevin Ward" class="photo">
+                    <img src="assets/img/team/kevin_ward.png" alt="Kevin Ward" class="photo">
                     <h3>Kevin Ward</h3>
                     <div class="our-team-ico">
                         <a href="#"><span class="facebook-ico"></span></a>
@@ -207,7 +206,7 @@
     </div>
 </section>
 <!-- SAY HELLO -->
-<section class="say-hello">
+<section class="say-hello-block">
     <div class="content text-center">
         <header>
             <h2>Say <strong class="text-accent">Hello</strong></h2>
@@ -217,7 +216,7 @@
             </p>
         </header>
         <form action="#" method="post">
-            <div class="inp-container clearfix">
+            <div class="input-container clearfix">
                 <input class="say-hello-email" type="email" name="email" placeholder="Your Mail">
                 <input class="say-hello-subject" type="text" name="subject" placeholder="Subject">
                 <textarea class="say-hello-message" name="message" id="message">Your Message</textarea>
@@ -234,11 +233,11 @@
     </div>
 </section>
 <!-- Main footer -->
-<footer class="main-footer">
+<footer class="main-footer-block">
     <div class="content clearfix">
         <p class="copyright text-inline-block">&copy;&nbsp;Copyright Design Studio</p>
         <a class="footer-logo" href="#">
-            <span class="copyright">Designed By &nbsp;</span><img src="img/footer_logo.png" alt="symu.co">
+            <span class="copyright">Designed By &nbsp;</span><img src="assets/img/footer_logo.png" alt="symu.co">
         </a>
     </div>
 </footer>
