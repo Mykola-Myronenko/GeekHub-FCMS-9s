@@ -1,0 +1,88 @@
+html {
+  padding: 3%  22%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24pt;
+  margin-bottom: 2px; 
+}
+
+p, ul, ol {
+  font-size: 14pt;
+  line-height: 1.5;  
+}
+
+ul, ol {
+  margin-top: 50px
+}
+
+.AuthTxt {	
+  text-align: center;
+  font-size: 18pt;
+  font-weight: normal;
+  font-style: italic;
+  margin-top: 2px;
+  margin-bottom: 15px;
+}
+
+.CorpTxt {	
+  text-align: center;
+  font-size: 16pt;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.ScLevelHead {
+  text-align: left;
+  font-size: 22pt;
+}
+
+.ThLevelHead {
+  text-align: left;
+  font-size: 20pt;
+}
+
+.BoldLeftTxt {
+  font-weight: bold;	
+}
+
+.ItalicCenterTxt {
+  text-align: center;	
+  font-style: italic;
+}
+
+.BoldItalicTxt {
+  font-weight: bold;	
+  font-style: italic;	
+}
+
+.ItalicRightTxt {
+  text-align: right;	
+  font-style: italic;
+}
+
+.UndTxt {
+  text-decoration: underline;	
+}
+
+.BoldTxt {
+  font-weight: bold;
+}
+
+.UndItalicTxt {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.LeftFloatImg {
+  float: left;
+  width: 380px;
+  margin-right: 15px;
+}
+
+.CenterImg {
+  display: block;
+  width: 430px;	
+  margin: auto;
+}
