@@ -9,7 +9,7 @@
     placement: 'sticky-top',
     container: 'fixed',
     color: 'light',
-    utility_classes: ['header-navigation'],
+    utility_classes: ['main-navigation'],
   } %}
 
     {% block branding %}
@@ -36,9 +36,7 @@
   <main class="pt-5 pb-5">
     {% if page.header %}
       <header class="page__header mb-3">
-        <div class="container">
-          {{ page.header }}
-        </div>
+        {{ page.header }}
       </header>
     {% endif %}
 
@@ -51,10 +49,8 @@
 
   {% if page.footer %}
     <footer class="page__footer">
-      <div class="container">
-        <div class="d-flex justify-content-md-between align-items-md-center">
-          {{ page.footer }}
-        </div>
+      <div class="d-flex justify-content-md-between align-items-md-center">
+        {{ page.footer }}
       </div>
     </footer>
   {% endif %}

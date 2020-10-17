@@ -145,7 +145,7 @@ function drush_radix($name = NULL, $machine_name = NULL) {
   // Rename files.
   $files_to_rename = array(
     '{{kit}}.info.yml',
-    '{{kit}}._libraries_.yml',
+    '{{kit}}.libraries.yml',
     '{{kit}}.breakpoints.yml',
     '{{kit}}.theme',
     'config/schema/{{kit}}.schema.yml',
@@ -185,7 +185,7 @@ function radix_file_str_replace($file_path, $find, $replace) {
 function radix_get_files_to_make_replacements($kit = 'default') {
   return array(
     $kit . '.info.yml',
-    $kit . '._libraries_.yml',
+    $kit . '.libraries.yml',
     $kit . '.theme',
     'package.json',
     'package-lock.json',

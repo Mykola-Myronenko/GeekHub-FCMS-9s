@@ -1,72 +1,94 @@
-h1 {
-  @include text-style($main-font, 60px, 300, $secondary-text-color, 1.35px, 60px);
-  margin-bottom: 22px;
-  text-align: center;
-}
-
-.another-text {
-  @include text-style($secondary-font, 20px, 300, $secondary-text-color, .6px, 20px);
-  margin-bottom: 40px;
-}
-
-.text-acccent {
-  @include text-style($main-font, 60px, 700, $secondary-text-color, 1.5px, 60px)
-}
-
-.about-us-item-title a {
-  @include text-style($main-font, 30px, 400, #000000, .75px, 96px);
-  margin-top: 30px;
-  text-align: center;
-}
-
-.about-us-item-desc,
-.our-team-description {
-  @include text-style($secondary-font, 18px, 300, $main-text-color, .45px, 30px);
-  text-align: center;
-}
-
-
-.section-title {
-  @include text-style($main-font, 60px, 200, $main-text-color, 1.5px, 60px);
-  margin-bottom: 25px;
-}
-
-.about-us-description,
-.our-services-description,
-.our-team-description,
-.pricing-description {
-  @include text-style($secondary-font, 14px, 400, $main-text-color, .45px, 18px);
-  margin: 30px 0 90px;
-  text-align: center;
-}
-
-.service-title a {
-  @include text-style($main-font, 36px, 200, $secondary-header-text-color, 1.5px, 40px)
-}
-
-.service-details p {
-  @include text-style($secondary-font, 18px, 400, $main-text-color, .45px, 48px)
-}
-
-.price-container {
-  padding: 10px;
-
-  & .another-text {
-    @include text-style($secondary-font, 12px, 400, $main-text-color, .45px, 12px);
+.hero-section {
+  & h2 {
+    @include text-style($main-font, 48px, 700, $main-text-color, .35px, 50px);
+    margin-bottom: 15px;
   }
 
-  & .product-details {
-    @include text-style($main-font, 12px, 400, $main-text-color, .45px, 28px);
+  & .hero-description {
+    @include text-style($main-font, 18px, 400, $secondary-header-text-color, .35px, 30px);
+
+    & p {
+      margin-bottom: 30px;
+    }
   }
 }
 
-.product-price {
-  @include text-style($main-font, 60px, 400, $main-bg-color, 1.5px, 96px);
-  margin: 0;
+.best-work-subsection {
+  & h2 {
+    @include text-style($main-font, 48px, 300, $secondary-text-color, .35px, 50px);
+    margin-bottom: 20px;
+  }
+
+  & .text-accent {
+    @include text-style($main-font, 48px, 700, $secondary-text-color, .35px, 50px);
+  }
+
+  & .best-work-single-item-description {
+    @include text-style($main-font, 18px, 300, $secondary-text-color, .35px, 30px);
+
+    & p {
+      margin-bottom: 40px;
+    }
+  }
 }
 
+.what-we-do-section {
+  & h2 {
+    @include text-style($main-font, 48px, 700, $main-text-color, .35px, 50px);
+  }
 
-.header-navigation {
-  @include text-style($main-font, 14px, 700, $secondary-text-color, .35px, 24px);
-  text-transform: uppercase;
+  & .what-we-do-item-list {
+    & h3 {
+      @include text-style($main-font, 30px, 700, $main-text-color, .35px, 36px);
+      margin-bottom: 20px;
+    }
+
+    & .what-we-do-single-item-description {
+      @include text-style($main-font, 18px, 300, $secondary-header-text-color, .35px, 30px);
+    }
+  }
+}
+
+.slider-subsection {
+  & h2 {
+    @include text-style($main-font, 30px, 700, $secondary-text-color, .35px, 36px);
+    margin-bottom: 20px;
+  }
+
+  & .slider-single-item-description {
+    @include text-style($main-font, 16px, 300, $secondary-text-color, .35px, 24px);
+    margin-bottom: 40px;
+  }
+}
+
+.about-us-section {
+  & h2 {
+    @include text-style($main-font, 48px, 700, $secondary-text-color, .35px, 50px);
+    margin-bottom: 20px;
+  }
+
+  & .about-us-item-list-description {
+    @include text-style($main-font, 18px, 300, $secondary-header-text-color, .35px, 30px);
+  }
+
+  & .about-us-section-items {
+    & h3 {
+      @include text-style($secondary-font, 24px, 700, $secondary-text-color, .35px, 36px);
+      margin: 25px 0;
+    }
+
+    & .about-us-single-item-description {
+      @include text-style($main-font, 18px, 300, $secondary-header-text-color, .35px, 30px);
+    }
+  }
+}
+
+.footer-section {
+  & .footer-description {
+    @include text-style($main-font, 18px, 300, $secondary-header-text-color, .35px, 36px);
+  }
+
+  & .copyright-link {
+    @include text-style($main-font, 18px, 700, $secondary-header-text-color, .35px, 36px);
+  }
 }

@@ -22,10 +22,12 @@
         "drupal/core-project-message": "^8.8",
         "drupal/core-recommended": "^8.8",
         "drupal/core-vendor-hardening": "^8.8",
+        "drupal/paragraphs": "^1.11",
         "drupal/radix": "4.x-dev",
         "drupal/radix_layouts": "^4.1",
         "drupal/slick": "^2.1",
-        "drupal/slick_views": "^2.2"
+        "drupal/slick_views": "^2.2",
+        "drupal/twig_tweak": "^2.4"
     },
     "require-dev": {
     },

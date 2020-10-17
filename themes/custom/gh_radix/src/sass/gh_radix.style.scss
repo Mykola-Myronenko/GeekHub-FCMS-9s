@@ -35,11 +35,6 @@
 @import "~bootstrap/scss/carousel";
 @import "~bootstrap/scss/utilities";
 
-// Utils
-// -----------------------------------------------------------------------------
-@import "utils/mixins";
-@import "utils/variables";
-
 // Base
 // -----------------------------------------------------------------------------
 @import "base/mixins";
@@ -48,31 +43,30 @@
 @import "base/elements";
 @import "base/typography";
 
+
 // Layout
 // -----------------------------------------------------------------------------
-@import "layout/navigation";
 @import "layout/page.header";
 @import "layout/page.content";
 @import "layout/page.footer";
 
+// Components
+// -----------------------------------------------------------------------------
+@import "components/buttons";
+@import "components/texts";
+@import "components/icons";
+@import "components/navigation";
+
 // Pages
 // -----------------------------------------------------------------------------
 @import "pages/home";
+
 // Component
 // -----------------------------------------------------------------------------
 @import "../components/node/node";
-
-// Components
-// -----------------------------------------------------------------------------
-@import "components/images";
-@import "components/icons";
-@import "components/buttons";
-@import "components/texts";
-@import "components/other";
 
 // Other
 // -----------------------------------------------------------------------------
 @import "block/block";
 @import "content/node.page";
 @import "content/node.article";
-

@@ -16,7 +16,6 @@ regions:
   content: Content
   page_bottom: Page bottom
   footer: Footer
-  hidden: Hidden
 
 libraries:
   - radix/style

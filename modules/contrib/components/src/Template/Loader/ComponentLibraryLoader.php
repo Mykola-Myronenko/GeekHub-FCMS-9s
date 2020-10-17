@@ -15,7 +15,7 @@ use Drupal\Core\Extension\ThemeHandlerInterface;
  *
  * This loader adds module and theme components paths as namespaces to the Twig
  * filesystem loader so that templates can be referenced by namespace, like
- * @mycomponents/box.html.twig or @mythemeComponents/_page.html.twig.
+ * @mycomponents/box.html.twig or @mythemeComponents/page.html.twig.
  */
 class ComponentLibraryLoader extends \Twig_Loader_Filesystem {
 
