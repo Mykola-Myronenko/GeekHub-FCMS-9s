@@ -39,24 +39,33 @@
  */
 #}
 {% set class = [
-  'hero-section'
+  content.field_section_class['#items'][0].value ~ '-section',
+  'row no-gutters',
+  'align-items-end',
+  'justify-content-center'
 ] | join (' ') %}
 {% block paragraph %}
-
   <section class="{{ class }}" style="background-image: url('{{ content.field_section_image['#items']|file_url }}')">
     {% block content %}
-
-      <div class="hero-section-container">
-
-        <h2 class="text-center">{{ content.field_section_title }}</h2>
-
-        {% if content.field_section_description.0 %}
-          <div class="hero-description text-center">{{ content.field_section_description }}</div>
-        {% endif %}
-
-        <div class="hero-link text-center">{{ content.field_section_link }}</div>
-      </div>
-
+        <div class="col-12 row no-gutters align-items-center left-line">
+          <div class="col- col-lg-9 text-center">
+            {% if content.field_section_title.0 %}
+              <h2 class="text-left">{{ content.field_section_title }}</h2>
+            {% endif %}
+            {% if content.field_section_description.0 %}
+              <div class="text-left {{ content.field_section_class['#items'][0].value ~ '-description' }}">
+                {{ content.field_section_description }}
+              </div>
+            {% endif %}
+          </div>
+          <div class="col- col-lg-3">
+            {% if content.field_section_link.0 %}
+              <div class="text-center {{ content.field_section_class['#items'][0].value ~ '-link' }}">
+                {{ content.field_section_link }}
+              </div>
+            {% endif %}
+          </div>
+        </div>
     {% endblock %}
   </section>
 

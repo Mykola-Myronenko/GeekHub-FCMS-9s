@@ -1,52 +1,44 @@
-.what-we-do-item-icon img {
-  width: 90%;
-}
-
-.what-we-do-single-item-container {
+.practis-area-subsection {
   position: relative;
 
   @media (min-width: 320px) and (max-width: 576px) {
-    padding: 0 30px 30px 30px;
+    padding: 0 30px 30px 50px;
 
-    & .what-we-do-item-icon {
+    & .practis-area-item-image {
       margin-bottom: 25px;
       position: static;
-
-      & img {
-        width: auto;
-      }
     }
   }
 
   @media (min-width: 576px) {
-    padding: 0 15px 30px 150px;
+    padding: 0 15px 30px 100px;
 
-    & .what-we-do-item-icon {
+    & .practis-area-item-image  {
 
       position: absolute;
-      left: 0;
+      left: 15px;
       top: 3px;
     }
   }
 
   @media (min-width: 800px) {
-    padding: 0 0 20px 150px;
+    padding: 0 0 20px 100px;
 
-    & .what-we-do-item-icon {
+    & .practis-area-item-image {
 
       position: absolute;
-      left: 0;
+      left: 15px;
       top: 3px;
     }
   }
 
   @media (min-width: 992px) {
-    padding: 0 40px 20px 140px;
+    padding: 0 30px 20px 100px;
 
-    & .what-we-do-item-icon {
+    & .practis-area-item-image {
 
       position: absolute;
-      left: -7px;
+      left: 20px;
       top: 3px;
     }
   }

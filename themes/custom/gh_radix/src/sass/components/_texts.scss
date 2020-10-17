@@ -1,94 +1,250 @@
-.hero-section {
-  & h2 {
-    @include text-style($main-font, 48px, 700, $main-text-color, .35px, 50px);
-    margin-bottom: 15px;
-  }
-
-  & .hero-description {
-    @include text-style($main-font, 18px, 400, $secondary-header-text-color, .35px, 30px);
-
-    & p {
-      margin-bottom: 30px;
-    }
+.header-section {
+  & .left-line {
+    border-radius: 1px;
+    border-left: 3px solid $secondary-text-color;
+    padding-left: 15px;
+    margin-bottom: 0;
+    max-width: 65vw;
   }
 }
 
-.best-work-subsection {
-  & h2 {
-    @include text-style($main-font, 48px, 300, $secondary-text-color, .35px, 50px);
-    margin-bottom: 20px;
-  }
+.left-line {
+  border-radius: 1px;
+  border-left: 3px solid $secondary-text-color;
+  padding-left: 25px;
+  margin-bottom: 70px;
+}
 
-  & .text-accent {
-    @include text-style($main-font, 48px, 700, $secondary-text-color, .35px, 50px);
-  }
-
-  & .best-work-single-item-description {
-    @include text-style($main-font, 18px, 300, $secondary-text-color, .35px, 30px);
-
-    & p {
-      margin-bottom: 40px;
-    }
+.about-us-section,
+.our-team-section,
+.recent-publications-section {
+  & .num-section-container {
+    @include text-style($secondary-font, 200px, 400, #f3f3f3, .5px, 120px);
+    position: absolute;
   }
 }
 
-.what-we-do-section {
-  & h2 {
-    @include text-style($main-font, 48px, 700, $main-text-color, .35px, 50px);
-  }
-
-  & .what-we-do-item-list {
-    & h3 {
-      @include text-style($main-font, 30px, 700, $main-text-color, .35px, 36px);
-      margin-bottom: 20px;
-    }
-
-    & .what-we-do-single-item-description {
-      @include text-style($main-font, 18px, 300, $secondary-header-text-color, .35px, 30px);
-    }
+.practis-area-section,
+.customer-reviews-section,
+.faq-section {
+  & .num-section-container {
+    @include text-style($secondary-font, 200px, 400, #f1d1d1d, .5px, 120px);
+    position: absolute;
   }
 }
 
-.slider-subsection {
+.num-section-container {
+  padding-left: 15px;
+}
+
+.header-section {
   & h2 {
-    @include text-style($main-font, 30px, 700, $secondary-text-color, .35px, 36px);
-    margin-bottom: 20px;
+    @include text-style($main-font, 65px, 400, $main-bg-color, 2.5px, 65px);
   }
 
-  & .slider-single-item-description {
-    @include text-style($main-font, 16px, 300, $secondary-text-color, .35px, 24px);
-    margin-bottom: 40px;
+  & .header-description {
+    @include text-style($secondary-font, 32px, 400, $main-bg-color, 1.25px, 32px);
   }
 }
 
 .about-us-section {
   & h2 {
-    @include text-style($main-font, 48px, 700, $secondary-text-color, .35px, 50px);
+    @include text-style($main-font, 32px, 400, $secondary-bg-color, 1.25px, 46px);
     margin-bottom: 20px;
   }
 
-  & .about-us-item-list-description {
-    @include text-style($main-font, 18px, 300, $secondary-header-text-color, .35px, 30px);
+  & .about-us-description {
+    @include text-style($main-font, 22px, 400, $main-text-color, .85px, 32px);
+    max-width: 800px;
+
+    & p {
+      margin: 0;
+    }
   }
 
-  & .about-us-section-items {
-    & h3 {
-      @include text-style($secondary-font, 24px, 700, $secondary-text-color, .35px, 36px);
-      margin: 25px 0;
+  & .about-us-item-title {
+    @include text-style($secondary-font, 22px, 700, $secondary-bg-color, 1.25px, 36px);
+  }
+
+  & .about-us-item-description {
+    @include text-style($secondary-font, 16px, 400, $secondary-bg-color, .65px, 22px);
+    padding-bottom: 17px;
+  }
+
+  & .about-us-another-text {
+    @include text-style($secondary-font, 14px, 400, $secondary-bg-color, .55px, 32px);
+    padding-bottom: 17px;
+  }
+
+  & .about-us-first-column-title,
+  & .about-us-second-column-title {
+    @include text-style($main-font, 22px, 400, $secondary-bg-color, .85px, 32px);
+    margin-bottom: 30px;
+  }
+}
+
+.practis-area-section {
+  & h2 {
+    @include text-style($main-font, 32x, 400, $main-bg-color, 1.25px, 46px);
+  }
+
+  & .practis-area-description {
+    @include text-style($main-font, 22px, 400, $main-text-color, .85px, 32px);
+    max-width: 800px;
+
+    & p {
+      margin: 0;
+    }
+  }
+
+  & .practis-area-item-title {
+    @include text-style($main-font, 22px, 400, $main-bg-color, .85px, 32px);
+    margin-bottom: 30px;
+  }
+
+  & .practis-area-item-description {
+    @include text-style($secondary-font, 14px, 400, $main-bg-color, .55px, 25px);
+    margin-bottom: 30px;
+  }
+}
+
+.our-team-section {
+  & h2 {
+    @include text-style($main-font, 32x, 400, $secondary-bg-color, 1.25px, 46px);
+    margin-bottom: 20px;
+  }
+
+  & .our-team-description {
+    @include text-style($main-font, 22px, 400, $main-text-color, .85px, 32px);
+    max-width: 800px;
+
+    & p {
+      margin: 0;
+    }
+  }
+
+  & .our-team-item-title {
+    @include text-style($main-font, 22px, 400, $secondary-bg-color, .85px, 32px);
+    margin: 10px 0 5px;
+  }
+
+  & .our-team-item-description {
+    @include text-style($secondary-font, 14px, 400, $main-text-color, .55px, 24px);
+  }
+}
+
+.customer-reviews-section {
+  & h2 {
+    @include text-style($main-font, 32x, 400, $main-bg-color, 1.25px, 46px);
+  }
+
+  & .customer-reviews-description {
+    @include text-style($main-font, 22px, 400, $main-text-color, .85px, 32px);
+    max-width: 800px;
+
+    & p {
+      margin: 0;
+    }
+  }
+
+  & .customer-reviews-item-title {
+    @include text-style($main-font, 22px, 400, $main-bg-color, .85px, 24px);
+    margin: 40px 0 5px;
+  }
+
+  & .customer-reviews-item-description {
+    @include text-style($secondary-font, 14px, 400, $main-bg-color, .55px, 32px);
+    position: relative;
+
+    @media (max-width: 992px) {
+      margin-top: 30px;
+    }
+  }
+
+  & .customer-reviews-item-title-description {
+    @include text-style($main-font, 14px, 400, $main-text-color, .55px, 32px);
+  }
+
+
+}
+
+.quotes-icon {
+  @include text-style($main-font, 135px, 400, #212529, .55px, 65px);
+  position: absolute;
+  left: -65px;
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.recent-publications-section {
+  & h2 {
+    @include text-style($main-font, 32x, 400, $secondary-bg-color, 1.25px, 46px);
+  }
+
+  & .recent-publications-description {
+    @include text-style($main-font, 22px, 400, $main-text-color, .85px, 32px);
+    max-width: 800px;
+
+    & p {
+      margin: 0;
+    }
+  }
+
+  & .recent-publications-item-title {
+    @include text-style($main-font, 22px, 400, $secondary-bg-color, .85px, 32px);
+    margin: 25px 0 30px;
+  }
+
+  & .recent-publications-item-description {
+    @include text-style($main-font, 14px, 400, $main-text-color, .55px, 32px);
+  }
+}
+
+.faq-section {
+  & h2 {
+    @include text-style($main-font, 32x, 400, $main-bg-color, 1.25px, 46px);
+  }
+
+  & .faq-description {
+    @include text-style($main-font, 22px, 400, $main-text-color, .85px, 32px);
+    max-width: 800px;
+
+    & p {
+      margin: 0;
+    }
+  }
+
+  & .faq-another-text {
+    box-shadow: 0 12px 40px rgba(216, 178, 87, 0.32);
+    border-radius: 3px;
+    background-color: $secondary-text-color;
+
+    padding: 40px;
+
+    @media (max-width: 992px) {
+      margin-top: 30px;
     }
 
-    & .about-us-single-item-description {
-      @include text-style($main-font, 18px, 300, $secondary-header-text-color, .35px, 30px);
+    & p {
+      @include text-style($secondary-font, 14px, 400, $secondary-bg-color, .55px, 32px);
+    }
+  }
+
+  & .faq-item {
+    border-radius: 1px;
+    border-bottom: 3px solid $secondary-text-color;
+
+    padding-bottom: 20px;
+
+    @include text-style($secondary-font, 14px, 700, $main-bg-color, .55px, 32px);
+
+    &:hover {
+      cursor: pointer;
+      @include text-style($secondary-font, 14px, 700, $secondary-text-color, .55px, 32px);
     }
   }
 }
 
-.footer-section {
-  & .footer-description {
-    @include text-style($main-font, 18px, 300, $secondary-header-text-color, .35px, 36px);
-  }
 
-  & .copyright-link {
-    @include text-style($main-font, 18px, 700, $secondary-header-text-color, .35px, 36px);
-  }
-}

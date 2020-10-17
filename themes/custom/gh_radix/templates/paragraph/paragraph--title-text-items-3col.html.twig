@@ -39,23 +39,34 @@
  */
 #}
 {% set class = [
-  'about-us-section'
+  content.field_section_class['#items'][0].value ~ '-section'
 ] | join (' ') %}
 {% block paragraph %}
 
   <section class="{{ class }}" style="background-image: url('{{ content.field_section_image['#items']|file_url }}')">
     {% block content %}
 
-      <h2 class="text-center">{{ content.field_section_title }}</h2>
-      <div class="about-us-item-list-description text-center">{{ content.field_section_description }}</div>
-
       <div class="container">
-        <div class="about-us-item-list-container">
-          <div class="about-us-section-items row">{{ content.field_section_items }}</div>
-        </div>
+        {% if content.field_section_class['#items'][0].value == 'recent-publications' %}
+          <div class=" {{ content.field_section_class['#items'][0].value ~ '-section-container' }}">
+            <div class="num-section-container">05</div>
+            <div class="left-line">
+                <h2>{{ content.field_section_title }}</h2>
+                <div class="{{ content.field_section_class['#items'][0].value ~ '-description' }}">
+                  {{ content.field_section_description }}
+              </div>
+            </div>
+            <div class="row">
+              {% if content.field_section_items.0 %}
+                {{ content.field_section_items }}
+              {% endif %}
+              {% if content.field_section_another_text.0 %}
+                <div class="{{ content.field_second_column_class }}">{{ content.field_section_another_text }}</div>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
       </div>
-
-      <div class="about-us-item-list-link text-center">{{ content.field_section_link }}</div>
 
     {% endblock %}
   </section>

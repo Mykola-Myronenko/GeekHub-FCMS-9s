@@ -9590,365 +9590,533 @@ a:hover {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Playfair Display", sans-serif;
 }
 
 .pt-5, .pb-5 {
   padding: 0 !important;
 }
 
-.hero-link a,
-.best-work-single-item-link a,
-.what-we-do-item-list-link a,
-.slider-single-item-link a,
-.about-us-item-list-link a {
-  width: 205px;
+.header-link a {
+  width: 180px;
   height: 50px;
-  background-image: linear-gradient(74deg, #49007c 0%, #e70088 100%);
+  background-color: #e8bf5d;
   border-radius: 25px;
   display: inline-block;
   text-align: center;
 }
 
-.hero-link a:hover,
-.best-work-single-item-link a:hover,
-.what-we-do-item-list-link a:hover,
-.slider-single-item-link a:hover,
-.about-us-item-list-link a:hover {
-  background-image: linear-gradient(74deg, #49007c 0%, #e70088 50%);
-  opacity: 0.9;
+.header-link a:hover {
+  background-color: #FFBF5D;
   cursor: pointer;
 }
 
-.hero-link a,
-.best-work-single-item-link a,
-.what-we-do-item-list-link a,
-.slider-single-item-link a,
-.about-us-item-list-link a {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  color: #ffffff;
-  letter-spacing: 0.35px;
-  line-height: 50px;
-}
-.hero-section h2 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 48px;
-  font-weight: 700;
-  color: #000000;
-  letter-spacing: 0.35px;
-  line-height: 50px;
-  margin-bottom: 15px;
-}
-.hero-section .hero-description {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  color: #949494;
-  letter-spacing: 0.35px;
-  line-height: 30px;
-}
-.hero-section .hero-description p {
-  margin-bottom: 30px;
-}
-
-.best-work-subsection h2 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 48px;
-  font-weight: 300;
-  color: #ffffff;
-  letter-spacing: 0.35px;
-  line-height: 50px;
-  margin-bottom: 20px;
-}
-.best-work-subsection .text-accent {
-  font-family: "Open Sans", sans-serif;
-  font-size: 48px;
-  font-weight: 700;
-  color: #ffffff;
-  letter-spacing: 0.35px;
-  line-height: 50px;
-}
-.best-work-subsection .best-work-single-item-description {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  color: #ffffff;
-  letter-spacing: 0.35px;
-  line-height: 30px;
-}
-.best-work-subsection .best-work-single-item-description p {
-  margin-bottom: 40px;
-}
-
-.what-we-do-section h2 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 48px;
-  font-weight: 700;
-  color: #000000;
-  letter-spacing: 0.35px;
-  line-height: 50px;
-}
-.what-we-do-section .what-we-do-item-list h3 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  color: #000000;
-  letter-spacing: 0.35px;
-  line-height: 36px;
-  margin-bottom: 20px;
-}
-.what-we-do-section .what-we-do-item-list .what-we-do-single-item-description {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  color: #949494;
-  letter-spacing: 0.35px;
-  line-height: 30px;
-}
-
-.slider-subsection h2 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 30px;
-  font-weight: 700;
-  color: #ffffff;
-  letter-spacing: 0.35px;
-  line-height: 36px;
-  margin-bottom: 20px;
-}
-.slider-subsection .slider-single-item-description {
-  font-family: "Open Sans", sans-serif;
+.header-link a {
+  font-family: "Playfair Display", sans-serif;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
+  color: #111111;
+  letter-spacing: 0.65px;
+  line-height: 50px;
+}
+.header-section .left-line {
+  border-radius: 1px;
+  border-left: 3px solid #e8bf5d;
+  padding-left: 15px;
+  margin-bottom: 0;
+  max-width: 65vw;
+}
+
+.left-line {
+  border-radius: 1px;
+  border-left: 3px solid #e8bf5d;
+  padding-left: 25px;
+  margin-bottom: 70px;
+}
+
+.about-us-section .num-section-container,
+.our-team-section .num-section-container,
+.recent-publications-section .num-section-container {
+  font-family: "Open Sans", sans-serif;
+  font-size: 200px;
+  font-weight: 400;
+  color: #f3f3f3;
+  letter-spacing: 0.5px;
+  line-height: 120px;
+  position: absolute;
+}
+
+.practis-area-section .num-section-container,
+.customer-reviews-section .num-section-container,
+.faq-section .num-section-container {
+  font-family: "Open Sans", sans-serif;
+  font-size: 200px;
+  font-weight: 400;
+  color: #f1d1d1d;
+  letter-spacing: 0.5px;
+  line-height: 120px;
+  position: absolute;
+}
+
+.num-section-container {
+  padding-left: 15px;
+}
+
+.header-section h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 65px;
+  font-weight: 400;
   color: #ffffff;
-  letter-spacing: 0.35px;
-  line-height: 24px;
-  margin-bottom: 40px;
+  letter-spacing: 2.5px;
+  line-height: 65px;
+}
+.header-section .header-description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 1.25px;
+  line-height: 32px;
 }
 
 .about-us-section h2 {
-  font-family: "Open Sans", sans-serif;
-  font-size: 48px;
-  font-weight: 700;
-  color: #ffffff;
-  letter-spacing: 0.35px;
-  line-height: 50px;
+  font-family: "Playfair Display", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #111111;
+  letter-spacing: 1.25px;
+  line-height: 46px;
   margin-bottom: 20px;
 }
-.about-us-section .about-us-item-list-description {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  color: #949494;
-  letter-spacing: 0.35px;
-  line-height: 30px;
+.about-us-section .about-us-description {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #666666;
+  letter-spacing: 0.85px;
+  line-height: 32px;
+  max-width: 800px;
 }
-.about-us-section .about-us-section-items h3 {
-  font-family: "Roboto", sans-serif;
-  font-size: 24px;
+.about-us-section .about-us-description p {
+  margin: 0;
+}
+.about-us-section .about-us-item-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #111111;
+  letter-spacing: 1.25px;
+  line-height: 36px;
+}
+.about-us-section .about-us-item-description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #111111;
+  letter-spacing: 0.65px;
+  line-height: 22px;
+  padding-bottom: 17px;
+}
+.about-us-section .about-us-another-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #111111;
+  letter-spacing: 0.55px;
+  line-height: 32px;
+  padding-bottom: 17px;
+}
+.about-us-section .about-us-first-column-title, .about-us-section .about-us-second-column-title {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #111111;
+  letter-spacing: 0.85px;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+
+.practis-area-section h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 32x;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 1.25px;
+  line-height: 46px;
+}
+.practis-area-section .practis-area-description {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #666666;
+  letter-spacing: 0.85px;
+  line-height: 32px;
+  max-width: 800px;
+}
+.practis-area-section .practis-area-description p {
+  margin: 0;
+}
+.practis-area-section .practis-area-item-title {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 0.85px;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+.practis-area-section .practis-area-item-description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 0.55px;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+.our-team-section h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 32x;
+  font-weight: 400;
+  color: #111111;
+  letter-spacing: 1.25px;
+  line-height: 46px;
+  margin-bottom: 20px;
+}
+.our-team-section .our-team-description {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #666666;
+  letter-spacing: 0.85px;
+  line-height: 32px;
+  max-width: 800px;
+}
+.our-team-section .our-team-description p {
+  margin: 0;
+}
+.our-team-section .our-team-item-title {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #111111;
+  letter-spacing: 0.85px;
+  line-height: 32px;
+  margin: 10px 0 5px;
+}
+.our-team-section .our-team-item-description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+  letter-spacing: 0.55px;
+  line-height: 24px;
+}
+
+.customer-reviews-section h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 32x;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 1.25px;
+  line-height: 46px;
+}
+.customer-reviews-section .customer-reviews-description {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #666666;
+  letter-spacing: 0.85px;
+  line-height: 32px;
+  max-width: 800px;
+}
+.customer-reviews-section .customer-reviews-description p {
+  margin: 0;
+}
+.customer-reviews-section .customer-reviews-item-title {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 0.85px;
+  line-height: 24px;
+  margin: 40px 0 5px;
+}
+.customer-reviews-section .customer-reviews-item-description {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 0.55px;
+  line-height: 32px;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .customer-reviews-section .customer-reviews-item-description {
+    margin-top: 30px;
+  }
+}
+.customer-reviews-section .customer-reviews-item-title-description {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+  letter-spacing: 0.55px;
+  line-height: 32px;
+}
+
+.quotes-icon {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 135px;
+  font-weight: 400;
+  color: #212529;
+  letter-spacing: 0.55px;
+  line-height: 65px;
+  position: absolute;
+  left: -65px;
+}
+@media (max-width: 1200px) {
+  .quotes-icon {
+    display: none;
+  }
+}
+
+.recent-publications-section h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 32x;
+  font-weight: 400;
+  color: #111111;
+  letter-spacing: 1.25px;
+  line-height: 46px;
+}
+.recent-publications-section .recent-publications-description {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #666666;
+  letter-spacing: 0.85px;
+  line-height: 32px;
+  max-width: 800px;
+}
+.recent-publications-section .recent-publications-description p {
+  margin: 0;
+}
+.recent-publications-section .recent-publications-item-title {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #111111;
+  letter-spacing: 0.85px;
+  line-height: 32px;
+  margin: 25px 0 30px;
+}
+.recent-publications-section .recent-publications-item-description {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666666;
+  letter-spacing: 0.55px;
+  line-height: 32px;
+}
+
+.faq-section h2 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 32x;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 1.25px;
+  line-height: 46px;
+}
+.faq-section .faq-description {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #666666;
+  letter-spacing: 0.85px;
+  line-height: 32px;
+  max-width: 800px;
+}
+.faq-section .faq-description p {
+  margin: 0;
+}
+.faq-section .faq-another-text {
+  box-shadow: 0 12px 40px rgba(216, 178, 87, 0.32);
+  border-radius: 3px;
+  background-color: #e8bf5d;
+  padding: 40px;
+}
+@media (max-width: 992px) {
+  .faq-section .faq-another-text {
+    margin-top: 30px;
+  }
+}
+.faq-section .faq-another-text p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #111111;
+  letter-spacing: 0.55px;
+  line-height: 32px;
+}
+.faq-section .faq-item {
+  border-radius: 1px;
+  border-bottom: 3px solid #e8bf5d;
+  padding-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
   font-weight: 700;
   color: #ffffff;
-  letter-spacing: 0.35px;
-  line-height: 36px;
-  margin: 25px 0;
+  letter-spacing: 0.55px;
+  line-height: 32px;
 }
-.about-us-section .about-us-section-items .about-us-single-item-description {
+.faq-section .faq-item:hover {
+  cursor: pointer;
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  color: #949494;
-  letter-spacing: 0.35px;
-  line-height: 30px;
-}
-
-.footer-section .footer-description {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 300;
-  color: #949494;
-  letter-spacing: 0.35px;
-  line-height: 36px;
-}
-.footer-section .copyright-link {
-  font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
-  color: #949494;
-  letter-spacing: 0.35px;
-  line-height: 36px;
+  color: #e8bf5d;
+  letter-spacing: 0.55px;
+  line-height: 32px;
 }
 
-.what-we-do-item-icon img {
-  width: 90%;
-}
-
-.what-we-do-single-item-container {
+.practis-area-subsection {
   position: relative;
 }
 @media (min-width: 320px) and (max-width: 576px) {
-  .what-we-do-single-item-container {
-    padding: 0 30px 30px 30px;
+  .practis-area-subsection {
+    padding: 0 30px 30px 50px;
   }
-  .what-we-do-single-item-container .what-we-do-item-icon {
+  .practis-area-subsection .practis-area-item-image {
     margin-bottom: 25px;
     position: static;
   }
-  .what-we-do-single-item-container .what-we-do-item-icon img {
-    width: auto;
-  }
 }
 @media (min-width: 576px) {
-  .what-we-do-single-item-container {
-    padding: 0 15px 30px 150px;
+  .practis-area-subsection {
+    padding: 0 15px 30px 100px;
   }
-  .what-we-do-single-item-container .what-we-do-item-icon {
+  .practis-area-subsection .practis-area-item-image {
     position: absolute;
-    left: 0;
+    left: 15px;
     top: 3px;
   }
 }
 @media (min-width: 800px) {
-  .what-we-do-single-item-container {
-    padding: 0 0 20px 150px;
+  .practis-area-subsection {
+    padding: 0 0 20px 100px;
   }
-  .what-we-do-single-item-container .what-we-do-item-icon {
+  .practis-area-subsection .practis-area-item-image {
     position: absolute;
-    left: 0;
+    left: 15px;
     top: 3px;
   }
 }
 @media (min-width: 992px) {
-  .what-we-do-single-item-container {
-    padding: 0 40px 20px 140px;
+  .practis-area-subsection {
+    padding: 0 30px 20px 100px;
   }
-  .what-we-do-single-item-container .what-we-do-item-icon {
+  .practis-area-subsection .practis-area-item-image {
     position: absolute;
-    left: -7px;
+    left: 20px;
     top: 3px;
   }
+}
+
+.navbar {
+  height: 70px;
 }
 
 .main-navigation .navbar-nav .nav-link {
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
-  color: #000000;
-  letter-spacing: 0.35px;
-  line-height: 24px;
-  margin: 0 5px;
-  border: 1px solid transparent;
+  color: #666666;
+  letter-spacing: 0.5px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border-bottom: solid 5px transparent;
 }
 .main-navigation .navbar-nav .nav-link:hover {
-  border-radius: 18px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: solid 5px #e8bf5d;
 }
 
+@media (max-width: 992px) {
+  .navbar-collapse {
+    padding: 30px;
+    background-color: #ffffff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 5px 15px rgba(30, 30, 30, 0.5);
+  }
+}
 .container {
   padding: 0;
 }
 
-.hero-section,
-.best-work-subsection,
-.what-we-do-section,
-.slider-subsection,
+.header-section,
 .about-us-section,
-.map-section,
-.footer-section {
+.practis-area-section,
+.our-team-section,
+.customer-reviews-section,
+.recent-publications-section,
+.faq-section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  padding: 90px 25px 90px;
 }
-
-.navbar {
-  position: absolute;
-  top: 50px;
-  width: 100%;
-}
-
-.hero-section {
-  min-height: 100vh;
+.header-section .left-line,
+.about-us-section .left-line,
+.practis-area-section .left-line,
+.our-team-section .left-line,
+.customer-reviews-section .left-line,
+.recent-publications-section .left-line,
+.faq-section .left-line {
   position: relative;
 }
-.hero-section .hero-section-container {
-  margin: 110px 0;
+
+.header-section {
+  min-height: 90vh;
+  padding: 90px 25px 50px;
 }
 
-.best-work-subsection,
-.slider-subsection {
-  min-height: 60vh;
-}
-
-.about-us-section {
+.about-us-section,
+.our-team-section,
+.recent-publications-section {
+  background-color: #ffffff;
   min-height: 80vh;
 }
 
-.map-section {
-  min-height: 60vh;
+.practis-area-section,
+.faq-section {
+  background-color: #111111;
+  min-height: 80vh;
 }
 
-.footer-section {
-  min-height: 30vh;
+.customer-reviews-section {
+  min-height: 80vh;
 }
 
-@media (min-width: 320px) {
-  .best-work-subsection-container {
-    width: 80vw;
-  }
-}
-@media (min-width: 768px) {
-  .best-work-subsection-container {
-    width: 35vw;
+@media (max-width: 992px) {
+  .our-team-subsection {
+    text-align: center;
   }
 }
 
-@media (min-width: 320px) {
-  .slider-subsection-container {
-    width: 70vw;
+@media (max-width: 992px) {
+  .customer-reviews-subsection,
+.recent-publications-subsection {
+    text-align: center;
+  }
+  .customer-reviews-subsection .customer-reviews-item-description, .customer-reviews-subsection .recent-publications-item-description,
+.recent-publications-subsection .customer-reviews-item-description,
+.recent-publications-subsection .recent-publications-item-description {
+    margin-bottom: 30px;
   }
 }
-@media (min-width: 992px) {
-  .slider-subsection-container {
-    width: 25vw;
-  }
-}
-
-.slider-subsection-container {
-  display: none;
-}
-
-.slider-subsection {
-  padding: 30px 20px 30px;
-}
-.slider-subsection:hover {
-  background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-.slider-subsection:hover .slider-subsection-container {
-  display: block;
-}
-
-.hero-section,
-.what-we-do-section,
-.about-us-section {
-  padding: 90px 20px 90px;
-}
-
-.slider-subsection,
-.best-work-subsection {
-  padding: 40px 20px 40px;
-}
-
-.best-work-subsection,
-.footer-section {
-  padding: 30px 20px 30px;
-}
-
-.what-we-do-item-list-container,
-.about-us-item-list-container {
-  margin: 90px 0 90px;
-}
-
-.about-us-single-item-container {
-  padding: 30px 20px 30px;
+.customer-reviews-subsection .customer-reviews-item-description, .customer-reviews-subsection .recent-publications-item-description,
+.recent-publications-subsection .customer-reviews-item-description,
+.recent-publications-subsection .recent-publications-item-description {
+  text-align: left;
 }

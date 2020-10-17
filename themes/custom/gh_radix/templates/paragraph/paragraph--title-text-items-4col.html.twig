@@ -39,27 +39,37 @@
  */
 #}
 {% set class = [
-  'best-work-subsection',
-  'row no-gutters',
-  'col-',
-  'col-sm-',
-  'col-md-6',
-  'col-lg-6',
-  'align-items-center',
-  'justify-content-center',
+  content.field_section_class['#items'][0].value ~ '-section'
 ] | join (' ') %}
 {% block paragraph %}
 
-  <div class="{{ class }}" style="background-image: url('{{ content.field_section_image['#items']|file_url }}')">
+  <section class="{{ class }}" style="background-image: url('{{ content.field_section_image['#items']|file_url }}')">
     {% block content %}
 
-      <div class="best-work-subsection-container">
-        <h2>{{ content.field_section_title }}</h2>
-        <div class="best-work-single-item-description">{{ content.field_section_description }}</div>
-        <div class="best-work-single-item-link text-left">{{ content.field_section_link }}</div>
+      <div class="container">
+
+        {% if content.field_section_class['#items'][0].value == 'our-team' %}
+          <div class=" {{ content.field_section_class['#items'][0].value ~ '-section-container' }}">
+            <div class="num-section-container">03</div>
+            <div class="left-line">
+                <h2>{{ content.field_section_title }}</h2>
+                <div class="{{ content.field_section_class['#items'][0].value ~ '-description' }}">
+                  {{ content.field_section_description }}
+              </div>
+            </div>
+            <div class="row">
+              {% if content.field_section_items.0 %}
+                {{ content.field_section_items }}
+              {% endif %}
+              {% if content.field_section_another_text.0 %}
+                <div class="{{ content.field_second_column_class }}">{{ content.field_section_another_text }}</div>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
       </div>
 
     {% endblock %}
-  </div>
+  </section>
 
 {% endblock paragraph %}

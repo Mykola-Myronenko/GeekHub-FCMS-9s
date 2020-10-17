@@ -2,113 +2,64 @@
   padding: 0;
 }
 
-.hero-section,
-.best-work-subsection,
-.what-we-do-section,
-.slider-subsection,
+.header-section,
 .about-us-section,
-.map-section,
-.footer-section {
+.practis-area-section,
+.our-team-section,
+.customer-reviews-section,
+.recent-publications-section,
+.faq-section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
+  padding: 90px 25px 90px;
 
-.navbar {
-  position: absolute;
-  top: 50px;
-
-  width: 100%;
-}
-
-.hero-section {
-  min-height: 100vh;
-  position: relative;
-
-  & .hero-section-container {
-    margin: 110px 0
+  & .left-line {
+    position: relative;
   }
 }
 
-
-.best-work-subsection,
-.slider-subsection {
-  min-height: 60vh;
+.header-section {
+  min-height: 90vh;
+  padding: 90px 25px 50px;
 }
 
-.about-us-section {
+.about-us-section,
+.our-team-section,
+.recent-publications-section {
+  background-color: $main-bg-color;
   min-height: 80vh;
 }
 
-.map-section {
-  min-height: 60vh;
+.practis-area-section,
+.faq-section {
+  background-color: $secondary-bg-color;
+  min-height: 80vh;
 }
 
-.footer-section {
-  min-height: 30vh;
+.customer-reviews-section {
+  min-height: 80vh;
 }
 
-.best-work-subsection-container {
-
-  @media (min-width: 320px) {
-    width: 80vw;
-  }
-
-  @media (min-width: 768px) {
-    width: 35vw;
+.our-team-subsection {
+  @media (max-width: 992px) {
+    text-align: center;
   }
 }
 
-.slider-subsection-container {
-  @media (min-width: 320px) {
-    width: 70vw;
-  }
+.customer-reviews-subsection,
+.recent-publications-subsection {
+  @media (max-width: 992px) {
+    text-align: center;
 
-  @media (min-width: 992px) {
-    width: 25vw;
-  }
-}
-
-.slider-subsection-container {
-  display: none;
-}
-
-.slider-subsection {
-  padding: 30px 20px 30px;
-
-  &:hover {
-    background-blend-mode: multiply;
-    background-color: rgba(0, 0, 0, 0.6);
-
-    & .slider-subsection-container {
-      display: block;
+    & .customer-reviews-item-description,
+    & .recent-publications-item-description {
+      margin-bottom: 30px;
     }
   }
+
+  & .customer-reviews-item-description,
+  & .recent-publications-item-description {
+    text-align: left;
+  }
 }
-
-.hero-section,
-.what-we-do-section,
-.about-us-section {
-  padding: 90px 20px 90px;
-}
-
-.slider-subsection,
-.best-work-subsection {
-  padding: 40px 20px 40px;
-}
-
-.best-work-subsection,
-.footer-section {
-  padding: 30px 20px 30px;
-}
-
-.what-we-do-item-list-container,
-.about-us-item-list-container {
-  margin: 90px 0 90px;
-}
-
-.about-us-single-item-container {
-  padding: 30px 20px 30px;
-}
-
-
