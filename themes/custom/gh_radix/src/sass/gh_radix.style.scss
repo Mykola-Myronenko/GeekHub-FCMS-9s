@@ -41,8 +41,11 @@
 @import "base/functions";
 @import "base/helpers";
 @import "base/elements";
-@import "base/typography";
 
+// Components
+// -----------------------------------------------------------------------------
+@import "components/texts";
+@import "components/navigation";
 
 // Layout
 // -----------------------------------------------------------------------------
@@ -50,21 +53,13 @@
 @import "layout/page.content";
 @import "layout/page.footer";
 
-// Components
-// -----------------------------------------------------------------------------
-@import "components/buttons";
-@import "components/texts";
-@import "components/icons";
-@import "components/navigation";
-
-// Pages
-// -----------------------------------------------------------------------------
-@import "pages/home";
-@import "pages/candidate.families";
-
 // Component
 // -----------------------------------------------------------------------------
 @import "../components/node/node";
+
+// Pages
+// -----------------------------------------------------------------------------
+@import "pages/all";
 
 // Other
 // -----------------------------------------------------------------------------

@@ -1,39 +1,4 @@
-.front-main-navigation .navbar-nav .nav-link,
-.candidate-families-main-navigation .navbar-nav .nav-link {
-  @include text-style($main-font, 16px, 600, $secondary-text-color, .35px, 24px);
-  margin: 0 5px;
-  border-bottom: 1px solid transparent;
-
-  &:hover {
-    color: $secondary-text-color;
-    border-bottom: 1px solid $main-bg-color;
-  }
-}
-
-.candidate-families-main-navigation {
-  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.09);
-  background-color: #2d2620
-}
-
-.breadcrumb {
-  background-color: $secondary-bg-color;
-
-  padding: 25px 15px 0;
-  margin: 0;
-}
-
-.front-main-navigation {
-  width: 100%;
-}
-
-@media (max-width: 992px) {
-  .front-main-navigation {
-    .navbar-collapse {
-      padding: 30px;
-      background-color: $main-bg-color;
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px;
-      box-shadow: 0 5px 15px rgb(30, 30, 30, .5);
-    }
-  }
+.nav-link,
+.feed-icon {
+  display: none;
 }

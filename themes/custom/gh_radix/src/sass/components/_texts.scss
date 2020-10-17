@@ -1,165 +1,31 @@
-.breadcrumb-item {
+.books-list {
+  & h2 {
+    @include text-style($main-font, 22px, 600, 26px);
+
+  }
+
+  & .book-author {
+    @include text-style($main-font, 18px, 400, 20px);
+
+    margin-bottom: 12px;
+  }
+
+  & .book-genre {
+    @include text-style($main-font, 18px, 400, 20px);
+
+    margin-top: 12px;
+  }
+
+  margin-bottom: 30px;
+
   & a {
-    @include text-style($main-font, 18px, 200, #a9a9a9, 1px, 26px);
-  }
-}
+    color: #000000;
 
-.header-section {
-  & h2 {
-    @include text-style($main-font, 60px, 900, $secondary-text-color, 1px, 64px);
-
-    & p {
-      margin-bottom: 25px;
+    &:hover {
+      text-decoration: underline;
     }
   }
-
-  & .header-description {
-    @include text-style($main-font, 18px, 400, $secondary-text-color, 1px, 24px);
-
-    & p {
-      margin-bottom: 40px;
-    }
-
-    max-width: 600px;
-    margin: 0 auto;
-  }
 }
 
-.process-description-section {
-  & h2 {
-    @include text-style($main-font, 40px, 600, $main-text-color, 1px, 44px);
-  }
 
-  & .process-description-item-title {
-    @include text-style($main-font, 20px, 600, $main-text-color, 1px, 24px);
 
-    & p {
-      margin-bottom: 17px;
-    }
-  }
-
-  & .process-description-item-description {
-    @include text-style($main-font, 16px, 400, $main-text-color, .1px, 22px);
-  }
-}
-
-.about-section {
-  & h2 {
-    @include text-style($main-font, 40px, 600, $main-text-color, 1px, 44px);
-  }
-
-  & .about-description {
-    @include text-style($main-font, 16px, 400, #010000, 1px, 27px);
-    margin-bottom: 35px;
-
-    & p {
-      margin-bottom: 25px;
-    }
-  }
-
-  & .about-link a {
-    @include text-style($main-font, 16px, 600, $main-bg-color, 1px, 24px);
-    text-transform: uppercase;
-    text-decoration: underline;
-  }
-}
-
-.candidate-families-section {
-  & h2 {
-    @include text-style($main-font, 40px, 600, $main-text-color, 1, 44px);
-  }
-
-  & h3 {
-    @include text-style($main-font, 24px, 600, $main-text-color, 1, 28px);
-  }
-
-  & .candidate-families-item-description {
-    @include text-style($main-font, 16px, 400, $main-text-color, 1, 24px);
-  }
-
-  & .candidate-families-more-link a {
-    @include text-style($main-font, 16px, 600, $main-bg-color, 1px, 24px);
-    text-transform: uppercase;
-    text-decoration: underline;
-  }
-
-  & .text-container {
-    padding: 20px 15px;
-  }
-}
-
-.candidate-families-page-item {
-  & h2 {
-    @include text-style($main-font, 24px, 600, $main-text-color, 1, 28px);
-  }
-
-  & .author-name,
-  & .date-create {
-    @include text-style($main-font, 16px, 400, #a9a9a9, 1, 24px);
-    margin-bottom: 15px;
-  }
-
-  & .description {
-    @include text-style($main-font, 16px, 400, $main-text-color, 1, 24px);
-
-    & p {
-      margin-bottom: 10px;
-    }
-  }
-
-  & .link a {
-    @include text-style($main-font, 16px, 600, $main-bg-color, 1px, 24px);
-    text-transform: uppercase;
-    text-decoration: underline;
-  }
-}
-
-.testimonials-section {
-  & h2 {
-    @include text-style($main-font, 40px, 600, $main-text-color, 1, 44px);
-  }
-
-  & h3 {
-    @include text-style($main-font, 18px, 200, $main-text-color, 1, 22px);
-
-    & .text-accent {
-      @include text-style($main-font, 18x, 600, $main-bg-color, 1, 26px);
-    }
-  }
-
-  & .testiomonials-item-description {
-    @include text-style($main-font, 16px, 400, $main-text-color, 1, 24px);
-  }
-
-  & .testimonials-more-link a {
-    @include text-style($main-font, 16px, 600, $main-bg-color, 1px, 24px);
-    text-transform: uppercase;
-    text-decoration: underline;
-  }
-}
-
-.build-home-section {
-  & h2 {
-    @include text-style($main-font, 60px, 600, $main-text-color, 1, 64px);
-    margin-bottom: 30px;
-  }
-
-  & .build-home-description {
-    @include text-style($main-font, 18px, 400, $main-text-color, 1, 26px);
-    margin-bottom: 30px;
-  }
-}
-
-.copyright,
-.design-by,
-.developed-by {
-  @include text-style($main-font, 14px, 600, $main-text-color, 1, 20px);
-  opacity: .65;
-  margin-top: 10px;
-}
-
-.footer-links {
-  & a {
-    @include text-style($main-font, 14px, 400, $main-text-color, .1px, 30px);
-  }
-}
