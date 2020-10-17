@@ -14,29 +14,28 @@
 
 .navbar {
   position: relative;
-
   padding: 15px 30px;
 
   & .block--gh-radix-branding {
     position: absolute;
 
-    @media (min-width: 320px) and  (max-width: 699px) {
+    @media (min-width: 320px) and (max-width: 699px) {
       left: calc(75% - 55px);
-      bottom: 60px;
+      bottom: 110px;
     }
 
-    @media (min-width: 700px) and (max-width: 991px) {
+    @media (min-width: 700px) and (max-width: 1199px) {
       left: calc(50% - 55px);
-      bottom: 60px;
+      bottom: 110px;
     }
 
-    @media (min-width: 992px) {
+    @media (min-width: 1199px) {
       left: calc(50% - 55px);
     }
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1199px) {
   .front-main-navigation {
     .navbar-collapse {
       padding: 30px;
@@ -47,4 +46,37 @@
     }
   }
 }
+
+.block--dropdownlanguage {
+  & .card-body {
+    padding: 0;
+  }
+
+  margin: 10px;
+
+  & .dropdown-toggle:hover,
+  & .dropdown-menu-right:hover,
+  & .language-link:hover {
+    background-color: $main-bg-color;
+    opacity: .9;
+  }
+
+  @media (min-width: 320px) and (max-width: 1199px) {
+    margin: 10px auto;
+  }
+}
+
+html[lang='en'] {
+  & .block--dropdownlanguage {
+    max-width: 78px;
+  }
+}
+
+html[lang='uk'] {
+  & .block--dropdownlanguage {
+    max-width: 102px;
+  }
+}
+
+
 

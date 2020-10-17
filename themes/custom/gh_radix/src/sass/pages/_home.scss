@@ -9,6 +9,7 @@
 .header-section {
   min-height: 90vh;
   padding: 70px 15px;
+  background-position: 25% 50%;
 }
 
 .members-item {
@@ -36,6 +37,14 @@
     cursor: pointer;
     bottom: 45px;
     transition: bottom .6s;
+  }
+}
+
+.concert-section,
+.videos-section,
+.our-members-section {
+  & img {
+    width: 100%
   }
 }
 
@@ -76,48 +85,49 @@
 
 .memory-section {
   & .text-container {
-    padding: 15px;
+    padding: 15px 15px 15px 50px;
+
+    @media (max-width: 500px) {
+      padding: 15px;
+    }
   }
 }
 
 .subscribe-section {
 
   & .subscribe-email-wrapper {
-    position: relative;
 
     & .form-email {
       border: none;
       border-radius: 0;
       border-bottom: 3px solid #999999;
-
-      padding: 7px 0 7px 0;
+      padding-left: 0;
 
       &:focus {
-        box-shadow: none
+        box-shadow: none;
+        border-color: $main-bg-color;
       }
     }
   }
 
-  & .subscribe-submit {
-    position: absolute;
+  .submit-button-wrapper {
 
-    background-color: transparent;
-    border: none;
+    & .subscribe-submit {
 
-    background: url("../../src/img/icon/arrow_icon.png") no-repeat;
-    background-position: center;
+      background-color: transparent;
+      border: none;
 
-    padding: 7px 0 7px 0;
+      background: url("../../src/img/icon/arrow_icon.png") no-repeat;
+      background-position: center;
 
-    &:focus {
-      box-shadow: none !important;
+      &:focus {
+        box-shadow: none !important;
+      }
     }
 
-    top: 0;
-    right: 0;
+    margin-left: -25px;
   }
 
   max-width: 450px;
-  padding: 0 25px;
   margin: 50px auto;
 }

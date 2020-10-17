@@ -82,28 +82,3 @@
     margin: 5px
   }
 }
-
-
-//
-//.subscribe-button {
-//  @include text-style($main-font, 16px, 600, $secondary-text-color, 0.65px, 1px);
-//  @extend %button-style;
-//  text-transform: uppercase;
-//
-//  width: 145px;
-//  height: 38px;
-//
-//  border: none;
-//
-//  &:hover {
-//    @extend %button-style-hover;
-//  }
-//}
-//
-//.subscribe-input-col {
-//  padding: 3px 5px 0 3px;
-//}
-//
-//.subscribe-button-col {
-//  padding: 3px 3px 16px 3px;
-//}

@@ -9674,7 +9674,6 @@ body {
   font-size: 13px;
   font-weight: 400;
   color: #ffffff;
-  padding-left: 5px;
 }
 
 .header-section h2 {
@@ -9736,7 +9735,7 @@ body {
 .our-members-section .social-info .facebook-icon, .our-members-section .social-info .twitter-icon, .our-members-section .social-info .gplus-icon {
   font-size: 20px;
   color: #ffffff;
-  margin: 10px 10px 10px 0;
+  margin: 10px 0 10px 0;
 }
 .our-members-section .social-info .facebook-icon:hover, .our-members-section .social-info .twitter-icon:hover, .our-members-section .social-info .gplus-icon:hover {
   cursor: pointer;
@@ -9789,7 +9788,7 @@ body {
 }
 .top-music-section .top-music-item {
   border-bottom: 1px solid #999999;
-  padding: 7px 0;
+  padding: 5px 0;
 }
 .top-music-section .top-music-item a {
   font-family: "Oswald", sans-serif;
@@ -9927,10 +9926,6 @@ body {
   line-height: 28px;
 }
 
-.process-description-section .process-description-item-image {
-  margin-bottom: 25px;
-}
-
 .slide__caption {
   padding: 0 15px 0;
 }
@@ -9976,22 +9971,22 @@ body {
 @media (min-width: 320px) and (max-width: 699px) {
   .navbar .block--gh-radix-branding {
     left: calc(75% - 55px);
-    bottom: 60px;
+    bottom: 110px;
   }
 }
-@media (min-width: 700px) and (max-width: 991px) {
+@media (min-width: 700px) and (max-width: 1199px) {
   .navbar .block--gh-radix-branding {
     left: calc(50% - 55px);
-    bottom: 60px;
+    bottom: 110px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1199px) {
   .navbar .block--gh-radix-branding {
     left: calc(50% - 55px);
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1199px) {
   .front-main-navigation .navbar-collapse {
     padding: 30px;
     background-color: #df001f;
@@ -10000,6 +9995,30 @@ body {
     box-shadow: 0 5px 15px rgba(30, 30, 30, 0.5);
   }
 }
+.block--dropdownlanguage {
+  margin: 10px;
+}
+.block--dropdownlanguage .card-body {
+  padding: 0;
+}
+.block--dropdownlanguage .dropdown-toggle:hover, .block--dropdownlanguage .dropdown-menu-right:hover, .block--dropdownlanguage .language-link:hover {
+  background-color: #df001f;
+  opacity: 0.9;
+}
+@media (min-width: 320px) and (max-width: 1199px) {
+  .block--dropdownlanguage {
+    margin: 10px auto;
+  }
+}
+
+html[lang=en] .block--dropdownlanguage {
+  max-width: 78px;
+}
+
+html[lang=uk] .block--dropdownlanguage {
+  max-width: 102px;
+}
+
 .header-section,
 .memory-section,
 .apps-section {
@@ -10011,6 +10030,7 @@ body {
 .header-section {
   min-height: 90vh;
   padding: 70px 15px;
+  background-position: 25% 50%;
 }
 
 .members-item {
@@ -10036,6 +10056,12 @@ body {
   cursor: pointer;
   bottom: 45px;
   transition: bottom 0.6s;
+}
+
+.concert-section img,
+.videos-section img,
+.our-members-section img {
+  width: 100%;
 }
 
 .soundcloud-track {
@@ -10075,36 +10101,37 @@ body {
 }
 
 .memory-section .text-container {
-  padding: 15px;
+  padding: 15px 15px 15px 50px;
+}
+@media (max-width: 500px) {
+  .memory-section .text-container {
+    padding: 15px;
+  }
 }
 
 .subscribe-section {
   max-width: 450px;
-  padding: 0 25px;
   margin: 50px auto;
-}
-.subscribe-section .subscribe-email-wrapper {
-  position: relative;
 }
 .subscribe-section .subscribe-email-wrapper .form-email {
   border: none;
   border-radius: 0;
   border-bottom: 3px solid #999999;
-  padding: 7px 0 7px 0;
+  padding-left: 0;
 }
 .subscribe-section .subscribe-email-wrapper .form-email:focus {
   box-shadow: none;
+  border-color: #df001f;
 }
-.subscribe-section .subscribe-submit {
-  position: absolute;
+.subscribe-section .submit-button-wrapper {
+  margin-left: -25px;
+}
+.subscribe-section .submit-button-wrapper .subscribe-submit {
   background-color: transparent;
   border: none;
   background: url("../../src/img/icon/arrow_icon.png") no-repeat;
   background-position: center;
-  padding: 7px 0 7px 0;
-  top: 0;
-  right: 0;
 }
-.subscribe-section .subscribe-submit:focus {
+.subscribe-section .submit-button-wrapper .subscribe-submit:focus {
   box-shadow: none !important;
 }
