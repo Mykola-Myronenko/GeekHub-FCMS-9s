@@ -1,4 +1,50 @@
-.nav-link,
-.feed-icon {
-  display: none;
+.front-main-navigation {
+  background-color: $main-bg-color;
 }
+
+.front-main-navigation .navbar-nav .nav-link {
+  @include text-style($main-font, 13px, 700, $main-text-color, .65px, 44px);
+  text-transform: uppercase;
+
+  &:hover {
+    color: $main-text-color;
+    text-decoration: line-through;
+  }
+}
+
+.navbar {
+  position: relative;
+
+  padding: 15px 30px;
+
+  & .block--gh-radix-branding {
+    position: absolute;
+
+    @media (min-width: 320px) and  (max-width: 699px) {
+      left: calc(75% - 55px);
+      bottom: 60px;
+    }
+
+    @media (min-width: 700px) and (max-width: 991px) {
+      left: calc(50% - 55px);
+      bottom: 60px;
+    }
+
+    @media (min-width: 992px) {
+      left: calc(50% - 55px);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .front-main-navigation {
+    .navbar-collapse {
+      padding: 30px;
+      background-color: $main-bg-color;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      box-shadow: 0 5px 15px rgb(30, 30, 30, .5);
+    }
+  }
+}
+

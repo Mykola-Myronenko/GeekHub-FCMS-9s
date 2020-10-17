@@ -1,0 +1,19 @@
+.slide__caption {
+  padding: 0 15px 0;
+}
+
+.slick__arrow {
+  position: absolute;
+
+  left: -10px;
+  top: -20px;
+
+  ::before {
+    color: $main-bg-color;
+  }
+
+  & .slick-prev {
+    left: auto !important;
+    right: 40px !important;
+  }
+}

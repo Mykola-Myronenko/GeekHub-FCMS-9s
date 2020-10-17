@@ -1,0 +1,123 @@
+.header-section,
+.memory-section,
+.apps-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-section {
+  min-height: 90vh;
+  padding: 70px 15px;
+}
+
+.members-item {
+  position: relative;
+
+  & .social-info {
+    background: $main-bg-color;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 25px 10px;
+    z-index: 0;
+  }
+
+  & .member-info {
+    background: $main-bg-color;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 25px;
+    z-index: 1;
+  }
+
+  &:hover .member-info {
+    cursor: pointer;
+    bottom: 45px;
+    transition: bottom .6s;
+  }
+}
+
+.soundcloud-track {
+  margin-bottom: 12px;
+}
+
+.our-members-section,
+.concert-section,
+.videos-section,
+.top-music-section,
+.feed-section {
+  padding: 50px 20px 10px;
+}
+
+.memory-section,
+.apps-section {
+  margin: 50px 0 10px;
+}
+
+.concert-info {
+  padding: 15px 30px 15px 40px;
+
+  @media (max-width: 576px) {
+    padding-left: 15px;
+  }
+}
+
+.instagram-feed-item {
+  margin-bottom: 20px;
+}
+
+.memory-section,
+.apps-section {
+  min-height: 40vh;
+  padding: 70px 15px;
+}
+
+.memory-section {
+  & .text-container {
+    padding: 15px;
+  }
+}
+
+.subscribe-section {
+
+  & .subscribe-email-wrapper {
+    position: relative;
+
+    & .form-email {
+      border: none;
+      border-radius: 0;
+      border-bottom: 3px solid #999999;
+
+      padding: 7px 0 7px 0;
+
+      &:focus {
+        box-shadow: none
+      }
+    }
+  }
+
+  & .subscribe-submit {
+    position: absolute;
+
+    background-color: transparent;
+    border: none;
+
+    background: url("../../src/img/icon/arrow_icon.png") no-repeat;
+    background-position: center;
+
+    padding: 7px 0 7px 0;
+
+    &:focus {
+      box-shadow: none !important;
+    }
+
+    top: 0;
+    right: 0;
+  }
+
+  max-width: 450px;
+  padding: 0 25px;
+  margin: 50px auto;
+}

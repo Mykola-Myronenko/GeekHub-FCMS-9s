@@ -1,31 +1,243 @@
-.books-list {
-  & h2 {
-    @include text-style($main-font, 22px, 600, 26px);
+.navbar {
+  & .facebook-icon,
+  & .twitter-icon,
+  & .gplus-icon {
+    font-size: 25px;
 
-  }
-
-  & .book-author {
-    @include text-style($main-font, 18px, 400, 20px);
-
-    margin-bottom: 12px;
-  }
-
-  & .book-genre {
-    @include text-style($main-font, 18px, 400, 20px);
-
-    margin-top: 12px;
-  }
-
-  margin-bottom: 30px;
-
-  & a {
-    color: #000000;
+    color: $main-text-color;
+    margin: 10px 0 10px 15px;
 
     &:hover {
-      text-decoration: underline;
+      cursor: pointer;
+      opacity: .8;
+    }
+  }
+
+  & .number-followers {
+    font-size: 13px;
+    font-weight: 400;
+    color: $main-text-color;
+    padding-left: 5px;
+  }
+}
+
+
+.header-section {
+  & h2 {
+    @include text-style($main-header-font, 116px, 900, $main-bg-color, 2px, 120px);
+    text-transform: uppercase;
+
+    & p {
+      margin-bottom: 25px;
+    }
+  }
+
+  & .header-some-text {
+    @include text-style($secondary-header-font, 80px, 400, $secondary-text-color, 1px, 90px);
+
+    & p {
+      margin-bottom: 40px;
     }
   }
 }
+
+.our-members-section {
+  & h2 {
+    @include text-style($main-header-font, 32px, 400, $secondary-text-color, 2px, 32x);
+    text-transform: uppercase;
+  }
+
+  & h3 {
+    @include text-style($main-header-font, 22px, 400, $main-text-color, 1px, 32x);
+  }
+
+  & .member-profession {
+    @include text-style($main-font, 16px, 400, $main-text-color, 1px, 26px);
+  }
+
+  & .social-info {
+    & p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 44px;
+      color: $main-text-color;
+      margin: 0;
+    }
+
+    & .facebook-icon,
+    & .twitter-icon,
+    & .gplus-icon {
+      font-size: 20px;
+
+      color: $main-text-color;
+      margin: 10px 10px 10px 0;
+
+      &:hover {
+        cursor: pointer;
+        opacity: .8;
+      }
+    }
+
+    & .number-followers {
+      font-size: 13px;
+      font-weight: 400;
+      color: $main-text-color;
+      padding-right: 15px;
+    }
+  }
+}
+
+.concert-section {
+  & h2 {
+    @include text-style($main-header-font, 32px, 400, $secondary-text-color, 2px, 32x);
+    text-transform: uppercase;
+  }
+
+  & h3 {
+    & a {
+      @include text-style($main-header-font, 22px, 500, $secondary-text-color, 1px, 30x);
+    }
+
+    margin-bottom: 25px;
+  }
+
+  & .concert-location,
+  & .concert-date,
+  & .concert-time,
+  & .concert-price {
+    @include text-style($main-header-font, 16px, 400, $secondary-text-color, .5px, 30x);
+  }
+}
+
+.top-music-section {
+  & h2 {
+    @include text-style($main-header-font, 32px, 400, $secondary-text-color, 2px, 32x);
+    text-transform: uppercase;
+  }
+
+  & .top-music-item {
+    & a {
+      @include text-style($main-header-font, 16px, 400, $secondary-text-color, .5px, 30x);
+    }
+
+    border-bottom: 1px solid #999999;
+    padding: 7px 0;
+  }
+}
+
+.videos-section {
+  & h2 {
+    @include text-style($main-header-font, 32px, 400, $secondary-text-color, 2px, 32x);
+    text-transform: uppercase;
+  }
+}
+
+.feed-section {
+  & h2 {
+    @include text-style($main-header-font, 32px, 400, $secondary-text-color, 2px, 32x);
+    text-transform: uppercase;
+  }
+}
+
+.our-members-section,
+.concert-section,
+.videos-section,
+.feed-section,
+.top-music-section {
+  .view-header {
+    @include text-style($secondary-header-font, 32px, 400, $main-bg-color, 2px, 40px);
+    margin-bottom: 30px;
+  }
+}
+
+.memory-section {
+  & h2 {
+    @include text-style($main-font, 32px, 500, $main-text-color, 0, 32px);
+    text-transform: uppercase;
+  }
+
+  & .memory-some-text {
+    @include text-style($main-font, 18px, 400, $main-text-color, .5px, 18px);
+
+    & p {
+      margin-bottom: 20px;
+    }
+
+    & .text-accent {
+      & a {
+        @include text-style($secondary-header-font, 50px, 400, $main-text-color, 1.4px, 50px);
+      }
+    }
+  }
+}
+
+.apps-section {
+  & h2 {
+    @include text-style($main-font, 32px, 700, $main-text-color, 0, 32px);
+  }
+
+  & .apps-some-text {
+    @include text-style($main-font, 18px, 400, $main-text-color, .5px, 18px);
+
+    & p {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.subscribe-email-wrapper {
+  & .form-email {
+    @include text-style($main-font, 16px, 400, #282828, 3px, 24px);
+  }
+}
+
+.page__footer {
+  & .footer-links {
+    & a {
+      @include text-style($main-font, 13px, 400, $secondary-text-color, .65px, 13px);
+      text-transform: uppercase;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+
+    & .link-item {
+      padding: 0 15px;
+    }
+
+    margin-bottom: 15px;
+  }
+
+  & .copyright {
+    @include text-style($main-font, 13px, 400, $secondary-text-color, .65px, 13px);
+  }
+
+  & .text-accent {
+    & a {
+      @include text-style($secondary-header-font, 28px, 400, $main-bg-color, 1.4px, 28px);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -41,11 +41,8 @@
 @import "base/functions";
 @import "base/helpers";
 @import "base/elements";
+@import "base/typography";
 
-// Components
-// -----------------------------------------------------------------------------
-@import "components/texts";
-@import "components/navigation";
 
 // Layout
 // -----------------------------------------------------------------------------
@@ -53,13 +50,21 @@
 @import "layout/page.content";
 @import "layout/page.footer";
 
-// Component
+// Components
 // -----------------------------------------------------------------------------
-@import "../components/node/node";
+@import "components/buttons";
+@import "components/texts";
+@import "components/icons";
+@import "components/sliders";
+@import "components/navigation";
 
 // Pages
 // -----------------------------------------------------------------------------
-@import "pages/all";
+@import "pages/home";
+
+// Component
+// -----------------------------------------------------------------------------
+@import "../components/node/node";
 
 // Other
 // -----------------------------------------------------------------------------

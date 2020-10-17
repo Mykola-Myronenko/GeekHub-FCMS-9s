@@ -4353,12 +4353,10 @@ input[type=button].btn-block {
 }
 @media (min-width: 576px) {
   .card-columns {
-    -webkit-column-count: 3;
-       -moz-column-count: 3;
-            column-count: 3;
-    -webkit-column-gap: 1.25rem;
-       -moz-column-gap: 1.25rem;
-            column-gap: 1.25rem;
+    -moz-column-count: 3;
+         column-count: 3;
+    -moz-column-gap: 1.25rem;
+         column-gap: 1.25rem;
     orphans: 1;
     widows: 1;
   }
@@ -9587,43 +9585,526 @@ a.text-dark:hover, a.text-dark:focus {
 
 a:hover {
   text-decoration: none;
+  cursor: pointer !important;
 }
 
-.books-list {
-  margin-bottom: 30px;
+body {
+  font-family: "Open-Sans", sans-serif;
 }
-.books-list h2 {
-  font-family: "Lato", sans-serif;
+
+.pt-5, .pb-5 {
+  padding: 0 !important;
+}
+
+.page__footer {
+  border-top: 1px solid #d2d2d2;
+  padding: 40px 25px 40px;
+}
+
+.memory-section .memory-link a, .concert-section .purchase-link a, .header-section .header-link a, .navbar .purchase-link a {
+  width: 180px;
+  height: 50px;
+  background-color: #fbf7f4;
+  border-radius: 25px;
+  display: inline-block;
+  text-align: center;
+}
+
+.memory-section .memory-link a:hover, .concert-section .purchase-link a:hover, .header-section .header-link a:hover, .navbar .purchase-link a:hover {
+  opacity: 0.8;
+}
+
+.navbar .purchase-link a {
+  font-family: "Open-Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #df001f;
+  letter-spacing: 1px;
+  line-height: 50px;
+  margin: 10px 10px 10px 25px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+.header-section .header-link a {
+  font-family: "Open-Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1.2px;
+  line-height: 50px;
+  background-color: #df001f;
+  text-transform: uppercase;
+}
+.concert-section .purchase-link {
+  margin-top: 30px;
+}
+.concert-section .purchase-link a {
+  font-family: "Open-Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1.2px;
+  line-height: 50px;
+  background-color: #df001f;
+  text-transform: uppercase;
+}
+.memory-section .memory-link a {
+  font-family: "Open-Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #df001f;
+  letter-spacing: 1.2px;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+.apps-section .apps-link {
+  margin: 5px;
+}
+
+.navbar .facebook-icon, .navbar .twitter-icon, .navbar .gplus-icon {
+  font-size: 25px;
+  color: #ffffff;
+  margin: 10px 0 10px 15px;
+}
+.navbar .facebook-icon:hover, .navbar .twitter-icon:hover, .navbar .gplus-icon:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.navbar .number-followers {
+  font-size: 13px;
+  font-weight: 400;
+  color: #ffffff;
+  padding-left: 5px;
+}
+
+.header-section h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 116px;
+  font-weight: 900;
+  color: #df001f;
+  letter-spacing: 2px;
+  line-height: 120px;
+  text-transform: uppercase;
+}
+.header-section h2 p {
+  margin-bottom: 25px;
+}
+.header-section .header-some-text {
+  font-family: "Great Vibes", cursive;
+  font-size: 80px;
+  font-weight: 400;
+  color: #333333;
+  letter-spacing: 1px;
+  line-height: 90px;
+}
+.header-section .header-some-text p {
+  margin-bottom: 40px;
+}
+
+.our-members-section h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #333333;
+  letter-spacing: 2px;
+  line-height: 32x;
+  text-transform: uppercase;
+}
+.our-members-section h3 {
+  font-family: "Oswald", sans-serif;
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 1px;
+  line-height: 32x;
+}
+.our-members-section .member-profession {
+  font-family: "Open-Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 1px;
   line-height: 26px;
 }
-.books-list .book-author {
-  font-family: "Lato", sans-serif;
+.our-members-section .social-info p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 44px;
+  color: #ffffff;
+  margin: 0;
+}
+.our-members-section .social-info .facebook-icon, .our-members-section .social-info .twitter-icon, .our-members-section .social-info .gplus-icon {
+  font-size: 20px;
+  color: #ffffff;
+  margin: 10px 10px 10px 0;
+}
+.our-members-section .social-info .facebook-icon:hover, .our-members-section .social-info .twitter-icon:hover, .our-members-section .social-info .gplus-icon:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.our-members-section .social-info .number-followers {
+  font-size: 13px;
+  font-weight: 400;
+  color: #ffffff;
+  padding-right: 15px;
+}
+
+.concert-section h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #333333;
+  letter-spacing: 2px;
+  line-height: 32x;
+  text-transform: uppercase;
+}
+.concert-section h3 {
+  margin-bottom: 25px;
+}
+.concert-section h3 a {
+  font-family: "Oswald", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  color: #333333;
+  letter-spacing: 1px;
+  line-height: 30x;
+}
+.concert-section .concert-location, .concert-section .concert-date, .concert-section .concert-time, .concert-section .concert-price {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  letter-spacing: 0.5px;
+  line-height: 30x;
+}
+
+.top-music-section h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #333333;
+  letter-spacing: 2px;
+  line-height: 32x;
+  text-transform: uppercase;
+}
+.top-music-section .top-music-item {
+  border-bottom: 1px solid #999999;
+  padding: 7px 0;
+}
+.top-music-section .top-music-item a {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  letter-spacing: 0.5px;
+  line-height: 30x;
+}
+
+.videos-section h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #333333;
+  letter-spacing: 2px;
+  line-height: 32x;
+  text-transform: uppercase;
+}
+
+.feed-section h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #333333;
+  letter-spacing: 2px;
+  line-height: 32x;
+  text-transform: uppercase;
+}
+
+.our-members-section .view-header,
+.concert-section .view-header,
+.videos-section .view-header,
+.feed-section .view-header,
+.top-music-section .view-header {
+  font-family: "Great Vibes", cursive;
+  font-size: 32px;
+  font-weight: 400;
+  color: #df001f;
+  letter-spacing: 2px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.memory-section h2 {
+  font-family: "Open-Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 32px;
+  text-transform: uppercase;
+}
+.memory-section .memory-some-text {
+  font-family: "Open-Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 20px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  line-height: 18px;
+}
+.memory-section .memory-some-text p {
+  margin-bottom: 20px;
+}
+.memory-section .memory-some-text .text-accent a {
+  font-family: "Great Vibes", cursive;
+  font-size: 50px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 1.4px;
+  line-height: 50px;
+}
+
+.apps-section h2 {
+  font-family: "Open-Sans", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 32px;
+}
+.apps-section .apps-some-text {
+  font-family: "Open-Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  line-height: 18px;
+}
+.apps-section .apps-some-text p {
+  margin-bottom: 25px;
+}
+
+.subscribe-email-wrapper .form-email {
+  font-family: "Open-Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #282828;
+  letter-spacing: 3px;
+  line-height: 24px;
+}
+
+.page__footer .footer-links {
+  margin-bottom: 15px;
+}
+.page__footer .footer-links a {
+  font-family: "Open-Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #333333;
+  letter-spacing: 0.65px;
+  line-height: 13px;
+  text-transform: uppercase;
+}
+.page__footer .footer-links a:hover {
+  opacity: 0.8;
+}
+.page__footer .footer-links .link-item {
+  padding: 0 15px;
+}
+.page__footer .copyright {
+  font-family: "Open-Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #333333;
+  letter-spacing: 0.65px;
+  line-height: 13px;
+}
+.page__footer .text-accent a {
+  font-family: "Great Vibes", cursive;
+  font-size: 28px;
+  font-weight: 400;
+  color: #df001f;
+  letter-spacing: 1.4px;
+  line-height: 28px;
+}
+
+.process-description-section .process-description-item-image {
+  margin-bottom: 25px;
+}
+
+.slide__caption {
+  padding: 0 15px 0;
+}
+
+.slick__arrow {
+  position: absolute;
+  left: -10px;
+  top: -20px;
+}
+.slick__arrow ::before {
+  color: #df001f;
+}
+.slick__arrow .slick-prev {
+  left: auto !important;
+  right: 40px !important;
+}
+
+.front-main-navigation {
+  background-color: #df001f;
+}
+
+.front-main-navigation .navbar-nav .nav-link {
+  font-family: "Open-Sans", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.65px;
+  line-height: 44px;
+  text-transform: uppercase;
+}
+.front-main-navigation .navbar-nav .nav-link:hover {
+  color: #ffffff;
+  text-decoration: line-through;
+}
+
+.navbar {
+  position: relative;
+  padding: 15px 30px;
+}
+.navbar .block--gh-radix-branding {
+  position: absolute;
+}
+@media (min-width: 320px) and (max-width: 699px) {
+  .navbar .block--gh-radix-branding {
+    left: calc(75% - 55px);
+    bottom: 60px;
+  }
+}
+@media (min-width: 700px) and (max-width: 991px) {
+  .navbar .block--gh-radix-branding {
+    left: calc(50% - 55px);
+    bottom: 60px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar .block--gh-radix-branding {
+    left: calc(50% - 55px);
+  }
+}
+
+@media (max-width: 992px) {
+  .front-main-navigation .navbar-collapse {
+    padding: 30px;
+    background-color: #df001f;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 5px 15px rgba(30, 30, 30, 0.5);
+  }
+}
+.header-section,
+.memory-section,
+.apps-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-section {
+  min-height: 90vh;
+  padding: 70px 15px;
+}
+
+.members-item {
+  position: relative;
+}
+.members-item .social-info {
+  background: #df001f;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0 25px 10px;
+  z-index: 0;
+}
+.members-item .member-info {
+  background: #df001f;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 25px;
+  z-index: 1;
+}
+.members-item:hover .member-info {
+  cursor: pointer;
+  bottom: 45px;
+  transition: bottom 0.6s;
+}
+
+.soundcloud-track {
   margin-bottom: 12px;
 }
-.books-list .book-genre {
-  font-family: "Lato", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 20px;
-  margin-top: 12px;
-}
-.books-list a {
-  color: #000000;
-}
-.books-list a:hover {
-  text-decoration: underline;
+
+.our-members-section,
+.concert-section,
+.videos-section,
+.top-music-section,
+.feed-section {
+  padding: 50px 20px 10px;
 }
 
-.nav-link,
-.feed-icon {
-  display: none;
+.memory-section,
+.apps-section {
+  margin: 50px 0 10px;
 }
 
-.page {
-  background-color: #f8f9fa;
+.concert-info {
+  padding: 15px 30px 15px 40px;
+}
+@media (max-width: 576px) {
+  .concert-info {
+    padding-left: 15px;
+  }
+}
+
+.instagram-feed-item {
+  margin-bottom: 20px;
+}
+
+.memory-section,
+.apps-section {
+  min-height: 40vh;
+  padding: 70px 15px;
+}
+
+.memory-section .text-container {
+  padding: 15px;
+}
+
+.subscribe-section {
+  max-width: 450px;
+  padding: 0 25px;
+  margin: 50px auto;
+}
+.subscribe-section .subscribe-email-wrapper {
+  position: relative;
+}
+.subscribe-section .subscribe-email-wrapper .form-email {
+  border: none;
+  border-radius: 0;
+  border-bottom: 3px solid #999999;
+  padding: 7px 0 7px 0;
+}
+.subscribe-section .subscribe-email-wrapper .form-email:focus {
+  box-shadow: none;
+}
+.subscribe-section .subscribe-submit {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  background: url("../../src/img/icon/arrow_icon.png") no-repeat;
+  background-position: center;
+  padding: 7px 0 7px 0;
+  top: 0;
+  right: 0;
+}
+.subscribe-section .subscribe-submit:focus {
+  box-shadow: none !important;
 }
