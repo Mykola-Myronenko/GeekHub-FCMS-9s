@@ -9601,7 +9601,7 @@ body {
   padding: 40px 25px 40px;
 }
 
-.memory-section .memory-link a, .concert-section .purchase-link a, .header-section .header-link a, .navbar .purchase-link a {
+.members-page .members-page-item .more-info-link a, .memory-section .memory-link a, .concert-section .purchase-link a, .our-members-section .more-info-link a, .header-section .header-link a, .navbar .purchase-link a {
   width: 180px;
   height: 50px;
   background-color: #fbf7f4;
@@ -9610,7 +9610,7 @@ body {
   text-align: center;
 }
 
-.memory-section .memory-link a:hover, .concert-section .purchase-link a:hover, .header-section .header-link a:hover, .navbar .purchase-link a:hover {
+.members-page .members-page-item .more-info-link a:hover, .memory-section .memory-link a:hover, .concert-section .purchase-link a:hover, .our-members-section .more-info-link a:hover, .header-section .header-link a:hover, .navbar .purchase-link a:hover {
   opacity: 0.8;
 }
 
@@ -9626,6 +9626,16 @@ body {
   text-transform: uppercase;
 }
 .header-section .header-link a {
+  font-family: "Open-Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1.2px;
+  line-height: 50px;
+  background-color: #df001f;
+  text-transform: uppercase;
+}
+.our-members-section .more-info-link a {
   font-family: "Open-Sans", sans-serif;
   font-size: 12px;
   font-weight: 700;
@@ -9661,6 +9671,19 @@ body {
   margin: 5px;
 }
 
+.members-page .members-page-item .more-info-link {
+  margin-top: 30px;
+}
+.members-page .members-page-item .more-info-link a {
+  font-family: "Open-Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1.2px;
+  line-height: 50px;
+  background-color: #df001f;
+  text-transform: uppercase;
+}
 .navbar .facebook-icon, .navbar .twitter-icon, .navbar .gplus-icon {
   font-size: 25px;
   color: #ffffff;
@@ -9926,6 +9949,42 @@ body {
   line-height: 28px;
 }
 
+.members-page .members-page-item h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #333333;
+  letter-spacing: 1px;
+  line-height: 30x;
+  margin-bottom: 20px;
+}
+.members-page .member-profession, .members-page .member-genre, .members-page .member-age {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  letter-spacing: 0.5px;
+  line-height: 30x;
+}
+
+.member-node h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #333333;
+  letter-spacing: 1px;
+  line-height: 30x;
+  margin-bottom: 20px;
+}
+.member-node .member-biography {
+  font-family: "Open-Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #333333;
+  letter-spacing: 0.3;
+  line-height: 20px;
+}
+
 .slide__caption {
   padding: 0 15px 0;
 }
@@ -10134,4 +10193,22 @@ html[lang=uk] .block--dropdownlanguage {
 }
 .subscribe-section .submit-button-wrapper .subscribe-submit:focus {
   box-shadow: none !important;
+}
+
+.members-page .members-page-item {
+  padding: 30px;
+}
+.members-page .members-page-item img {
+  width: 100%;
+}
+.members-page .members-page-item .member-info {
+  padding: 15px;
+}
+
+.member-node img {
+  width: 100%;
+  padding: 15px;
+}
+.member-node .member-biography {
+  padding: 15px;
 }

@@ -219,7 +219,32 @@
   }
 }
 
+.members-page {
+  & .members-page-item {
 
+    & h3 {
+      @include text-style($main-header-font, 30px, 500, $secondary-text-color, 1px, 30x);
+      margin-bottom: 20px;
+    }
+  }
+
+  & .member-profession,
+  & .member-genre,
+  & .member-age {
+    @include text-style($main-header-font, 16px, 400, $secondary-text-color, .5px, 30x);
+  }
+}
+
+.member-node {
+  & h3 {
+    @include text-style($main-header-font, 30px, 500, $secondary-text-color, 1px, 30x);
+    margin-bottom: 20px;
+  }
+
+  & .member-biography {
+    @include text-style($main-font, 18px, 400, $secondary-text-color, .3, 20px);
+  }
+}
 
 
 
