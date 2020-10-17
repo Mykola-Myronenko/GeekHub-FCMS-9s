@@ -1,250 +1,165 @@
-.header-section {
-  & .left-line {
-    border-radius: 1px;
-    border-left: 3px solid $secondary-text-color;
-    padding-left: 15px;
-    margin-bottom: 0;
-    max-width: 65vw;
+.breadcrumb-item {
+  & a {
+    @include text-style($main-font, 18px, 200, #a9a9a9, 1px, 26px);
   }
-}
-
-.left-line {
-  border-radius: 1px;
-  border-left: 3px solid $secondary-text-color;
-  padding-left: 25px;
-  margin-bottom: 70px;
-}
-
-.about-us-section,
-.our-team-section,
-.recent-publications-section {
-  & .num-section-container {
-    @include text-style($secondary-font, 200px, 400, #f3f3f3, .5px, 120px);
-    position: absolute;
-  }
-}
-
-.practis-area-section,
-.customer-reviews-section,
-.faq-section {
-  & .num-section-container {
-    @include text-style($secondary-font, 200px, 400, #f1d1d1d, .5px, 120px);
-    position: absolute;
-  }
-}
-
-.num-section-container {
-  padding-left: 15px;
 }
 
 .header-section {
   & h2 {
-    @include text-style($main-font, 65px, 400, $main-bg-color, 2.5px, 65px);
+    @include text-style($main-font, 60px, 900, $secondary-text-color, 1px, 64px);
+
+    & p {
+      margin-bottom: 25px;
+    }
   }
 
   & .header-description {
-    @include text-style($secondary-font, 32px, 400, $main-bg-color, 1.25px, 32px);
+    @include text-style($main-font, 18px, 400, $secondary-text-color, 1px, 24px);
+
+    & p {
+      margin-bottom: 40px;
+    }
+
+    max-width: 600px;
+    margin: 0 auto;
   }
 }
 
-.about-us-section {
+.process-description-section {
   & h2 {
-    @include text-style($main-font, 32px, 400, $secondary-bg-color, 1.25px, 46px);
-    margin-bottom: 20px;
+    @include text-style($main-font, 40px, 600, $main-text-color, 1px, 44px);
   }
 
-  & .about-us-description {
-    @include text-style($main-font, 22px, 400, $main-text-color, .85px, 32px);
-    max-width: 800px;
+  & .process-description-item-title {
+    @include text-style($main-font, 20px, 600, $main-text-color, 1px, 24px);
 
     & p {
-      margin: 0;
+      margin-bottom: 17px;
     }
   }
 
-  & .about-us-item-title {
-    @include text-style($secondary-font, 22px, 700, $secondary-bg-color, 1.25px, 36px);
+  & .process-description-item-description {
+    @include text-style($main-font, 16px, 400, $main-text-color, .1px, 22px);
+  }
+}
+
+.about-section {
+  & h2 {
+    @include text-style($main-font, 40px, 600, $main-text-color, 1px, 44px);
   }
 
-  & .about-us-item-description {
-    @include text-style($secondary-font, 16px, 400, $secondary-bg-color, .65px, 22px);
-    padding-bottom: 17px;
+  & .about-description {
+    @include text-style($main-font, 16px, 400, #010000, 1px, 27px);
+    margin-bottom: 35px;
+
+    & p {
+      margin-bottom: 25px;
+    }
   }
 
-  & .about-us-another-text {
-    @include text-style($secondary-font, 14px, 400, $secondary-bg-color, .55px, 32px);
-    padding-bottom: 17px;
+  & .about-link a {
+    @include text-style($main-font, 16px, 600, $main-bg-color, 1px, 24px);
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+}
+
+.candidate-families-section {
+  & h2 {
+    @include text-style($main-font, 40px, 600, $main-text-color, 1, 44px);
   }
 
-  & .about-us-first-column-title,
-  & .about-us-second-column-title {
-    @include text-style($main-font, 22px, 400, $secondary-bg-color, .85px, 32px);
+  & h3 {
+    @include text-style($main-font, 24px, 600, $main-text-color, 1, 28px);
+  }
+
+  & .candidate-families-item-description {
+    @include text-style($main-font, 16px, 400, $main-text-color, 1, 24px);
+  }
+
+  & .candidate-families-more-link a {
+    @include text-style($main-font, 16px, 600, $main-bg-color, 1px, 24px);
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+
+  & .text-container {
+    padding: 20px 15px;
+  }
+}
+
+.candidate-families-page-item {
+  & h2 {
+    @include text-style($main-font, 24px, 600, $main-text-color, 1, 28px);
+  }
+
+  & .author-name,
+  & .date-create {
+    @include text-style($main-font, 16px, 400, #a9a9a9, 1, 24px);
+    margin-bottom: 15px;
+  }
+
+  & .description {
+    @include text-style($main-font, 16px, 400, $main-text-color, 1, 24px);
+
+    & p {
+      margin-bottom: 10px;
+    }
+  }
+
+  & .link a {
+    @include text-style($main-font, 16px, 600, $main-bg-color, 1px, 24px);
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+}
+
+.testimonials-section {
+  & h2 {
+    @include text-style($main-font, 40px, 600, $main-text-color, 1, 44px);
+  }
+
+  & h3 {
+    @include text-style($main-font, 18px, 200, $main-text-color, 1, 22px);
+
+    & .text-accent {
+      @include text-style($main-font, 18x, 600, $main-bg-color, 1, 26px);
+    }
+  }
+
+  & .testiomonials-item-description {
+    @include text-style($main-font, 16px, 400, $main-text-color, 1, 24px);
+  }
+
+  & .testimonials-more-link a {
+    @include text-style($main-font, 16px, 600, $main-bg-color, 1px, 24px);
+    text-transform: uppercase;
+    text-decoration: underline;
+  }
+}
+
+.build-home-section {
+  & h2 {
+    @include text-style($main-font, 60px, 600, $main-text-color, 1, 64px);
+    margin-bottom: 30px;
+  }
+
+  & .build-home-description {
+    @include text-style($main-font, 18px, 400, $main-text-color, 1, 26px);
     margin-bottom: 30px;
   }
 }
 
-.practis-area-section {
-  & h2 {
-    @include text-style($main-font, 32x, 400, $main-bg-color, 1.25px, 46px);
-  }
-
-  & .practis-area-description {
-    @include text-style($main-font, 22px, 400, $main-text-color, .85px, 32px);
-    max-width: 800px;
-
-    & p {
-      margin: 0;
-    }
-  }
-
-  & .practis-area-item-title {
-    @include text-style($main-font, 22px, 400, $main-bg-color, .85px, 32px);
-    margin-bottom: 30px;
-  }
-
-  & .practis-area-item-description {
-    @include text-style($secondary-font, 14px, 400, $main-bg-color, .55px, 25px);
-    margin-bottom: 30px;
-  }
+.copyright,
+.design-by,
+.developed-by {
+  @include text-style($main-font, 14px, 600, $main-text-color, 1, 20px);
+  opacity: .65;
+  margin-top: 10px;
 }
 
-.our-team-section {
-  & h2 {
-    @include text-style($main-font, 32x, 400, $secondary-bg-color, 1.25px, 46px);
-    margin-bottom: 20px;
-  }
-
-  & .our-team-description {
-    @include text-style($main-font, 22px, 400, $main-text-color, .85px, 32px);
-    max-width: 800px;
-
-    & p {
-      margin: 0;
-    }
-  }
-
-  & .our-team-item-title {
-    @include text-style($main-font, 22px, 400, $secondary-bg-color, .85px, 32px);
-    margin: 10px 0 5px;
-  }
-
-  & .our-team-item-description {
-    @include text-style($secondary-font, 14px, 400, $main-text-color, .55px, 24px);
+.footer-links {
+  & a {
+    @include text-style($main-font, 14px, 400, $main-text-color, .1px, 30px);
   }
 }
-
-.customer-reviews-section {
-  & h2 {
-    @include text-style($main-font, 32x, 400, $main-bg-color, 1.25px, 46px);
-  }
-
-  & .customer-reviews-description {
-    @include text-style($main-font, 22px, 400, $main-text-color, .85px, 32px);
-    max-width: 800px;
-
-    & p {
-      margin: 0;
-    }
-  }
-
-  & .customer-reviews-item-title {
-    @include text-style($main-font, 22px, 400, $main-bg-color, .85px, 24px);
-    margin: 40px 0 5px;
-  }
-
-  & .customer-reviews-item-description {
-    @include text-style($secondary-font, 14px, 400, $main-bg-color, .55px, 32px);
-    position: relative;
-
-    @media (max-width: 992px) {
-      margin-top: 30px;
-    }
-  }
-
-  & .customer-reviews-item-title-description {
-    @include text-style($main-font, 14px, 400, $main-text-color, .55px, 32px);
-  }
-
-
-}
-
-.quotes-icon {
-  @include text-style($main-font, 135px, 400, #212529, .55px, 65px);
-  position: absolute;
-  left: -65px;
-
-  @media (max-width: 1200px) {
-    display: none;
-  }
-}
-
-.recent-publications-section {
-  & h2 {
-    @include text-style($main-font, 32x, 400, $secondary-bg-color, 1.25px, 46px);
-  }
-
-  & .recent-publications-description {
-    @include text-style($main-font, 22px, 400, $main-text-color, .85px, 32px);
-    max-width: 800px;
-
-    & p {
-      margin: 0;
-    }
-  }
-
-  & .recent-publications-item-title {
-    @include text-style($main-font, 22px, 400, $secondary-bg-color, .85px, 32px);
-    margin: 25px 0 30px;
-  }
-
-  & .recent-publications-item-description {
-    @include text-style($main-font, 14px, 400, $main-text-color, .55px, 32px);
-  }
-}
-
-.faq-section {
-  & h2 {
-    @include text-style($main-font, 32x, 400, $main-bg-color, 1.25px, 46px);
-  }
-
-  & .faq-description {
-    @include text-style($main-font, 22px, 400, $main-text-color, .85px, 32px);
-    max-width: 800px;
-
-    & p {
-      margin: 0;
-    }
-  }
-
-  & .faq-another-text {
-    box-shadow: 0 12px 40px rgba(216, 178, 87, 0.32);
-    border-radius: 3px;
-    background-color: $secondary-text-color;
-
-    padding: 40px;
-
-    @media (max-width: 992px) {
-      margin-top: 30px;
-    }
-
-    & p {
-      @include text-style($secondary-font, 14px, 400, $secondary-bg-color, .55px, 32px);
-    }
-  }
-
-  & .faq-item {
-    border-radius: 1px;
-    border-bottom: 3px solid $secondary-text-color;
-
-    padding-bottom: 20px;
-
-    @include text-style($secondary-font, 14px, 700, $main-bg-color, .55px, 32px);
-
-    &:hover {
-      cursor: pointer;
-      @include text-style($secondary-font, 14px, 700, $secondary-text-color, .55px, 32px);
-    }
-  }
-}
-
-

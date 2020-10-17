@@ -1,45 +1,5 @@
-.practis-area-subsection {
-  position: relative;
-
-  @media (min-width: 320px) and (max-width: 576px) {
-    padding: 0 30px 30px 50px;
-
-    & .practis-area-item-image {
-      margin-bottom: 25px;
-      position: static;
-    }
-  }
-
-  @media (min-width: 576px) {
-    padding: 0 15px 30px 100px;
-
-    & .practis-area-item-image  {
-
-      position: absolute;
-      left: 15px;
-      top: 3px;
-    }
-  }
-
-  @media (min-width: 800px) {
-    padding: 0 0 20px 100px;
-
-    & .practis-area-item-image {
-
-      position: absolute;
-      left: 15px;
-      top: 3px;
-    }
-  }
-
-  @media (min-width: 992px) {
-    padding: 0 30px 20px 100px;
-
-    & .practis-area-item-image {
-
-      position: absolute;
-      left: 20px;
-      top: 3px;
-    }
+.process-description-section {
+  & .process-description-item-image {
+    margin-bottom: 25px;
   }
 }

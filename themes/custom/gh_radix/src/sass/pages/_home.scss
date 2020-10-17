@@ -1,65 +1,112 @@
-.container {
-  padding: 0;
+.header-section {
+  min-height: 90vh;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+
+  position: relative;
+
+  margin-top: -100px;
 }
 
 .header-section,
-.about-us-section,
-.practis-area-section,
-.our-team-section,
-.customer-reviews-section,
-.recent-publications-section,
-.faq-section {
+.process-description-section,
+.about-section,
+.about-text-column,
+.about-image-column,
+.candidate-families-section,
+.testimonials-section,
+.build-home-section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 90px 25px 90px;
+}
 
-  & .left-line {
-    position: relative;
+.header-section,
+.process-description-section,
+.candidate-families-section,
+.testimonials-section,
+.build-home-section {
+  padding: 70px 20px 70px;
+}
+
+.process-description-items-container,
+.candidate-families-items-container,
+.testimonials-items-container {
+  margin: 35px 0 35px;
+}
+
+.about-section {
+  min-height: 60vh;
+
+  & .about-image-column {
+    min-height: 60vh;
   }
 }
 
-.header-section {
-  min-height: 90vh;
-  padding: 90px 25px 50px;
-}
+.about-text-column {
+  & .about-text-container {
 
-.about-us-section,
-.our-team-section,
-.recent-publications-section {
-  background-color: $main-bg-color;
-  min-height: 80vh;
-}
+    @media (min-width: 320px) {
+      max-width: 80vw;
+    }
 
-.practis-area-section,
-.faq-section {
-  background-color: $secondary-bg-color;
-  min-height: 80vh;
-}
-
-.customer-reviews-section {
-  min-height: 80vh;
-}
-
-.our-team-subsection {
-  @media (max-width: 992px) {
-    text-align: center;
-  }
-}
-
-.customer-reviews-subsection,
-.recent-publications-subsection {
-  @media (max-width: 992px) {
-    text-align: center;
-
-    & .customer-reviews-item-description,
-    & .recent-publications-item-description {
-      margin-bottom: 30px;
+    @media (min-width: 768px) {
+      max-width: 35vw;
     }
   }
 
-  & .customer-reviews-item-description,
-  & .recent-publications-item-description {
-    text-align: left;
+  background-color: $secondary-bg-color;
+  padding: 50px 40px 50px;
+}
+
+.candidate-families-item {
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  background-color: $secondary-text-color;
+  margin-bottom: 20px;
+}
+
+.testimonials-item {
+  & .text-container {
+    border: 1px solid #f0f0f0;
+    border-radius: 5px;
+    background-color: $secondary-text-color;
+    padding: 20px;
+    margin: 5px;
   }
+}
+
+.testimonials-section {
+  background-color: $secondary-bg-color;
+}
+
+.process-description-section,
+.candidate-families-section,
+.testimonials-section {
+  & .decoration-line {
+    margin: 30px auto 0;
+  }
+}
+
+.about-section {
+  & .decoration-line {
+    margin: 25px 0 30px;
+  }
+}
+
+.decoration-line {
+  height: 3px;
+  width: 80px;
+  border-bottom: 3px solid $main-bg-color;
+}
+
+@media (min-width: 1300px) {
+  .container {
+    max-width: 1220px;
+  }
+}
+
+.build-home-section {
+  min-height: 80vh;
 }

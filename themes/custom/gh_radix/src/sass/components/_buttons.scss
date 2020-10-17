@@ -2,24 +2,62 @@
   width: 180px;
   height: 50px;
 
-  background-color: $secondary-text-color;
+  background-color: $main-bg-color;
 
-  border-radius: 25px;
+  border-radius: 5px;
   display: inline-block;
   text-align: center;
 }
 
 %button-style-hover {
-  background-color: #FFBF5D;
+  background-color: $btn-hover-bg-color;
+  color: $secondary-text-color;
   cursor: pointer;
 }
 
-.header-link a {
-  @include text-style($main-font, 16px, 400, $secondary-bg-color, 0.65px, 50px);
+.header-section {
+  & .header-link a {
+    @include text-style($main-font, 16px, 600, $main-text-color, 1px, 50px);
+    @extend %button-style;
+    text-transform: uppercase;
+
+    &:hover {
+      @extend %button-style-hover;
+    }
+  }
+}
+
+.build-home-section {
+  & .build-home-link a {
+    @include text-style($main-font, 16px, 600, $main-text-color, 1px, 50px);
+    @extend %button-style;
+    text-transform: uppercase;
+
+    &:hover {
+      @extend %button-style-hover;
+    }
+  }
+}
+
+.subscribe-button {
+  @include text-style($main-font, 16px, 600, $secondary-text-color, 0.65px, 1px);
   @extend %button-style;
+  text-transform: uppercase;
+
+  width: 145px;
+  height: 38px;
+
+  border: none;
 
   &:hover {
     @extend %button-style-hover;
   }
 }
 
+.subscribe-input-col {
+  padding: 3px 5px 0 3px;
+}
+
+.subscribe-button-col {
+  padding: 3px 3px 16px 3px;
+}
