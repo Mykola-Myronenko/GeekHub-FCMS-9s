@@ -1,0 +1,72 @@
+h1 {
+  @include text-style($main-font, 60px, 300, $secondary-text-color, 1.35px, 60px);
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.another-text {
+  @include text-style($secondary-font, 20px, 300, $secondary-text-color, .6px, 20px);
+  margin-bottom: 40px;
+}
+
+.text-acccent {
+  @include text-style($main-font, 60px, 700, $secondary-text-color, 1.5px, 60px)
+}
+
+.about-us-item-title a {
+  @include text-style($main-font, 30px, 400, #000000, .75px, 96px);
+  margin-top: 30px;
+  text-align: center;
+}
+
+.about-us-item-desc,
+.our-team-description {
+  @include text-style($secondary-font, 18px, 300, $main-text-color, .45px, 30px);
+  text-align: center;
+}
+
+
+.section-title {
+  @include text-style($main-font, 60px, 200, $main-text-color, 1.5px, 60px);
+  margin-bottom: 25px;
+}
+
+.about-us-description,
+.our-services-description,
+.our-team-description,
+.pricing-description {
+  @include text-style($secondary-font, 14px, 400, $main-text-color, .45px, 18px);
+  margin: 30px 0 90px;
+  text-align: center;
+}
+
+.service-title a {
+  @include text-style($main-font, 36px, 200, $secondary-header-text-color, 1.5px, 40px)
+}
+
+.service-details p {
+  @include text-style($secondary-font, 18px, 400, $main-text-color, .45px, 48px)
+}
+
+.price-container {
+  padding: 10px;
+
+  & .another-text {
+    @include text-style($secondary-font, 12px, 400, $main-text-color, .45px, 12px);
+  }
+
+  & .product-details {
+    @include text-style($main-font, 12px, 400, $main-text-color, .45px, 28px);
+  }
+}
+
+.product-price {
+  @include text-style($main-font, 60px, 400, $main-bg-color, 1.5px, 96px);
+  margin: 0;
+}
+
+
+.header-navigation {
+  @include text-style($main-font, 14px, 700, $secondary-text-color, .35px, 24px);
+  text-transform: uppercase;
+}

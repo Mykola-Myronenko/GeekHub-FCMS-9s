@@ -1,0 +1,17 @@
+.price-container {
+  position: relative;
+}
+
+.services-icon {
+  position: absolute;
+  left: -35px;
+  top: -25px;
+}
+
+.purchase-button {
+  &::after {
+    content: url("../../src/img/icons/basket.png");
+    position: absolute;
+    right: 25px;
+  }
+}

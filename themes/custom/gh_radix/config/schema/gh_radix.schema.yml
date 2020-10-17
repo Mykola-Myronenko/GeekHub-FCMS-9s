@@ -1,0 +1,5 @@
+# Schema for the configuration files of the gh_radix theme.
+
+gh_radix.settings:
+  type: theme_settings
+  label: 'gh_radix settings'

@@ -659,6 +659,207 @@
         ]
     },
     {
+        "name": "drupal/admin_toolbar",
+        "version": "2.0.0",
+        "version_normalized": "2.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/admin_toolbar.git",
+            "reference": "8.x-2.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-2.0.zip",
+            "reference": "8.x-2.0",
+            "shasum": "568de63dbaa8046a82d327dbd0b892ab79fb87aa"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.0",
+                "datestamp": "1573751237",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Wilfrid Roze (eme)",
+                "homepage": "https://www.drupal.org/u/eme",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Romain Jarraud (romainj)",
+                "homepage": "https://www.drupal.org/u/romainj",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Adrian Cid Almaguer (adriancid)",
+                "homepage": "https://www.drupal.org/u/adriancid",
+                "email": "adriancid@gmail.com",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Mohamed Anis Taktak (matio89)",
+                "homepage": "https://www.drupal.org/u/matio89",
+                "role": "Maintainer"
+            },
+            {
+                "name": "fethi.krout",
+                "homepage": "https://www.drupal.org/user/3206765"
+            },
+            {
+                "name": "matio89",
+                "homepage": "https://www.drupal.org/user/2320090"
+            },
+            {
+                "name": "romainj",
+                "homepage": "https://www.drupal.org/user/370706"
+            }
+        ],
+        "description": "Provides a drop-down menu interface to the core Drupal Toolbar.",
+        "homepage": "http://drupal.org/project/admin_toolbar",
+        "keywords": [
+            "Drupal",
+            "Toolbar"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/admin_toolbar",
+            "issues": "https://www.drupal.org/project/issues/admin_toolbar"
+        }
+    },
+    {
+        "name": "drupal/blazy",
+        "version": "2.0.0-rc7",
+        "version_normalized": "2.0.0.0-RC7",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/blazy.git",
+            "reference": "8.x-2.0-rc7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/blazy-8.x-2.0-rc7.zip",
+            "reference": "8.x-2.0-rc7",
+            "shasum": "f42b39939c05ef1d1fc4fcdc5451d4a5ff568096"
+        },
+        "require": {
+            "drupal/core": "^8 || ^9"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.0-rc7",
+                "datestamp": "1581756279",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "RC releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Gaus Surahman",
+                "homepage": "https://www.drupal.org/u/gausarts",
+                "role": "Maintainer"
+            },
+            {
+                "name": "Contributors",
+                "homepage": "https://www.drupal.org/node/2663268/committers",
+                "role": "Contributor"
+            },
+            {
+                "name": "sun",
+                "homepage": "https://www.drupal.org/user/54136"
+            }
+        ],
+        "description": "Provides basic bLazy integration for lazy loading and multi-serving images.",
+        "homepage": "https://drupal.org/project/blazy",
+        "keywords": [
+            "Drupal",
+            "bLazy",
+            "lazyload"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/blazy",
+            "issues": "https://drupal.org/project/issues/blazy"
+        }
+    },
+    {
+        "name": "drupal/components",
+        "version": "1.1.0",
+        "version_normalized": "1.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/components.git",
+            "reference": "8.x-1.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/components-8.x-1.1.zip",
+            "reference": "8.x-1.1",
+            "shasum": "72af8ff1ca842556ee4b95335595c24703acdb75"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.1",
+                "datestamp": "1556870881",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "JohnAlbin",
+                "homepage": "https://www.drupal.org/user/32095"
+            },
+            {
+                "name": "RobLoach",
+                "homepage": "https://www.drupal.org/user/61114"
+            }
+        ],
+        "description": "Registers “component libraries” defined in modules and themes with the Twig system",
+        "homepage": "https://www.drupal.org/project/components",
+        "support": {
+            "source": "https://git.drupalcode.org/project/components"
+        }
+    },
+    {
         "name": "drupal/core",
         "version": "8.8.2",
         "version_normalized": "8.8.2.0",
@@ -1099,6 +1300,241 @@
         "keywords": [
             "drupal"
         ]
+    },
+    {
+        "name": "drupal/radix",
+        "version": "dev-4.x",
+        "version_normalized": "dev-4.x",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/radix.git",
+            "reference": "1d966519ac1506e00488108caab7c134ad85ce17"
+        },
+        "require": {
+            "drupal/components": "^1.0",
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-theme",
+        "extra": {
+            "branch-alias": {
+                "dev-4.x": "4.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-4.7+0-dev",
+                "datestamp": "1580057281",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "Dev releases are not covered by Drupal security advisories."
+                }
+            },
+            "drush": {
+                "services": {
+                    "drush.services.yml": "^9"
+                }
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Drush\\Commands\\radix\\": "Commands/radix/"
+            }
+        },
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "Arshad Chummun",
+                "homepage": "https://arshad.io",
+                "email": "arshad@chummun.com",
+                "role": "Maintainer"
+            },
+            {
+                "name": "dsnopek",
+                "homepage": "https://www.drupal.org/user/266527"
+            }
+        ],
+        "description": "Radix is a base theme for Drupal. It has Bootstrap, Sass, BrowserSync and Font Awesome built-in.",
+        "homepage": "https://www.drupal.org/project/radix",
+        "support": {
+            "source": "https://git.drupalcode.org/project/radix",
+            "issues": "https://www.drupal.org/project/issues/radix"
+        }
+    },
+    {
+        "name": "drupal/radix_layouts",
+        "version": "4.1.0",
+        "version_normalized": "4.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/radix_layouts.git",
+            "reference": "8.x-4.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/radix_layouts-8.x-4.1.zip",
+            "reference": "8.x-4.1",
+            "shasum": "c5aa0e5a72e13c2f163cc4a18d0816cb11018357"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-4.x": "4.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-4.1",
+                "datestamp": "1551641284",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "arshadcn",
+                "homepage": "https://www.drupal.org/user/571032"
+            },
+            {
+                "name": "dsnopek",
+                "homepage": "https://www.drupal.org/user/266527"
+            }
+        ],
+        "description": "Responsive layouts built on the Bootstrap 3 grid system.",
+        "homepage": "https://www.drupal.org/project/radix_layouts",
+        "support": {
+            "source": "https://git.drupalcode.org/project/radix_layouts"
+        }
+    },
+    {
+        "name": "drupal/slick",
+        "version": "2.1.0",
+        "version_normalized": "2.1.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/slick.git",
+            "reference": "8.x-2.1"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/slick-8.x-2.1.zip",
+            "reference": "8.x-2.1",
+            "shasum": "126dd674ee5b074b1893fd060caa437ecbd8b2bd"
+        },
+        "require": {
+            "drupal/blazy": "~2.0",
+            "drupal/core": "^8 || ^9"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.1",
+                "datestamp": "1581756259",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "arshadcn",
+                "homepage": "https://www.drupal.org/user/571032"
+            },
+            {
+                "name": "gausarts",
+                "homepage": "https://www.drupal.org/user/159062"
+            },
+            {
+                "name": "thalles",
+                "homepage": "https://www.drupal.org/user/3589086"
+            }
+        ],
+        "description": "Slick carousel, the last carousel you'll ever need.",
+        "homepage": "https://drupal.org/project/slick",
+        "keywords": [
+            "Drupal",
+            "carousel",
+            "slideshow"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/slick",
+            "issues": "https://drupal.org/project/issues/slick"
+        }
+    },
+    {
+        "name": "drupal/slick_views",
+        "version": "2.2.0",
+        "version_normalized": "2.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/slick_views.git",
+            "reference": "8.x-2.2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/slick_views-8.x-2.2.zip",
+            "reference": "8.x-2.2",
+            "shasum": "e187e29ad30dd07564907ddd8fedf8972134aaa1"
+        },
+        "require": {
+            "drupal/core": "^8 || ^9",
+            "drupal/slick": "~2.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-2.x": "2.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-2.2",
+                "datestamp": "1581742125",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "gausarts",
+                "homepage": "https://www.drupal.org/user/159062"
+            }
+        ],
+        "description": "Provides Slick carousel integration with Views. Slick carousel, the last carousel you'll ever need.",
+        "homepage": "https://drupal.org/project/slick_views",
+        "keywords": [
+            "Drupal",
+            "carousel",
+            "slideshow",
+            "views"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/slick_views",
+            "issues": "https://drupal.org/project/issues/slick_views"
+        }
     },
     {
         "name": "easyrdf/easyrdf",
