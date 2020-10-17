@@ -1,0 +1,88 @@
+.header-section {
+  background-color: $main-bg-color;
+}
+
+.welcome-container {
+  min-height: 60vh;
+}
+
+.header-section {
+  min-height: 90vh;
+
+  & .header-container {
+    min-height: 80vh;
+  }
+
+  padding: 70px 15px;
+}
+
+.offering-section {
+  background-color: $secondary-bg-color;
+  min-height: 60vh;
+
+  & .offering-item {
+    max-width: 300px;
+
+    & img {
+      margin-bottom: 25px;
+    }
+
+    margin: 15px 0;
+  }
+
+  padding: 70px 15px;
+}
+
+.latest-work-section {
+  min-height: 80vh;
+
+  & .latest-work-item {
+    margin: 15px 0;
+  }
+
+  padding: 70px 15px;
+}
+
+.page__footer {
+  background: url("../../src/img/backgrounds/footer_bg.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+
+  padding: 0 15px;
+}
+
+.featured-clients-section {
+  background-color: $main-bg-color;
+
+  & .featured-clients-item {
+    padding: 15px;
+  }
+
+  img {
+    filter: brightness(0) invert(1);
+  }
+
+  padding: 50px 15px;
+}
+
+.site-logo-block {
+  background-color: #17212a;
+  padding: 35px 15px;
+}
+
+.copyright-block {
+  background-color: $main-bg-color;
+  padding: 20px 15px;
+}
+
+.contact-info-section,
+.contact-form {
+  padding: 70px 15px 0 15px;
+}
+
+.contact-form {
+  margin-bottom: 15px;
+}

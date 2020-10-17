@@ -39,58 +39,57 @@
  */
 #}
 {% set class = [
-  content.field_section_class['#items'][0].value ~ '-section',
-  'col-',
-  'row no-gutters',
+  content.field_section_class['#items'][0].value ~ '-section'
 ] | join (' ') %}
 {% block paragraph %}
 
   {% if content.field_section_class['#items'][0].value == 'header' %}
-    <section
-      class="justify-content-center {{ class }}"
-      style="background-image: url('{{ content.field_section_image['#items']|file_url }}')">
-      <div class="row no-gutters align-items-center">
-        <div class="text-center">
-          {% if content.field_section_title.0 %}
-            <h2 class="text-center ">{{ content.field_section_title }}</h2>
-          {% endif %}
-          {% if content.field_section_some_text.0 %}
-            <div class="text-center {{ content.field_section_class['#items'][0].value ~ '-some-text' }}">
-              {{ content.field_section_some_text }}
-            </div>
-          {% endif %}
-          {% if content.field_section_link.0 %}
-            <div class="text-center {{ content.field_section_class['#items'][0].value ~ '-link' }}">
-              {{ content.field_section_link }}
-            </div>
-          {% endif %}
-        </div>
-      </div>
-    </section>
-  {% endif %}
-
-  {% if content.field_section_class['#items'][0].value == 'memory' %}
-    <div class="container">
-      <section class="{{ class }}"
-               style="background-image: url('{{ content.field_section_image['#items']|file_url }}')">
-        <div class="row no-gutters justify-content-start">
-          <div class="text-center text-container">
-            {% if content.field_section_title.0 %}
-              <h2 class="text-left">{{ content.field_section_title }}</h2>
-            {% endif %}
+    <section class="{{ class }}">
+      <div class="container">
+        <div class="row align-items-center justify-content-center
+                   {{ content.field_section_class['#items'][0].value ~ '-container' }}">
+          <div class="col-lg-5">
+            {{ content.field_section_image }}
+          </div>
+          <div class="col-lg-7">
+            <h2 class="">{{ content.field_section_title }}</h2>
             {% if content.field_section_some_text.0 %}
-              <div class="text-left {{ content.field_section_class['#items'][0].value ~ '-some-text' }}">
+              <div class="{{ content.field_section_class['#items'][0].value ~ '-some-text' }}">
                 {{ content.field_section_some_text }}
               </div>
             {% endif %}
-            {% if content.field_section_link.0 %}
-              <div class="text-left {{ content.field_section_class['#items'][0].value ~ '-link' }}">
-                {{ content.field_section_link }}
+            <div class="{{ content.field_section_class['#items'][0].value ~ '-description' }}">
+              {{ content.field_section_description }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="arrow-down"></div>
+    </section>
+  {% endif %}
+
+  {% if content.field_section_class['#items'][0].value == 'welcome' %}
+    <section class="{{ class }}">
+      <div class="container">
+        <div class="row align-items-center justify-content-center
+                   {{ content.field_section_class['#items'][0].value ~ '-container' }}">
+          <div class="col-lg-4 align-items-start">
+            {{ content.field_section_image }}
+          </div>
+          <div class="col-lg-8">
+            <h2 class="">{{ content.field_section_title }}</h2>
+            {% if content.field_section_some_text.0 %}
+              <div class="{{ content.field_section_class['#items'][0].value ~ '-some-text' }}">
+                {{ content.field_section_some_text }}
               </div>
             {% endif %}
+            <div class="{{ content.field_section_class['#items'][0].value ~ '-description' }}">
+              {{ content.field_section_description }}
+            </div>
           </div>
-      </section>
-    </div>
+        </div>
+      </div>
+    </section>
   {% endif %}
 
 {% endblock paragraph %}

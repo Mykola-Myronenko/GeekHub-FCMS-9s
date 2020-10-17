@@ -1,29 +1,12 @@
-.navbar {
-  & .facebook-icon,
-  & .twitter-icon,
-  & .gplus-icon {
-    font-size: 25px;
-
-    color: $main-text-color;
-    margin: 10px 0 10px 15px;
-
-    &:hover {
-      cursor: pointer;
-      opacity: .8;
-    }
-  }
-
-  & .number-followers {
-    font-size: 13px;
-    font-weight: 400;
-    color: $main-text-color;
-  }
-}
-
-
 .header-section {
   & h2 {
-    @include text-style($main-header-font, 116px, 900, $main-bg-color, 2px, 120px);
+    @include text-style($main-font, 60px, 700, $main-text-color, .2px, 60px);
+    margin-top: 15px;
+
+    & .text-accent {
+      @include text-style($main-font, 60px, 700, $secondary-text-color, .2px, 60px);
+    }
+
     text-transform: uppercase;
 
     & p {
@@ -32,236 +15,103 @@
   }
 
   & .header-some-text {
-    @include text-style($secondary-header-font, 80px, 400, $secondary-text-color, 1px, 90px);
+
+    & .first-paragraph {
+      @include text-style($main-font, 48px, 400, $main-text-color, .2px, 50px);
+      margin-bottom: 0;
+    }
+
+    & .second-paragraph {
+      @include text-style($main-font, 30px, 400, $main-text-color, .2px, 32px);
+      margin-bottom: 20px;
+    }
+  }
+
+  & .header-description {
+    @include text-style($main-font, 24px, 300, $main-text-color, .2px, 26px);
 
     & p {
-      margin-bottom: 40px;
+      margin-bottom: 20px;
     }
   }
 }
 
-.our-members-section {
+.welcome-section {
   & h2 {
-    @include text-style($main-header-font, 32px, 400, $secondary-text-color, 2px, 32x);
+    @include text-style($main-font, 36px, 700, $secondary-text-color, .2px, 72px);
     text-transform: uppercase;
   }
 
-  & h3 {
-    @include text-style($main-header-font, 22px, 400, $main-text-color, 1px, 32x);
-  }
+  & .welcome-description {
+    @include text-style($main-font, 18px, 300, $secondary-text-color, .2px, 24px);
 
-  & .member-profession {
-    @include text-style($main-font, 16px, 400, $main-text-color, 1px, 26px);
-  }
-
-  & .social-info {
-    & p {
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 44px;
-      color: $main-text-color;
-      margin: 0;
-    }
-
-    & .facebook-icon,
-    & .twitter-icon,
-    & .gplus-icon {
-      font-size: 20px;
-
-      color: $main-text-color;
-      margin: 10px 0 10px 0;
-
-      &:hover {
-        cursor: pointer;
-        opacity: .8;
-      }
-    }
-
-    & .number-followers {
-      font-size: 13px;
-      font-weight: 400;
-      color: $main-text-color;
-      padding-right: 15px;
+    & .text-accent {
+      @include text-style($main-font, 18px, 700, $main-bg-color, .2px, 24px);
     }
   }
 }
 
-.concert-section {
+.offering-section {
   & h2 {
-    @include text-style($main-header-font, 32px, 400, $secondary-text-color, 2px, 32x);
-    text-transform: uppercase;
-  }
-
-  & h3 {
-    & a {
-      @include text-style($main-header-font, 22px, 500, $secondary-text-color, 1px, 30x);
-    }
-
+    @include text-style($main-font, 36px, 300, $main-text-color, .2px, 38px);
     margin-bottom: 25px;
   }
 
-  & .concert-location,
-  & .concert-date,
-  & .concert-time,
-  & .concert-price {
-    @include text-style($main-header-font, 16px, 400, $secondary-text-color, .5px, 30x);
-  }
-}
-
-.top-music-section {
-  & h2 {
-    @include text-style($main-header-font, 32px, 400, $secondary-text-color, 2px, 32x);
-    text-transform: uppercase;
+  .view-header {
+    @include text-style($main-font, 18px, 400, $main-text-color, .2px, 24px);
+    margin-bottom: 40px;
   }
 
-  & .top-music-item {
-    & a {
-      @include text-style($main-header-font, 16px, 400, $secondary-text-color, .5px, 30x);
+  & .offering-item {
+    & h2 {
+      & a {
+        @include text-style($main-font, 36px, 300, $main-text-color, .2px, 38px);
+      }
     }
 
-    border-bottom: 1px solid #999999;
-    padding: 5px 0;
+    & .offering-item-description {
+      @include text-style($main-font, 18px, 400, $main-text-color, .2px, 24px);
+    }
   }
 }
 
-.videos-section {
+.latest-work-section {
   & h2 {
-    @include text-style($main-header-font, 32px, 400, $secondary-text-color, 2px, 32x);
-    text-transform: uppercase;
+    @include text-style($main-font, 36px, 300, #000000, .2px, 38px);
+    margin-bottom: 25px;
   }
-}
 
-.feed-section {
-  & h2 {
-    @include text-style($main-header-font, 32px, 400, $secondary-text-color, 2px, 32x);
-    text-transform: uppercase;
-  }
-}
-
-.our-members-section,
-.concert-section,
-.videos-section,
-.feed-section,
-.top-music-section {
   .view-header {
-    @include text-style($secondary-header-font, 32px, 400, $main-bg-color, 2px, 40px);
+    @include text-style($main-font, 18px, 400, #000000, .2px, 24px);
+    margin-bottom: 40px;
+  }
+}
+
+.featured-clients-section {
+  & h2 {
+    @include text-style($main-font, 36px, 300, $main-text-color, .2px, 38px);
     margin-bottom: 30px;
   }
 }
 
-.memory-section {
+.contact-info-section {
   & h2 {
-    @include text-style($main-font, 32px, 500, $main-text-color, 0, 32px);
-    text-transform: uppercase;
+    @include text-style($main-font, 26px, 300, $main-text-color, .2px, 28px);
   }
 
-  & .memory-some-text {
-    @include text-style($main-font, 18px, 400, $main-text-color, .5px, 18px);
-
-    & p {
-      margin-bottom: 20px;
-    }
-
-    & .text-accent {
-      & a {
-        @include text-style($secondary-header-font, 50px, 400, $main-text-color, 1.4px, 50px);
-      }
-    }
+  & .contact-adress,
+  & .contact-telephone,
+  & .contact-some-text {
+    @include text-style($main-font, 18px, 300, $main-text-color, .2px, 24px);
   }
 }
 
-.apps-section {
-  & h2 {
-    @include text-style($main-font, 32px, 700, $main-text-color, 0, 32px);
+.copyright-block {
+  & {
+    @include text-style($main-font, 18px, 300, $main-text-color, .2px, 24px);
   }
 
-  & .apps-some-text {
-    @include text-style($main-font, 18px, 400, $main-text-color, .5px, 18px);
-
-    & p {
-      margin-bottom: 25px;
-    }
+  p {
+    margin: 0;
   }
 }
-
-.subscribe-email-wrapper {
-  & .form-email {
-    @include text-style($main-font, 16px, 400, #282828, 3px, 24px);
-  }
-}
-
-.page__footer {
-  & .footer-links {
-    & a {
-      @include text-style($main-font, 13px, 400, $secondary-text-color, .65px, 13px);
-      text-transform: uppercase;
-
-      &:hover {
-        opacity: .8;
-      }
-    }
-
-    & .link-item {
-      padding: 0 15px;
-    }
-
-    margin-bottom: 15px;
-  }
-
-  & .copyright {
-    @include text-style($main-font, 13px, 400, $secondary-text-color, .65px, 13px);
-  }
-
-  & .text-accent {
-    & a {
-      @include text-style($secondary-header-font, 28px, 400, $main-bg-color, 1.4px, 28px);
-    }
-  }
-}
-
-.members-page {
-  & .members-page-item {
-
-    & h3 {
-      @include text-style($main-header-font, 30px, 500, $secondary-text-color, 1px, 30x);
-      margin-bottom: 20px;
-    }
-  }
-
-  & .member-profession,
-  & .member-genre,
-  & .member-age {
-    @include text-style($main-header-font, 16px, 400, $secondary-text-color, .5px, 30x);
-  }
-}
-
-.member-node {
-  & h3 {
-    @include text-style($main-header-font, 30px, 500, $secondary-text-color, 1px, 30x);
-    margin-bottom: 20px;
-  }
-
-  & .member-biography {
-    @include text-style($main-font, 18px, 400, $secondary-text-color, .3, 20px);
-  }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

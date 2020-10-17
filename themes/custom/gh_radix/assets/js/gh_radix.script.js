@@ -17847,8 +17847,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /var/www/homework/themes/custom/gh_radix/src/js/gh_radix.script.js */"./src/js/gh_radix.script.js");
-module.exports = __webpack_require__(/*! /var/www/homework/themes/custom/gh_radix/src/sass/gh_radix.style.scss */"./src/sass/gh_radix.style.scss");
+__webpack_require__(/*! /var/www/exam/themes/custom/gh_radix/src/js/gh_radix.script.js */"./src/js/gh_radix.script.js");
+module.exports = __webpack_require__(/*! /var/www/exam/themes/custom/gh_radix/src/sass/gh_radix.style.scss */"./src/sass/gh_radix.style.scss");
 
 
 /***/ })

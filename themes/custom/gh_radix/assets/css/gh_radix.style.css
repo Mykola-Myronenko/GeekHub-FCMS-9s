@@ -9589,626 +9589,312 @@ a:hover {
 }
 
 body {
-  font-family: "Open-Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .pt-5, .pb-5 {
   padding: 0 !important;
 }
 
-.page__footer {
-  border-top: 1px solid #d2d2d2;
-  padding: 40px 25px 40px;
-}
-
-.members-page .members-page-item .more-info-link a, .memory-section .memory-link a, .concert-section .purchase-link a, .our-members-section .more-info-link a, .header-section .header-link a, .navbar .purchase-link a {
+.contact-form-submit-button {
   width: 180px;
   height: 50px;
-  background-color: #fbf7f4;
-  border-radius: 25px;
+  background-color: #ff4848;
   display: inline-block;
   text-align: center;
 }
 
-.members-page .members-page-item .more-info-link a:hover, .memory-section .memory-link a:hover, .concert-section .purchase-link a:hover, .our-members-section .more-info-link a:hover, .header-section .header-link a:hover, .navbar .purchase-link a:hover {
-  opacity: 0.8;
+.contact-form-submit-button:hover {
+  background-color: #2c3e50;
 }
 
-.navbar .purchase-link a {
-  font-family: "Open-Sans", sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  color: #df001f;
-  letter-spacing: 1px;
-  line-height: 50px;
-  margin: 10px 10px 10px 25px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+.contact-form-submit-button {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.65px;
+  line-height: 1px;
   text-transform: uppercase;
 }
-.header-section .header-link a {
-  font-family: "Open-Sans", sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  color: #ffffff;
-  letter-spacing: 1.2px;
-  line-height: 50px;
-  background-color: #df001f;
-  text-transform: uppercase;
-}
-.our-members-section .more-info-link a {
-  font-family: "Open-Sans", sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  color: #ffffff;
-  letter-spacing: 1.2px;
-  line-height: 50px;
-  background-color: #df001f;
-  text-transform: uppercase;
-}
-.concert-section .purchase-link {
-  margin-top: 30px;
-}
-.concert-section .purchase-link a {
-  font-family: "Open-Sans", sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  color: #ffffff;
-  letter-spacing: 1.2px;
-  line-height: 50px;
-  background-color: #df001f;
-  text-transform: uppercase;
-}
-.memory-section .memory-link a {
-  font-family: "Open-Sans", sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  color: #df001f;
-  letter-spacing: 1.2px;
-  line-height: 50px;
-  text-transform: uppercase;
-}
-.apps-section .apps-link {
-  margin: 5px;
-}
-
-.members-page .members-page-item .more-info-link {
-  margin-top: 30px;
-}
-.members-page .members-page-item .more-info-link a {
-  font-family: "Open-Sans", sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  color: #ffffff;
-  letter-spacing: 1.2px;
-  line-height: 50px;
-  background-color: #df001f;
-  text-transform: uppercase;
-}
-.navbar .facebook-icon, .navbar .twitter-icon, .navbar .gplus-icon {
-  font-size: 25px;
-  color: #ffffff;
-  margin: 10px 0 10px 15px;
-}
-.navbar .facebook-icon:hover, .navbar .twitter-icon:hover, .navbar .gplus-icon:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
-.navbar .number-followers {
-  font-size: 13px;
-  font-weight: 400;
-  color: #ffffff;
-}
-
 .header-section h2 {
-  font-family: "Oswald", sans-serif;
-  font-size: 116px;
-  font-weight: 900;
-  color: #df001f;
-  letter-spacing: 2px;
-  line-height: 120px;
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+  line-height: 60px;
+  margin-top: 15px;
   text-transform: uppercase;
+}
+.header-section h2 .text-accent {
+  font-family: "Roboto", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  color: #004966;
+  letter-spacing: 0.2px;
+  line-height: 60px;
 }
 .header-section h2 p {
   margin-bottom: 25px;
 }
-.header-section .header-some-text {
-  font-family: "Great Vibes", cursive;
-  font-size: 80px;
-  font-weight: 400;
-  color: #333333;
-  letter-spacing: 1px;
-  line-height: 90px;
-}
-.header-section .header-some-text p {
-  margin-bottom: 40px;
-}
-
-.our-members-section h2 {
-  font-family: "Oswald", sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  color: #333333;
-  letter-spacing: 2px;
-  line-height: 32x;
-  text-transform: uppercase;
-}
-.our-members-section h3 {
-  font-family: "Oswald", sans-serif;
-  font-size: 22px;
+.header-section .header-some-text .first-paragraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
   font-weight: 400;
   color: #ffffff;
-  letter-spacing: 1px;
-  line-height: 32x;
+  letter-spacing: 0.2px;
+  line-height: 50px;
+  margin-bottom: 0;
 }
-.our-members-section .member-profession {
-  font-family: "Open-Sans", sans-serif;
-  font-size: 16px;
+.header-section .header-some-text .second-paragraph {
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
   font-weight: 400;
   color: #ffffff;
-  letter-spacing: 1px;
-  line-height: 26px;
-}
-.our-members-section .social-info p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 44px;
-  color: #ffffff;
-  margin: 0;
-}
-.our-members-section .social-info .facebook-icon, .our-members-section .social-info .twitter-icon, .our-members-section .social-info .gplus-icon {
-  font-size: 20px;
-  color: #ffffff;
-  margin: 10px 0 10px 0;
-}
-.our-members-section .social-info .facebook-icon:hover, .our-members-section .social-info .twitter-icon:hover, .our-members-section .social-info .gplus-icon:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
-.our-members-section .social-info .number-followers {
-  font-size: 13px;
-  font-weight: 400;
-  color: #ffffff;
-  padding-right: 15px;
-}
-
-.concert-section h2 {
-  font-family: "Oswald", sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  color: #333333;
-  letter-spacing: 2px;
-  line-height: 32x;
-  text-transform: uppercase;
-}
-.concert-section h3 {
-  margin-bottom: 25px;
-}
-.concert-section h3 a {
-  font-family: "Oswald", sans-serif;
-  font-size: 22px;
-  font-weight: 500;
-  color: #333333;
-  letter-spacing: 1px;
-  line-height: 30x;
-}
-.concert-section .concert-location, .concert-section .concert-date, .concert-section .concert-time, .concert-section .concert-price {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #333333;
-  letter-spacing: 0.5px;
-  line-height: 30x;
-}
-
-.top-music-section h2 {
-  font-family: "Oswald", sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  color: #333333;
-  letter-spacing: 2px;
-  line-height: 32x;
-  text-transform: uppercase;
-}
-.top-music-section .top-music-item {
-  border-bottom: 1px solid #999999;
-  padding: 5px 0;
-}
-.top-music-section .top-music-item a {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #333333;
-  letter-spacing: 0.5px;
-  line-height: 30x;
-}
-
-.videos-section h2 {
-  font-family: "Oswald", sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  color: #333333;
-  letter-spacing: 2px;
-  line-height: 32x;
-  text-transform: uppercase;
-}
-
-.feed-section h2 {
-  font-family: "Oswald", sans-serif;
-  font-size: 32px;
-  font-weight: 400;
-  color: #333333;
-  letter-spacing: 2px;
-  line-height: 32x;
-  text-transform: uppercase;
-}
-
-.our-members-section .view-header,
-.concert-section .view-header,
-.videos-section .view-header,
-.feed-section .view-header,
-.top-music-section .view-header {
-  font-family: "Great Vibes", cursive;
-  font-size: 32px;
-  font-weight: 400;
-  color: #df001f;
-  letter-spacing: 2px;
-  line-height: 40px;
-  margin-bottom: 30px;
-}
-
-.memory-section h2 {
-  font-family: "Open-Sans", sans-serif;
-  font-size: 32px;
-  font-weight: 500;
-  color: #ffffff;
-  letter-spacing: 0;
+  letter-spacing: 0.2px;
   line-height: 32px;
-  text-transform: uppercase;
-}
-.memory-section .memory-some-text {
-  font-family: "Open-Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  color: #ffffff;
-  letter-spacing: 0.5px;
-  line-height: 18px;
-}
-.memory-section .memory-some-text p {
   margin-bottom: 20px;
 }
-.memory-section .memory-some-text .text-accent a {
-  font-family: "Great Vibes", cursive;
-  font-size: 50px;
-  font-weight: 400;
+.header-section .header-description {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 300;
   color: #ffffff;
-  letter-spacing: 1.4px;
-  line-height: 50px;
+  letter-spacing: 0.2px;
+  line-height: 26px;
+}
+.header-section .header-description p {
+  margin-bottom: 20px;
 }
 
-.apps-section h2 {
-  font-family: "Open-Sans", sans-serif;
-  font-size: 32px;
+.welcome-section h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
   font-weight: 700;
-  color: #ffffff;
-  letter-spacing: 0;
-  line-height: 32px;
+  color: #004966;
+  letter-spacing: 0.2px;
+  line-height: 72px;
+  text-transform: uppercase;
 }
-.apps-section .apps-some-text {
-  font-family: "Open-Sans", sans-serif;
+.welcome-section .welcome-description {
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
-  font-weight: 400;
-  color: #ffffff;
-  letter-spacing: 0.5px;
-  line-height: 18px;
+  font-weight: 300;
+  color: #004966;
+  letter-spacing: 0.2px;
+  line-height: 24px;
 }
-.apps-section .apps-some-text p {
-  margin-bottom: 25px;
-}
-
-.subscribe-email-wrapper .form-email {
-  font-family: "Open-Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #282828;
-  letter-spacing: 3px;
+.welcome-section .welcome-description .text-accent {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ff4848;
+  letter-spacing: 0.2px;
   line-height: 24px;
 }
 
-.page__footer .footer-links {
-  margin-bottom: 15px;
+.offering-section h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+  line-height: 38px;
+  margin-bottom: 25px;
 }
-.page__footer .footer-links a {
-  font-family: "Open-Sans", sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  color: #333333;
-  letter-spacing: 0.65px;
-  line-height: 13px;
-  text-transform: uppercase;
-}
-.page__footer .footer-links a:hover {
-  opacity: 0.8;
-}
-.page__footer .footer-links .link-item {
-  padding: 0 15px;
-}
-.page__footer .copyright {
-  font-family: "Open-Sans", sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  color: #333333;
-  letter-spacing: 0.65px;
-  line-height: 13px;
-}
-.page__footer .text-accent a {
-  font-family: "Great Vibes", cursive;
-  font-size: 28px;
-  font-weight: 400;
-  color: #df001f;
-  letter-spacing: 1.4px;
-  line-height: 28px;
-}
-
-.members-page .members-page-item h3 {
-  font-family: "Oswald", sans-serif;
-  font-size: 30px;
-  font-weight: 500;
-  color: #333333;
-  letter-spacing: 1px;
-  line-height: 30x;
-  margin-bottom: 20px;
-}
-.members-page .member-profession, .members-page .member-genre, .members-page .member-age {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #333333;
-  letter-spacing: 0.5px;
-  line-height: 30x;
-}
-
-.member-node h3 {
-  font-family: "Oswald", sans-serif;
-  font-size: 30px;
-  font-weight: 500;
-  color: #333333;
-  letter-spacing: 1px;
-  line-height: 30x;
-  margin-bottom: 20px;
-}
-.member-node .member-biography {
-  font-family: "Open-Sans", sans-serif;
+.offering-section .view-header {
+  font-family: "Roboto", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  color: #333333;
-  letter-spacing: 0.3;
-  line-height: 20px;
-}
-
-.slide__caption {
-  padding: 0 15px 0;
-}
-
-.slick__arrow {
-  position: absolute;
-  left: -10px;
-  top: -20px;
-}
-.slick__arrow ::before {
-  color: #df001f;
-}
-.slick__arrow .slick-prev {
-  left: auto !important;
-  right: 40px !important;
-}
-
-.front-main-navigation {
-  background-color: #df001f;
-}
-
-.front-main-navigation .navbar-nav .nav-link {
-  font-family: "Open-Sans", sans-serif;
-  font-size: 13px;
-  font-weight: 700;
   color: #ffffff;
-  letter-spacing: 0.65px;
-  line-height: 44px;
-  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  margin-bottom: 40px;
 }
-.front-main-navigation .navbar-nav .nav-link:hover {
+.offering-section .offering-item h2 a {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
   color: #ffffff;
-  text-decoration: line-through;
+  letter-spacing: 0.2px;
+  line-height: 38px;
+}
+.offering-section .offering-item .offering-item-description {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+}
+
+.latest-work-section h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  color: #000000;
+  letter-spacing: 0.2px;
+  line-height: 38px;
+  margin-bottom: 25px;
+}
+.latest-work-section .view-header {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+
+.featured-clients-section h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+  line-height: 38px;
+  margin-bottom: 30px;
+}
+
+.contact-info-section h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+  line-height: 28px;
+}
+.contact-info-section .contact-adress, .contact-info-section .contact-telephone, .contact-info-section .contact-some-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+}
+
+.copyright-block {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffff;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+}
+.copyright-block p {
+  margin: 0;
 }
 
 .navbar {
-  position: relative;
-  padding: 15px 30px;
-}
-.navbar .block--gh-radix-branding {
-  position: absolute;
-}
-@media (min-width: 320px) and (max-width: 699px) {
-  .navbar .block--gh-radix-branding {
-    left: calc(75% - 55px);
-    bottom: 110px;
-  }
-}
-@media (min-width: 700px) and (max-width: 1199px) {
-  .navbar .block--gh-radix-branding {
-    left: calc(50% - 55px);
-    bottom: 110px;
-  }
-}
-@media (min-width: 1199px) {
-  .navbar .block--gh-radix-branding {
-    left: calc(50% - 55px);
-  }
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
-@media (max-width: 1199px) {
+.front-main-navigation {
+  background-color: #2c3e50;
+}
+
+.front-main-navigation .navbar-nav .nav-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 0.65px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.front-main-navigation .navbar-nav .nav-link:hover {
+  color: #ff4848;
+}
+
+@media (max-width: 992px) {
   .front-main-navigation .navbar-collapse {
     padding: 30px;
-    background-color: #df001f;
+    background-color: #2c3e50;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 0 5px 15px rgba(30, 30, 30, 0.5);
   }
 }
-.block--dropdownlanguage {
-  margin: 10px;
-}
-.block--dropdownlanguage .card-body {
-  padding: 0;
-}
-.block--dropdownlanguage .dropdown-toggle:hover, .block--dropdownlanguage .dropdown-menu-right:hover, .block--dropdownlanguage .language-link:hover {
-  background-color: #df001f;
-  opacity: 0.9;
-}
-@media (min-width: 320px) and (max-width: 1199px) {
-  .block--dropdownlanguage {
-    margin: 10px auto;
-  }
+.contact-form input, .contact-form textarea {
+  border-radius: 0;
 }
 
-html[lang=en] .block--dropdownlanguage {
-  max-width: 78px;
+.header-section {
+  background-color: #ff4848;
 }
 
-html[lang=uk] .block--dropdownlanguage {
-  max-width: 102px;
-}
-
-.header-section,
-.memory-section,
-.apps-section {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.welcome-container {
+  min-height: 60vh;
 }
 
 .header-section {
   min-height: 90vh;
   padding: 70px 15px;
-  background-position: 25% 50%;
+}
+.header-section .header-container {
+  min-height: 80vh;
 }
 
-.members-item {
-  position: relative;
-}
-.members-item .social-info {
-  background: #df001f;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 0 25px 10px;
-  z-index: 0;
-}
-.members-item .member-info {
-  background: #df001f;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 15px 25px;
-  z-index: 1;
-}
-.members-item:hover .member-info {
-  cursor: pointer;
-  bottom: 45px;
-  transition: bottom 0.6s;
-}
-
-.concert-section img,
-.videos-section img,
-.our-members-section img {
-  width: 100%;
-}
-
-.soundcloud-track {
-  margin-bottom: 12px;
-}
-
-.our-members-section,
-.concert-section,
-.videos-section,
-.top-music-section,
-.feed-section {
-  padding: 50px 20px 10px;
-}
-
-.memory-section,
-.apps-section {
-  margin: 50px 0 10px;
-}
-
-.concert-info {
-  padding: 15px 30px 15px 40px;
-}
-@media (max-width: 576px) {
-  .concert-info {
-    padding-left: 15px;
-  }
-}
-
-.instagram-feed-item {
-  margin-bottom: 20px;
-}
-
-.memory-section,
-.apps-section {
-  min-height: 40vh;
+.offering-section {
+  background-color: #2c3e50;
+  min-height: 60vh;
   padding: 70px 15px;
 }
-
-.memory-section .text-container {
-  padding: 15px 15px 15px 50px;
+.offering-section .offering-item {
+  max-width: 300px;
+  margin: 15px 0;
 }
-@media (max-width: 500px) {
-  .memory-section .text-container {
-    padding: 15px;
-  }
+.offering-section .offering-item img {
+  margin-bottom: 25px;
 }
 
-.subscribe-section {
-  max-width: 450px;
-  margin: 50px auto;
+.latest-work-section {
+  min-height: 80vh;
+  padding: 70px 15px;
 }
-.subscribe-section .subscribe-email-wrapper .form-email {
-  border: none;
-  border-radius: 0;
-  border-bottom: 3px solid #999999;
-  padding-left: 0;
+.latest-work-section .latest-work-item {
+  margin: 15px 0;
 }
-.subscribe-section .subscribe-email-wrapper .form-email:focus {
-  box-shadow: none;
-  border-color: #df001f;
-}
-.subscribe-section .submit-button-wrapper {
-  margin-left: -25px;
-}
-.subscribe-section .submit-button-wrapper .subscribe-submit {
-  background-color: transparent;
-  border: none;
-  background: url("../../src/img/icon/arrow_icon.png") no-repeat;
+
+.page__footer {
+  background: url("../../src/img/backgrounds/footer_bg.png") no-repeat;
   background-position: center;
-}
-.subscribe-section .submit-button-wrapper .subscribe-submit:focus {
-  box-shadow: none !important;
-}
-
-.members-page .members-page-item {
-  padding: 30px;
-}
-.members-page .members-page-item img {
-  width: 100%;
-}
-.members-page .members-page-item .member-info {
-  padding: 15px;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  padding: 0 15px;
 }
 
-.member-node img {
-  width: 100%;
+.featured-clients-section {
+  background-color: #ff4848;
+  padding: 50px 15px;
+}
+.featured-clients-section .featured-clients-item {
   padding: 15px;
 }
-.member-node .member-biography {
-  padding: 15px;
+.featured-clients-section img {
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+}
+
+.site-logo-block {
+  background-color: #17212a;
+  padding: 35px 15px;
+}
+
+.copyright-block {
+  background-color: #ff4848;
+  padding: 20px 15px;
+}
+
+.contact-info-section,
+.contact-form {
+  padding: 70px 15px 0 15px;
+}
+
+.contact-form {
+  margin-bottom: 15px;
 }
